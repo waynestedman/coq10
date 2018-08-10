@@ -1,0 +1,147 @@
+$dcBlue: #00388d;
+$dcGold: #ffd54f;
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  h1 {
+    font-size: 68px;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .slick-next, .slick-arrow {
+    border: none;
+  }
+  .text-blue {
+    color: $dcBlue;
+  }
+  .slick-slider {
+    .slick-track {
+      width: 100% !important;
+      // max-height: 500px;
+    }
+    .slick-slide {
+      width: 100% !important;
+      left: 0px !important;
+      display: none;
+    }
+    .slick-current {
+      display: block;
+    }
+  }
+}
+
+.productsTab {
+  width: 100%;
+  padding-bottom: 140px;
+
+  h2 {
+    margin: 4rem auto;
+    text-align: center;
+  }
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.5s;
+    font-size: 17px;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: lighten($dcBlue, 50%);
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ddd;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #ddd;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+      from {opacity: 0;}
+      to {opacity: 1;}
+  }
+
+  #faceSlider, #targetedSlider {
+    width: 90%;
+    height: inherit !important;
+    margin: 0 auto;
+    padding-left: 3%;
+
+    img {
+      width: 320px;
+      display: inline-block;
+    }
+    .productInfo-text {
+      display: inline-block;
+      width: 50%;
+      position: absolute;
+      margin-left: 58px;
+
+      .productInfo-desc {
+        margin: 20px 0;
+      }
+      .productDesc-cta {
+        margin: 0;
+
+        span {
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+      } // productDesc-cta
+    } // productInfo-text
+    .slick-dots {
+      bottom: -120px;
+      left: 0;
+
+      li {
+        height: 75px;
+        width: 90px;
+        padding-left: 14px;
+        border-left: 1px solid $gray400;
+
+        &:first-child {
+          border-left: none;
+        }
+        img {
+          margin: 0 auto;
+        }
+      } // li
+      .slick-active {
+        a {
+          border-bottom: 2px solid $dcBlue;
+          padding-bottom: 6px;
+        }
+      } // slick-active
+    } // slick-dots
+  } // productsSlider
+} // productInfo
