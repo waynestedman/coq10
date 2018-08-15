@@ -193,6 +193,85 @@ body {
   }
 }
 
+.content-wrapper .learn-cta {
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero .heroBox {
+  position: absolute;
+  top: 6%;
+  right: 2%;
+  margin: 0;
+  padding: 0 20px;
+  width: 44%;
+}
+
+.hero .heroBox .cta {
+  width: 40%;
+  margin: 0;
+  background-color: #913788;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.info {
+  position: relative;
+  margin-bottom: 68px;
+}
+
+.info .infoImg-left {
+  margin-top: 0;
+  width: 16%;
+  float: left;
+}
+
+.info .infoBox {
+  text-align: center;
+  display: inline-block;
+  background-color: #F8E4F9;
+  width: 70%;
+  margin: 40px 0 0 0;
+  padding: 0 80px 40px 80px;
+  box-shadow: -1px -1px 15px 3px rgba(150, 150, 150, 0.6);
+}
+
+.info .infoBox h2 {
+  margin-bottom: 0;
+}
+
+.info .infoBox h4 {
+  margin: 0.5rem auto 2rem auto;
+  line-height: 1;
+}
+
+.info .infoBox .benefits {
+  text-align: left;
+}
+
+.info .infoBox .benefits .benefit {
+  width: 50%;
+  margin: 40px 0;
+}
+
+.info .infoBox .benefits .benefit .benefit-title {
+  text-transform: uppercase;
+}
+
+.info .infoImg-right {
+  position: absolute;
+  top: 150px;
+  right: 0;
+  width: 40%;
+}
+
 .ingredients {
   margin: 0 auto 5% auto;
 }
@@ -534,13 +613,13 @@ body {
 .comments {
   text-align: center;
   background-color: #F8E4F9;
-  padding: 100px 0 0 0;
+  padding: 40px 0 0 0;
   height: 400px;
 }
 
 .comments .quotes {
   margin: 0 auto;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .comments .quotes img {
@@ -562,14 +641,40 @@ body {
   max-width: 1280px;
 }
 
+.comments #commentsSlider .comment h5 {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
 .comments #commentsSlider .comment p {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 50%;
 }
 
 .comments #commentsSlider blockquote {
   font-weight: 300;
   margin: 0 auto;
+}
+
+.blog {
+  position: relative;
+  display: inline-block;
+}
+
+.blog .blogBox {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  width: 40%;
+  text-align: left;
+}
+
+.blog .blogBox .learn-cta {
+  margin-top: 40px;
+}
+
+.blog .blog-img img {
+  margin: 0 !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

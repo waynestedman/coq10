@@ -13,9 +13,88 @@ $q10purpleDK: #913788;
       from {opacity: 0;}
       to {opacity: 1;}
   }
+  .learn-cta {
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+.hero {
+  position: relative;
+
+  .heroBox {
+    position: absolute;
+    top: 6%;
+    right: 2%;
+    margin: 0;
+    padding: 0 20px;
+    width: 44%;
+
+    .cta {
+      width: 40%;
+      margin: 0;
+      background-color: $q10purpleDK;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      text-transform: uppercase;
+    }
+  }
 }
 .info {
+  position: relative;
+  margin-bottom: 68px;
 
+  .infoImg-left {
+    margin-top: 0;
+    width: 16%;
+    float: left;
+
+    // img {
+    //   width: 210px;
+    // }
+  }
+  .infoBox {
+    // position: relative;
+    text-align: center;
+    display: inline-block;
+    background-color: $q10purpleLT;
+    width: 70%;
+    margin: 40px 0 0 0;
+    padding: 0 80px 40px 80px;
+    box-shadow: -1px -1px 15px 3px rgba(150,150,150,0.6);
+
+    h2 {
+      margin-bottom: 0;
+    }
+    h4 {
+      margin: 0.5rem auto 2rem auto;
+      line-height: 1;
+    }
+    .benefits {
+      text-align: left;
+
+      .benefit {
+        width: 50%;
+        margin: 40px 0;
+
+        .benefit-title {
+          text-transform: uppercase;
+        }
+      }
+
+    }
+  } // infoBox
+  .infoImg-right {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 40%;
+
+    // img {
+    //   margin: 0;
+    // }
+  }
 }
 .ingredients {
   margin: 0 auto 5% auto;
@@ -342,12 +421,12 @@ $q10purpleDK: #913788;
 .comments {
   text-align: center;
   background-color: $q10purpleLT;
-  padding: 100px 0 0 0;
+  padding: 40px 0 0 0;
   height: 400px;
 
   .quotes {
     margin: 0 auto;
-    opacity: 0.3;
+    opacity: 0.2;
 
     img {
       width: 80px;
@@ -367,8 +446,12 @@ $q10purpleDK: #913788;
       width: 60% !important;
       max-width: 1280px;
 
+      h5 {
+        margin-top: -10px;
+        margin-bottom: 20px;
+      }
       p {
-        margin: 0 auto;
+        margin: 20px auto;
         width: 50%;
       }
     }
@@ -378,3 +461,24 @@ $q10purpleDK: #913788;
     }
   } // commentsSlider
 } // comments
+.blog {
+  position: relative;
+  display: inline-block;
+
+  .blogBox {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    width: 40%;
+    text-align: left;
+
+    .learn-cta {
+      margin-top: 40px;
+    }
+  } // blogBox
+  .blog-img {
+    img {
+      margin: 0 !important;
+    }
+  } // blog-img
+}
