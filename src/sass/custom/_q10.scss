@@ -40,7 +40,7 @@ $q10purpleDK: #913788;
       text-transform: uppercase;
     }
   }
-}
+} // hero
 .info {
   position: relative;
   margin-bottom: 68px;
@@ -95,7 +95,7 @@ $q10purpleDK: #913788;
     //   margin: 0;
     // }
   }
-}
+} // info
 .ingredients {
   margin: 0 auto 5% auto;
 
@@ -198,6 +198,9 @@ $q10purpleDK: #913788;
 
       .faceButtons, .targetButtons {
         height: 85px;
+        text-align: center;
+        // overflow: auto;
+        // white-space: nowrap;
 
         .tablink, .targetlink {
           border-top: none;
@@ -214,7 +217,7 @@ $q10purpleDK: #913788;
 
           &:hover {
             padding-bottom: 14px;
-            background-color: $q10purpleLT;
+            background-color: $q10purpleLT !important;
           }
         } // tablink targetlink
       }
@@ -461,11 +464,11 @@ $q10purpleDK: #913788;
     }
   } // commentsSlider
 } // comments
-.blog {
+.learn {
   position: relative;
   display: inline-block;
 
-  .blogBox {
+  .learnBox {
     position: absolute;
     top: 8%;
     left: 8%;
@@ -475,10 +478,10 @@ $q10purpleDK: #913788;
     .learn-cta {
       margin-top: 40px;
     }
-  } // blogBox
-  .blog-img {
+  } // learnBox
+  .learn-img {
     img {
       margin: 0 !important;
     }
-  } // blog-img
-}
+  } // learn-img
+} // learn

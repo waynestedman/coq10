@@ -378,6 +378,7 @@ body {
 
 .collection .collectionWrapper .mainTabContent .faceButtons, .collection .collectionWrapper .mainTabContent .targetButtons {
   height: 85px;
+  text-align: center;
 }
 
 .collection .collectionWrapper .mainTabContent .faceButtons .tablink, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink, .collection .collectionWrapper .mainTabContent .targetButtons .tablink, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink {
@@ -395,7 +396,7 @@ body {
 
 .collection .collectionWrapper .mainTabContent .faceButtons .tablink:hover, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .tablink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink:hover {
   padding-bottom: 14px;
-  background-color: #F8E4F9;
+  background-color: #F8E4F9 !important;
 }
 
 .collection .collectionWrapper .mainTabContent .tabcontent, .collection .collectionWrapper .mainTabContent .targetcontent {
@@ -656,12 +657,12 @@ body {
   margin: 0 auto;
 }
 
-.blog {
+.learn {
   position: relative;
   display: inline-block;
 }
 
-.blog .blogBox {
+.learn .learnBox {
   position: absolute;
   top: 8%;
   left: 8%;
@@ -669,12 +670,94 @@ body {
   text-align: left;
 }
 
-.blog .blogBox .learn-cta {
+.learn .learnBox .learn-cta {
   margin-top: 40px;
 }
 
-.blog .blog-img img {
+.learn .learn-img img {
   margin: 0 !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .cms-page-view .column.main p {
+    margin: 0 auto 10px auto;
+  }
+  .content-wrapper .slick-list {
+    margin-left: 0;
+  }
+  .hero .heroBox {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero .heroBox .cta {
+    margin: 0 auto;
+  }
+  .info {
+    margin-top: 20px;
+  }
+  .info .infoBox {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .info .infoBox .benefits {
+    text-align: center;
+  }
+  .info .infoBox .benefits .benefit {
+    width: 90%;
+  }
+  .info .infoBox .benefits .learn-cta {
+    text-align: left;
+  }
+  .info .infoImg-right {
+    top: unset;
+    bottom: -72px;
+  }
+  .ingredients #ingredientsDesc {
+    width: 90%;
+  }
+  .ingredients #ingredientsDesc .ingredient-text {
+    text-align: center;
+  }
+  .ingredients #ingredientsDesc .slick-dots li {
+    width: 14px;
+    height: 14px;
+  }
+  .ingredients #ingredientsDesc .slick-dots li button:before {
+    font-size: 10px;
+  }
+  .collection .collectionWrapper {
+    box-shadow: none;
+    width: 100%;
+  }
+  .collection .collectionWrapper .mainTabContent .faceButtons, .collection .collectionWrapper .mainTabContent .targetButtons {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .collection .collectionWrapper .mainTabContent .faceButtons::-webkit-scrollbar, .collection .collectionWrapper .mainTabContent .targetButtons::-webkit-scrollbar {
+    display: none;
+  }
+  .collection .collectionWrapper .mainTabContent .faceButtons .tablink, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink, .collection .collectionWrapper .mainTabContent .targetButtons .tablink, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink {
+    width: 45%;
+    height: 44px;
+    flex: 0 0 auto;
+    font-size: 14px;
+  }
+  .learn .learnBox {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
