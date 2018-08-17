@@ -212,6 +212,12 @@ body {
   margin: 0;
 }
 
+.content-wrapper .tabActive {
+  color: #913788 !important;
+  padding-bottom: 14px !important;
+  border-bottom: 4px solid #913788 !important;
+}
+
 .hero {
   position: relative;
 }

@@ -167,8 +167,8 @@
     <section class="collection">
       <h2>The Collection</h2>
       <div class="mainTab">
-        <button class="mainTablinks" onclick="openMain(event, 'faceCare')" id="defaultOpenM">Face Care</button>
-        <button class="mainTablinks" onclick="openMain(event, 'targetCare')">Targeted Care</button>
+        <button class="mainTablinks" id="faceCareMain">Face Care</button>
+        <button class="mainTablinks" id="targetCareMain">Targeted Care</button>
       </div>
       <div class="collectionWrapper">
   <!-- Face Care -->
@@ -290,9 +290,9 @@
     </section>
     <section class="suggestedRegimen">
       <h2>Suggested Regimen</h2>
-      <div class="mainTab">
-        <button class="mainTablinks" onclick="openMain(event, 'regimenCore')" id="defaultOpenR">Core</button>
-        <button class="mainTablinks" onclick="openMain(event, 'regimenSimple')">Simplified</button>
+      <div class="regimenTab">
+        <button class="regimenTablinks" onclick="openRegimen(event, 'regimenCore')" id="defaultOpenRegimen">Core</button>
+        <button class="regimenTablinks" onclick="openRegimen(event, 'regimenSimple')">Simplified</button>
       </div>
       <div id="regimenCore" class="mainTabContent">
         <div class="regimenDetails">
@@ -452,9 +452,8 @@
     </section>
   </div> <!-- content wrapper -->
 
-  <script type="text/javascript" src="./src/js/bottomScript.js"></script>
-<!--
-  <script>
+  <script type="text/javascript" src="./src/js/bottomScript2.js"></script>
+  <!-- <script>
     function openCare(evt, careName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("mainTabContent");
@@ -529,7 +528,6 @@
     }
     // Get the element with id="defaultOpenRegimen" and click on it
     document.getElementById("defaultOpenRegimen").click();
-  </script>
--->
+  </script> -->
 </body>
 </html>

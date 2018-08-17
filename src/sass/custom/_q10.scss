@@ -18,6 +18,11 @@ $q10purpleDK: #913788;
     text-transform: uppercase;
     margin: 0;
   }
+  .tabActive {
+    color: $q10purpleDK !important;
+    padding-bottom: 14px !important;
+    border-bottom: 4px solid $q10purpleDK !important;
+  }
 }
 .hero {
   position: relative;
@@ -189,6 +194,7 @@ $q10purpleDK: #913788;
     margin: 18px auto 0 auto;
     width: 90%;
 
+
     .mainTabContent {
       display: none;
       padding: 0 12px;
@@ -275,6 +281,10 @@ $q10purpleDK: #913788;
         } // productInfo-text
       } // productInfo-details
     } // main tab content
+
+    // #faceCare {
+    //   display: block;
+    // }
   } // collection wrapper
   .collection-cta {
     margin: 20px auto 0 auto;

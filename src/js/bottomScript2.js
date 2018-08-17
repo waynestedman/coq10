@@ -1,18 +1,35 @@
-// Collection Main Tabs
-function openCare(evt, careName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("mainTabContent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("mainTablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(careName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-document.getElementById("defaultOpenMain").click();
+$(document).ready(function () {
+// Collection Main Tab click event
+    $("#faceCare").css("display", "block");
+    $("#faceCareMain").addClass("tabActive");
+    $(".mainTab").click(function(event) {
+      var target = $( event.target );
+
+      $("button").removeClass("tabActive");
+      target.addClass("tabActive");
+
+      if (event.target == "#targetCareMain") {
+        $("#faceCare").css("display", "none");
+        $("#targetCare").css("display", "block");
+      } else {
+        $("#faceCare").css("display", "block");
+        $("#targetCare").css("display", "none");
+      }; // if else
+
+      // function handler( target ) {
+      //   if ( target.is( "#targetCareMain" ) ) {
+      //     $("#targetCare").css("display", "block");
+      //     $("#faceCare").css("display", "none");
+      //   }  else {
+      //    $("#faceCare").css("display", "none");
+      //    $("#targetCare").css("display", "block");
+      //   };
+      // }; // handler
+      // handler();
+    });// mainTab click event
+
+}); // Document Ready
+
 
 // // Sub-tabs for Face Care
 function openFace(prodName1, elmnt) {
