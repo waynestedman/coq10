@@ -167,8 +167,8 @@
     <section class="collection">
       <h2>The Collection</h2>
       <div class="mainTab">
-        <button class="mainTablinks" onclick="openMain(event, 'faceCare')" id="defaultOpenM">Face Care</button>
-        <button class="mainTablinks" onclick="openMain(event, 'targetCare')">Targeted Care</button>
+        <button class="mainTablinks" onclick="openCare(event, 'faceCare')" id="defaultOpenMain">Face Care</button>
+        <button class="mainTablinks" onclick="openCare(event, 'targetCare')">Targeted Care</button>
       </div>
       <div class="collectionWrapper">
   <!-- Face Care -->
@@ -290,17 +290,17 @@
     </section>
     <section class="suggestedRegimen">
       <h2>Suggested Regimen</h2>
-      <div class="mainTab">
-        <button class="mainTablinks" onclick="openMain(event, 'regimenCore')" id="defaultOpenR">Core</button>
-        <button class="mainTablinks" onclick="openMain(event, 'regimenSimple')">Simplified</button>
+      <div class="regimenTab">
+        <button class="regimenTablinks" onclick="openRegimen(event, 'regimenCore')" id="defaultOpenRegimen">Core</button>
+        <button class="regimenTablinks" onclick="openRegimen(event, 'regimenSimple')">Simplified</button>
       </div>
-      <div id="regimenCore" class="mainTabContent">
+      <div id="regimenCore" class="regimenTabContent">
         <div class="regimenDetails">
           <div class="product">
             <img class="psn-icon" src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-icon.svg" alt="Double Cleanse icon">
             <div class="product-text">
               <h3>1</h3>
-              <h5>Double Cleanse 1</h5>
+              <h5>Double Cleanse</h5>
               <p>Oil and water-based cleansers set the stage</p>
             </div>
             <div class="dc-cta">
@@ -314,7 +314,7 @@
             </picture>
             <div class="product-text">
               <h3>2</h3>
-              <h5>Lotion 1</h5>
+              <h5>Lotion</h5>
               <p>Toning lotion refines skin and prepares for moisture</p>
             </div>
             <div class="psn-cta">
@@ -328,7 +328,7 @@
             </picture>
             <div class="product-text">
               <h3>3</h3>
-              <h5>Milky Essence 1</h5>
+              <h5>Milky Essence</h5>
               <p>Serum helps minimize the appearance of wrinkles and discoloration</p>
             </div>
           </div>
@@ -339,13 +339,13 @@
             </picture>
             <div class="product-text">
               <h3>4</h3>
-              <h5>Cream 1</h5>
+              <h5>Cream</h5>
               <p>Hydrates and locks in moisture to address fine lines and dryness</p>
             </div>
           </div>
         </div> <!-- regimen details -->
       </div> <!-- regimen Core -->
-      <div id="regimenSimple" class="mainTabContent">
+      <div id="regimenSimple" class="regimenTabContent">
         <div class="regimenDetails">
           <div class="product">
             <img class="psn-icon" src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-icon.svg" alt="Double Cleanse icon">
@@ -452,8 +452,6 @@
     </section>
   </div> <!-- content wrapper -->
 
-  <script type="text/javascript" src="./src/js/bottomScript.js"></script>
-<!--
   <script>
     function openCare(evt, careName) {
         var i, tabcontent, tablinks;
@@ -530,6 +528,5 @@
     // Get the element with id="defaultOpenRegimen" and click on it
     document.getElementById("defaultOpenRegimen").click();
   </script>
--->
 </body>
 </html>
