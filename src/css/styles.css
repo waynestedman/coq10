@@ -552,7 +552,11 @@ body {
   border-bottom: 4px solid #913788;
 }
 
-.suggestedRegimen .regimenDetails {
+.suggestedRegimen .regimenTabContent {
+  display: none;
+}
+
+.suggestedRegimen .regimenTabContent .regimenDetails {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -563,47 +567,47 @@ body {
   padding: 0 40px 10px 40px;
 }
 
-.suggestedRegimen .regimenDetails .product {
+.suggestedRegimen .regimenTabContent .regimenDetails .product {
   width: 20%;
 }
 
-.suggestedRegimen .regimenDetails .product .dc-cta, .suggestedRegimen .regimenDetails .product .psn-cta {
+.suggestedRegimen .regimenTabContent .regimenDetails .product .dc-cta, .suggestedRegimen .regimenTabContent .regimenDetails .product .psn-cta {
   display: none;
 }
 
-.suggestedRegimen .regimenDetails .product img {
+.suggestedRegimen .regimenTabContent .regimenDetails .product img {
   width: 150px;
   margin: 0 auto;
 }
 
-.suggestedRegimen .regimenDetails .product .psn-icon {
+.suggestedRegimen .regimenTabContent .regimenDetails .product .psn-icon {
   height: 527px;
   width: 150px;
 }
 
-.suggestedRegimen .regimenDetails .product h3 {
+.suggestedRegimen .regimenTabContent .regimenDetails .product h3 {
   font-size: 84px;
   display: flex;
   justify-content: center;
 }
 
-.suggestedRegimen .regimenDetails .product h3 span {
+.suggestedRegimen .regimenTabContent .regimenDetails .product h3 span {
   font-size: 44px;
   margin: 26px 6px 0 0;
 }
 
-.suggestedRegimen .regimenDetails .product h5 {
+.suggestedRegimen .regimenTabContent .regimenDetails .product h5 {
   font-size: 34px;
   margin-top: 0;
   margin-bottom: 2rem;
 }
 
-.suggestedRegimen .regimenDetails .product p {
+.suggestedRegimen .regimenTabContent .regimenDetails .product p {
   width: 90%;
   margin: 0 auto;
 }
 
-.suggestedRegimen .regimenCTA {
+.suggestedRegimen .regimenTabContent .regimenCTA {
   background-color: #fff;
   width: 85%;
   margin: 0 auto 30px auto;
@@ -612,27 +616,27 @@ body {
   justify-content: space-around;
 }
 
-.suggestedRegimen .regimenCTA .regimenCTA-1, .suggestedRegimen .regimenCTA .regimenCTA-2 {
+.suggestedRegimen .regimenTabContent .regimenCTA .regimenCTA-1, .suggestedRegimen .regimenTabContent .regimenCTA .regimenCTA-2 {
   display: inline-block;
   background-color: #913788;
   color: #fff;
   padding: 16px 0;
 }
 
-.suggestedRegimen .regimenCTA .regimenCTA-1 a, .suggestedRegimen .regimenCTA .regimenCTA-2 a {
+.suggestedRegimen .regimenTabContent .regimenCTA .regimenCTA-1 a, .suggestedRegimen .regimenTabContent .regimenCTA .regimenCTA-2 a {
   color: #fff;
   font-size: 18px;
 }
 
-.suggestedRegimen .regimenCTA .regimenCTA-1 {
+.suggestedRegimen .regimenTabContent .regimenCTA .regimenCTA-1 {
   width: 20%;
 }
 
-.suggestedRegimen .regimenCTA .regimenCTA-2 {
+.suggestedRegimen .regimenTabContent .regimenCTA .regimenCTA-2 {
   width: 60%;
 }
 
-.suggestedRegimen .dc-blog, .suggestedRegimen .oc-blog {
+.suggestedRegimen .regimenTabContent .dc-blog, .suggestedRegimen .regimenTabContent .oc-blog {
   margin: 10px auto;
 }
 

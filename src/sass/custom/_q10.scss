@@ -371,80 +371,84 @@ $q10purpleDK: #913788;
       }
     } // button
   } // regimen Tab
-  .regimenDetails {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    background-color: #fff;
-    width: 85%;
-    margin: 0 auto;
-    padding:0 40px 10px 40px;
-
-    .product {
-      width: 20%;
-
-      .dc-cta, .psn-cta {
-        display: none;
-      }
-      img {
-        width: 150px;
-        margin: 0 auto;
-      }
-      .psn-icon {
-        height: 527px;
-        width: 150px;
-      }
-      h3 {
-        font-size: 84px;
+  .regimenTabContent {
+    display: none;
+    
+      .regimenDetails {
         display: flex;
-        justify-content: center;
-
-        span {
-          font-size: 44px;
-          margin: 26px 6px 0 0;
-        }
-      }
-      h5 {
-        font-size: 34px;
-        margin-top: 0;
-        margin-bottom: 2rem;
-      }
-      p {
-        width: 90%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        background-color: #fff;
+        width: 85%;
         margin: 0 auto;
-      }
-    } // product
-  } // productDetails
-  .regimenCTA {
-    background-color: #fff;
-    width: 85%;
-    margin: 0 auto 30px auto;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: space-around;
+        padding:0 40px 10px 40px;
 
-    .regimenCTA-1, .regimenCTA-2 {
-      display: inline-block;
-      background-color: $q10purpleDK;
-      color: #fff;
-      padding: 16px 0;
+        .product {
+          width: 20%;
 
-      a {
-        color: #fff;
-        font-size: 18px;
-      }
-    }
-    .regimenCTA-1 {
-      width: 20%;
-    }
-    .regimenCTA-2 {
-      width: 60%;
-    }
-  } // regimen CTA
-  .dc-blog, .oc-blog {
-    margin: 10px auto;
-  } // DC & OC blog
+          .dc-cta, .psn-cta {
+            display: none;
+          }
+          img {
+            width: 150px;
+            margin: 0 auto;
+          }
+          .psn-icon {
+            height: 527px;
+            width: 150px;
+          }
+          h3 {
+            font-size: 84px;
+            display: flex;
+            justify-content: center;
+
+            span {
+              font-size: 44px;
+              margin: 26px 6px 0 0;
+            }
+          }
+          h5 {
+            font-size: 34px;
+            margin-top: 0;
+            margin-bottom: 2rem;
+          }
+          p {
+            width: 90%;
+            margin: 0 auto;
+          }
+        } // product
+      } // productDetails
+      .regimenCTA {
+        background-color: #fff;
+        width: 85%;
+        margin: 0 auto 30px auto;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+
+        .regimenCTA-1, .regimenCTA-2 {
+          display: inline-block;
+          background-color: $q10purpleDK;
+          color: #fff;
+          padding: 16px 0;
+
+          a {
+            color: #fff;
+            font-size: 18px;
+          }
+        }
+        .regimenCTA-1 {
+          width: 20%;
+        }
+        .regimenCTA-2 {
+          width: 60%;
+        }
+      } // regimen CTA
+      .dc-blog, .oc-blog {
+        margin: 10px auto;
+      } // DC & OC blog
+  } // regimenTabContent
 } // suggestedRegimen
 .comments {
   text-align: center;

@@ -291,12 +291,12 @@
     <section class="suggestedRegimen">
       <h2>Suggested Regimen</h2>
       <div class="regimenTab">
-        <button class="regimenTablinks" onclick="openRegimen(event, 'regimenCore')" id="defaultOpenRegimen">Core</button>
-        <button class="regimenTablinks" onclick="openRegimen(event, 'regimenSimple')">Simplified</button>
+        <button class="regimenTablinks" id="regimenCoreBtn">Core</button>
+        <button class="regimenTablinks" id="regimenSimpleBtn">Simplified</button>
       </div>
-      <div id="regimenCore" class="mainTabContent">
+      <div id="regimenCore" class="regimenTabContent">
         <div class="regimenDetails">
-          <div class="product">
+          <div class="product" id="core1" data-id="1">
             <img class="psn-icon" src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-icon.svg" alt="Double Cleanse icon">
             <div class="product-text">
               <h3>1</h3>
@@ -307,7 +307,7 @@
               <a href="https://www.dhccare.com/shop/skincare/double-cleanse.html " role="button" aria-disabled="true" class="psn-btn">Shop Double Cleanse</a>
             </div>
           </div>
-          <div class="product">
+          <div class="product" id="core2" data-id="2">
             <picture>
               <source media="(max-width: 500px)" srcset="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-lotion-mobile.png">
               <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-lotion.png" alt="Platinum Silver Nanocolloid Lotion">
@@ -321,7 +321,7 @@
               <a href="https://www.dhccare.com/shop/skincare/platinum-silver-nanocolloid.html" role="button" aria-disabled="true" class="psn-btn">Shop The Collection</a>
             </div>
           </div>
-          <div class="product">
+          <div class="product" id="core3" data-id="3">
             <picture>
               <source media="(max-width: 500px)" srcset="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-essence-mobile.png">
               <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-essence.png" alt="Platinum Silver Nanocolloid Milky Essence">
@@ -332,7 +332,7 @@
               <p>Serum helps minimize the appearance of wrinkles and discoloration</p>
             </div>
           </div>
-          <div class="product">
+          <div class="product" id="core4" data-id="4">
             <picture>
               <source media="(max-width: 500px)" srcset="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-cream-mobile.png">
               <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-cream.png" alt="Platinum Silver Nanocolloid Cream">
@@ -345,9 +345,9 @@
           </div>
         </div> <!-- regimen details -->
       </div> <!-- regimen Core -->
-      <div id="regimenSimple" class="mainTabContent">
+      <div id="regimenSimple" class="regimenTabContent">
         <div class="regimenDetails">
-          <div class="product">
+          <div class="product" id="simple1" data-id="1">
             <img class="psn-icon" src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-icon.svg" alt="Double Cleanse icon">
             <div class="product-text">
               <h3>1</h3>
@@ -358,7 +358,7 @@
               <a href="https://www.dhccare.com/shop/skincare/double-cleanse.html " role="button" aria-disabled="true" class="psn-btn">Shop Double Cleanse</a>
             </div>
           </div>
-          <div class="product">
+          <div class="product" id="simple2" data-id="2">
             <picture>
               <source media="(max-width: 500px)" srcset="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-lotion-mobile.png">
               <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-lotion.png" alt="Platinum Silver Nanocolloid Lotion">
@@ -372,7 +372,7 @@
               <a href="https://www.dhccare.com/shop/skincare/platinum-silver-nanocolloid.html" role="button" aria-disabled="true" class="psn-btn">Shop The Collection</a>
             </div>
           </div>
-          <div class="product">
+          <div class="product" id="simple3" data-id="3">
             <picture>
               <source media="(max-width: 500px)" srcset="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-essence-mobile.png">
               <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-essence.png" alt="Platinum Silver Nanocolloid Milky Essence">
@@ -383,7 +383,7 @@
               <p>Serum helps minimize the appearance of wrinkles and discoloration</p>
             </div>
           </div>
-          <div class="product">
+          <div class="product" id="simple4" data-id="4">
             <picture>
               <source media="(max-width: 500px)" srcset="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-cream-mobile.png">
               <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/psn-cream.png" alt="Platinum Silver Nanocolloid Cream">
