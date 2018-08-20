@@ -2,54 +2,48 @@ $(document).ready(function () {
 // Collection Main Tab click event
     $("#faceCare").css("display", "block");
     $("#faceCareMain").addClass("tabActive");
+    $("#faceProduct1").addClass("tabActive");
+
     $(".mainTab").click(function(event) {
       var target = $( event.target );
-
       $("button").removeClass("tabActive");
       target.addClass("tabActive");
-
-      if (event.target == "#targetCareMain") {
+      if (target.is("#faceCareMain")) {
+        $("#faceCare").css("display", "block");
+        $("#targetCare").css("display", "none");
+        $("button").css({"borderBottom": "none", "color": "#9E9E9E", "backgroundColor": "#EEEEEE"});
+      } else if (target.is("#targetCareMain")) {
         $("#faceCare").css("display", "none");
         $("#targetCare").css("display", "block");
       } else {
-        $("#faceCare").css("display", "block");
-        $("#targetCare").css("display", "none");
-      }; // if else
-
-      // function handler( target ) {
-      //   if ( target.is( "#targetCareMain" ) ) {
-      //     $("#targetCare").css("display", "block");
-      //     $("#faceCare").css("display", "none");
-      //   }  else {
-      //    $("#faceCare").css("display", "none");
-      //    $("#targetCare").css("display", "block");
-      //   };
-      // }; // handler
-      // handler();
+        console.log("selection error!");
+      } // if else
     });// mainTab click event
+
+// construct the inner-tabs
 
 }); // Document Ready
 
 
 // // Sub-tabs for Face Care
-function openFace(prodName1, elmnt) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "#EEEEEE";
-        tablinks[i].style.color = "#9E9E9E";
-        tablinks[i].style.borderBottom = "none";
-    }
-    document.getElementById(prodName1).style.display = "block";
-    elmnt.style.borderBottom = "2px solid #913788";
-    elmnt.style.color = "#913788";
-    elmnt.style.backgroundColor = "#FFFFFF";
-}
-document.getElementById("defaultOpen1").click();
+// function openFace(prodName1, elmnt) {
+//     var i, tabcontent, tablinks;
+//     tabcontent = document.getElementsByClassName("tabcontent");
+//     for (i = 0; i < tabcontent.length; i++) {
+//         tabcontent[i].style.display = "none";
+//     }
+//     tablinks = document.getElementsByClassName("tablink");
+//     for (i = 0; i < tablinks.length; i++) {
+//         tablinks[i].style.backgroundColor = "#EEEEEE";
+//         tablinks[i].style.color = "#9E9E9E";
+//         tablinks[i].style.borderBottom = "none";
+//     }
+//     document.getElementById(prodName1).style.display = "block";
+//     elmnt.style.borderBottom = "2px solid #913788";
+//     elmnt.style.color = "#913788";
+//     elmnt.style.backgroundColor = "#FFFFFF";
+// }
+// document.getElementById("defaultOpen1").click();
 
 // Sub-tabs for Target Care
 function openTarget(prodName2, elmnt) {

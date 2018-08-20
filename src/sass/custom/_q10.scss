@@ -35,6 +35,14 @@ $q10purpleDK: #913788;
     padding: 0 20px;
     width: 44%;
 
+    h1 {
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+    h4 {
+      margin: 1.5rem 0;
+      line-height: 1.2;
+    }
     .cta {
       width: 40%;
       margin: 0;
@@ -208,7 +216,7 @@ $q10purpleDK: #913788;
         // overflow: auto;
         // white-space: nowrap;
 
-        .tablink, .targetlink {
+        .faceLink, .targetlink {
           border-top: none;
           border-right: none;
           border-bottom: none;
@@ -225,10 +233,10 @@ $q10purpleDK: #913788;
             padding-bottom: 14px;
             background-color: $q10purpleLT !important;
           }
-        } // tablink targetlink
+        } // faceLink targetlink
       }
 
-      .tabcontent, .targetcontent {
+      .faceContent, .targetContent {
           color: white;
           display: none;
           padding: 50px;
