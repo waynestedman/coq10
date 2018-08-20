@@ -20,8 +20,15 @@ $q10purpleDK: #913788;
   }
   .tabActive {
     color: $q10purpleDK !important;
+    background-color: #FFF !important;
     padding-bottom: 14px !important;
     border-bottom: 4px solid $q10purpleDK !important;
+  }
+  .subTabActive {
+    border-bottom: none !important;
+    color: $q10purpleDK;
+    background-color: #FFF !important;
+    border-bottom: 2px solid $q10purpleDK !important;
   }
 }
 .hero {
@@ -202,7 +209,6 @@ $q10purpleDK: #913788;
     margin: 18px auto 0 auto;
     width: 90%;
 
-
     .mainTabContent {
       display: none;
       padding: 0 12px;
@@ -223,6 +229,7 @@ $q10purpleDK: #913788;
           border-left: none;
           float: left;
           outline: none;
+          background-color: #EEEEEE;
           cursor: pointer;
           padding: 14px 14px;
           font-size: 17px;

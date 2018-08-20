@@ -201,8 +201,16 @@ body {
 
 .content-wrapper .tabActive {
   color: #913788 !important;
+  background-color: #FFF !important;
   padding-bottom: 14px !important;
   border-bottom: 4px solid #913788 !important;
+}
+
+.content-wrapper .subTabActive {
+  border-bottom: none !important;
+  color: #913788;
+  background-color: #FFF !important;
+  border-bottom: 2px solid #913788 !important;
 }
 
 .hero {
@@ -404,6 +412,7 @@ body {
   border-left: none;
   float: left;
   outline: none;
+  background-color: #EEEEEE;
   cursor: pointer;
   padding: 14px 14px;
   font-size: 17px;
