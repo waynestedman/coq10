@@ -181,7 +181,7 @@ body {
 }
 
 .content-wrapper .text-purple {
-  color: #913788;
+  color: #9F3F95;
 }
 
 @keyframes fadeEffect {
@@ -200,17 +200,17 @@ body {
 }
 
 .content-wrapper .tabActive {
-  color: #913788 !important;
+  color: #9F3F95 !important;
   background-color: #FFF !important;
   padding-bottom: 14px !important;
-  border-bottom: 4px solid #913788 !important;
+  border-bottom: 4px solid #9F3F95 !important;
 }
 
 .content-wrapper .subTabActive {
   border-bottom: none !important;
-  color: #913788;
+  color: #9F3F95;
   background-color: #FFF !important;
-  border-bottom: 2px solid #913788 !important;
+  border-bottom: 2px solid #9F3F95 !important;
 }
 
 .hero {
@@ -239,8 +239,8 @@ body {
 .hero .heroBox .cta {
   width: 40%;
   margin: 0;
-  background-color: #913788;
-  color: #fff;
+  background-color: #9F3F95;
+  color: #FFF;
   text-align: center;
   padding: 10px;
   text-transform: uppercase;
@@ -309,7 +309,7 @@ body {
 .ingredients #ingredientsDesc {
   margin: 5% auto 0 auto;
   width: 80%;
-  background-color: #fff;
+  background-color: #FFF;
 }
 
 .ingredients #ingredientsDesc .ingredientImg {
@@ -373,7 +373,10 @@ body {
   outline: none;
   cursor: pointer;
   padding: 14px 16px 16px 16px;
-  font-size: 17px;
+  text-transform: capitalize;
+  font-size: 35px;
+  line-height: .8;
+  z-index: 10;
 }
 
 .collection .mainTab .mainTablinks:hover {
@@ -381,9 +384,16 @@ body {
 }
 
 .collection .mainTab .mainTablinks.active {
-  color: #913788;
+  color: #9F3F95;
   padding-bottom: 14px;
-  border-bottom: 4px solid #913788;
+  border-bottom: 4px solid #9F3F95;
+}
+
+.collection .mainTab .mainTablinks .mainTab-subtxt {
+  color: #BDBDBD;
+  background: none !important;
+  font-size: 18px;
+  z-index: -1;
 }
 
 .collection .collectionWrapper {
@@ -439,7 +449,7 @@ body {
   height: 44px;
   cursor: pointer;
   border: 1px solid #EEEEEE;
-  color: #913788;
+  color: #9F3F95;
   padding: 0 10px;
   margin-top: 20px;
 }
@@ -487,13 +497,13 @@ body {
   width: 30%;
   padding: 10px 20px;
   text-transform: uppercase;
-  background-color: #913788;
+  background-color: #9F3F95;
   font-weight: 400;
   border: 1px solid #BD8CBF;
 }
 
 .collection .collection-cta p:hover {
-  color: #913788;
+  color: #9F3F95;
   background-color: #F8E4F9;
 }
 
@@ -503,7 +513,7 @@ body {
 
 .suggestedRegimen {
   text-align: center;
-  background-color: #913788;
+  background-color: #BD8CBF;
   margin: 0 auto;
   padding-bottom: 30px;
   display: flex;
@@ -520,7 +530,7 @@ body {
   width: 85%;
   margin: 0 auto;
   padding: 0 40px 10px 40px;
-  background-color: #fff;
+  background-color: #FFF;
   overflow: hidden;
 }
 
@@ -547,9 +557,9 @@ body {
 }
 
 .suggestedRegimen .regimenTab .regimenTablinks.active {
-  color: #913788;
+  color: #9F3F95;
   padding-bottom: 14px;
-  border-bottom: 4px solid #913788;
+  border-bottom: 4px solid #9F3F95;
 }
 
 .suggestedRegimen .regimenTabContent {
@@ -561,7 +571,7 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  background-color: #fff;
+  background-color: #FFF;
   width: 85%;
   margin: 0 auto;
   padding: 0 40px 10px 40px;
@@ -608,7 +618,7 @@ body {
 }
 
 .suggestedRegimen .regimenTabContent .regimenCTA {
-  background-color: #fff;
+  background-color: #FFF;
   width: 85%;
   margin: 0 auto 30px auto;
   padding-bottom: 20px;
@@ -618,13 +628,13 @@ body {
 
 .suggestedRegimen .regimenTabContent .regimenCTA .regimenCTA-1, .suggestedRegimen .regimenTabContent .regimenCTA .regimenCTA-2 {
   display: inline-block;
-  background-color: #913788;
-  color: #fff;
+  background-color: #9F3F95;
+  color: #FFF;
   padding: 16px 0;
 }
 
 .suggestedRegimen .regimenTabContent .regimenCTA .regimenCTA-1 a, .suggestedRegimen .regimenTabContent .regimenCTA .regimenCTA-2 a {
-  color: #fff;
+  color: #FFF;
   font-size: 18px;
 }
 

@@ -9,7 +9,7 @@ $(document).ready(function(){
     fade: true,
     cssEase: 'ease-in-out',
     pauseOnHover: true
-}); // ingredients desc
+  }); // ingredients desc
   $('#commentsSlider').slick({
     dots: false,
     arrows: false,

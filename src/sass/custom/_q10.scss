@@ -1,8 +1,6 @@
-$dcBlue: #00388d;
-$dcGold: #ffd54f;
 $q10purple: #BD8CBF;
 $q10purpleLT: #F8E4F9;
-$q10purpleDK: #913788;
+$q10purpleDK: #9F3F95;
 
 .content-wrapper {
   .text-purple {
@@ -54,7 +52,7 @@ $q10purpleDK: #913788;
       width: 40%;
       margin: 0;
       background-color: $q10purpleDK;
-      color: #fff;
+      color: #FFF;
       text-align: center;
       padding: 10px;
       text-transform: uppercase;
@@ -128,7 +126,7 @@ $q10purpleDK: #913788;
   #ingredientsDesc {
     margin: 5% auto 0 auto;
     width: 80%;
-    background-color: #fff;
+    background-color: #FFF;
 
     .ingredientImg {
       margin: 0 40px;
@@ -188,19 +186,24 @@ $q10purpleDK: #913788;
       cursor: pointer;
       padding: 14px 16px 16px 16px;
       // transition: .75s;
-      font-size: 17px;
+      text-transform: capitalize;
+      font-size: 35px;
+      line-height: .8;
+      z-index: 10;
 
-      // &:last-child {
-      //   border-right: none;
-      // }
       &:hover {
         background-color: $q10purpleLT;
       }
-
       &.active {
         color: $q10purpleDK;
         padding-bottom: 14px;
         border-bottom: 4px solid $q10purpleDK;
+      }
+      .mainTab-subtxt {
+        color: $gray400;
+        background: none !important;
+        font-size: 18px;
+        z-index: -1;
       }
     } // button
   } // mainTab
@@ -229,7 +232,7 @@ $q10purpleDK: #913788;
           border-left: none;
           float: left;
           outline: none;
-          background-color: #EEEEEE;
+          background-color: $gray200;
           cursor: pointer;
           padding: 14px 14px;
           font-size: 17px;
@@ -326,7 +329,7 @@ $q10purpleDK: #913788;
 } // productTab
 .suggestedRegimen {
   text-align: center;
-  background-color: $q10purpleDK;
+  background-color: $q10purple;
   margin: 0 auto;
   padding-bottom: 30px;
   display: flex;
@@ -341,7 +344,7 @@ $q10purpleDK: #913788;
     width: 85%;
     margin: 0 auto;
     padding:0 40px 10px 40px;
-    background-color: #fff;
+    background-color: #FFF;
     overflow: hidden;
 
     .regimenTablinks {
@@ -373,13 +376,13 @@ $q10purpleDK: #913788;
   } // regimen Tab
   .regimenTabContent {
     display: none;
-    
+
       .regimenDetails {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        background-color: #fff;
+        background-color: #FFF;
         width: 85%;
         margin: 0 auto;
         padding:0 40px 10px 40px;
@@ -420,7 +423,7 @@ $q10purpleDK: #913788;
         } // product
       } // productDetails
       .regimenCTA {
-        background-color: #fff;
+        background-color: #FFF;
         width: 85%;
         margin: 0 auto 30px auto;
         padding-bottom: 20px;
@@ -430,11 +433,11 @@ $q10purpleDK: #913788;
         .regimenCTA-1, .regimenCTA-2 {
           display: inline-block;
           background-color: $q10purpleDK;
-          color: #fff;
+          color: #FFF;
           padding: 16px 0;
 
           a {
-            color: #fff;
+            color: #FFF;
             font-size: 18px;
           }
         }

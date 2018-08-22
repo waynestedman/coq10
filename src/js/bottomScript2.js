@@ -37,10 +37,12 @@ $(document).ready(function () {
       var target = $( event.target );
       $("button").removeClass("tabActive");
       target.addClass("tabActive");
+      $(".mainTab-subtxt").removeClass("tabActive");
+      
       if (target.is("#faceCareMain")) {
         $("#faceCare").css("display", "block");
         $("#targetCare").css("display", "none");
-        $("faceProduct1").css("display", "block");
+        $("#faceProduct1").css("display", "block");
         $("#faceProd-btn1").addClass("subTabActive");
         faceCare();
       } else if (target.is("#targetCareMain")) {
