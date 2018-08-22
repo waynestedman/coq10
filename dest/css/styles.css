@@ -214,8 +214,7 @@ body {
 
 .content-wrapper .tabActive {
   color: #9F3F95 !important;
-  background-color: #FFF !important;
-  padding-bottom: 14px !important;
+  padding-bottom: 42px !important;
   border-bottom: 4px solid #9F3F95 !important;
 }
 
@@ -369,12 +368,31 @@ body {
 }
 
 .collection h2 {
-  margin: 4rem auto;
+  margin: 4rem auto 4rem auto;
   text-align: center;
 }
 
+.collection .mainTab-underlay {
+  width: 100%;
+  z-index: 1;
+  padding-left: 2px;
+  margin: 0 auto;
+}
+
+.collection .mainTab-underlay .mainTab-subtxt {
+  text-align: center;
+  color: #BDBDBD;
+  background: none;
+  width: 49.8%;
+  font-size: 18px;
+  display: inline-block;
+}
+
 .collection .mainTab {
+  position: relative;
   overflow: hidden;
+  background: none;
+  margin-top: -94px;
 }
 
 .collection .mainTab .mainTablinks {
@@ -387,11 +405,10 @@ body {
   border-left: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px 16px 16px;
+  padding: 10px 16px 44px 16px;
   text-transform: capitalize;
   font-size: 35px;
-  line-height: .8;
-  z-index: 10;
+  z-index: 99;
 }
 
 .collection .mainTab .mainTablinks:hover {
@@ -402,13 +419,6 @@ body {
   color: #9F3F95;
   padding-bottom: 14px;
   border-bottom: 4px solid #9F3F95;
-}
-
-.collection .mainTab .mainTablinks .mainTab-subtxt {
-  color: #BDBDBD;
-  background: none !important;
-  font-size: 18px;
-  z-index: -1;
 }
 
 .collection .collectionWrapper {
@@ -443,7 +453,7 @@ body {
   cursor: pointer;
   padding: 14px 14px;
   font-size: 17px;
-  width: 20%;
+  margin: 0 auto;
 }
 
 .collection .collectionWrapper .mainTabContent .faceButtons .faceLink:hover, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .faceLink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink:hover {
@@ -451,8 +461,15 @@ body {
   background-color: #F8E4F9 !important;
 }
 
+.collection .collectionWrapper .mainTabContent .faceLink {
+  width: 16.66%;
+}
+
+.collection .collectionWrapper .mainTabContent .targetlink {
+  width: 20%;
+}
+
 .collection .collectionWrapper .mainTabContent .faceContent, .collection .collectionWrapper .mainTabContent .targetContent {
-  color: white;
   display: none;
   padding: 50px;
   text-align: center;
@@ -505,7 +522,15 @@ body {
   display: inline-block;
   width: 60%;
   text-align: left;
-  margin: 40px 0 0 40px;
+  margin: 0 0 0 40px;
+}
+
+.collection .collectionWrapper .mainTabContent .productInfo-details .productInfo-text .productInfo-title {
+  margin-bottom: 0;
+}
+
+.collection .collectionWrapper .mainTabContent .productInfo-details .productInfo-text h5 {
+  margin: 1rem 0;
 }
 
 .collection .collectionWrapper .mainTabContent .productInfo-details .productInfo-text .productInfo-desc {
@@ -537,6 +562,7 @@ body {
 }
 
 .suggestedRegimen {
+  position: relative;
   text-align: center;
   background-color: #BD8CBF;
   margin: 0 auto;
@@ -556,9 +582,24 @@ body {
   color: #fff;
 }
 
+.suggestedRegimen .regimenTab-underlay {
+  width: 79%;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.suggestedRegimen .regimenTab-underlay .regimenTab-subtxt {
+  text-align: center;
+  color: #BDBDBD;
+  background: none;
+  width: 49.8%;
+  font-size: 18px;
+  display: inline-block;
+}
+
 .suggestedRegimen .regimenTab {
   width: 85%;
-  margin: 0 auto;
+  margin: -94px auto 0 auto;
   padding: 0 40px 10px 40px;
   background-color: #FFF;
   overflow: hidden;
@@ -569,27 +610,17 @@ body {
   color: #BDBDBD;
   float: left;
   border-top: none;
-  border-right: 1px solid #BDBDBD;
+  border-right: none;
   border-bottom: 2px solid #BDBDBD;
   border-left: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px 16px 16px;
-  font-size: 17px;
-}
-
-.suggestedRegimen .regimenTab .regimenTablinks:last-child {
-  border-right: none;
+  padding: 14px 16px 44px 16px;
+  font-size: 35px;
 }
 
 .suggestedRegimen .regimenTab .regimenTablinks:hover {
   background-color: #F8E4F9;
-}
-
-.suggestedRegimen .regimenTab .regimenTablinks.active {
-  color: #9F3F95;
-  padding-bottom: 14px;
-  border-bottom: 4px solid #9F3F95;
 }
 
 .suggestedRegimen .regimenTabContent {
@@ -713,7 +744,7 @@ body {
 }
 
 .comments #commentsSlider {
-  margin: -70px auto 0 auto;
+  margin: -55px auto 0 auto;
 }
 
 .comments #commentsSlider .slick-list {

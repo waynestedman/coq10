@@ -18,8 +18,8 @@ $q10purpleDK: #9F3F95;
   }
   .tabActive {
     color: $q10purpleDK !important;
-    background-color: #FFF !important;
-    padding-bottom: 14px !important;
+    // background-color: #FFF ;
+    padding-bottom: 42px !important;
     border-bottom: 4px solid $q10purpleDK !important;
   }
   .subTabActive {
@@ -168,11 +168,32 @@ $q10purpleDK: #9F3F95;
   padding-bottom: 50px;
 
   h2 {
-    margin: 4rem auto;
+    margin: 4rem auto 4rem auto;
     text-align: center;
   }
+  .mainTab-underlay {
+    // background-color: lightblue;
+    // position: relative;
+    width: 100%;
+    z-index: 1;
+    padding-left: 2px;
+    margin: 0 auto;
+    // height: 1px;
+
+    .mainTab-subtxt {
+      text-align: center;
+      color: $gray400;
+      background: none;
+      width: 49.8%;
+      font-size: 18px;
+      display: inline-block;
+    }
+  }
   .mainTab {
+    position: relative;
     overflow: hidden;
+    background: none;
+    margin-top: -94px;
 
     .mainTablinks {
       width: 50%;
@@ -184,12 +205,12 @@ $q10purpleDK: #9F3F95;
       border-left: none;
       outline: none;
       cursor: pointer;
-      padding: 14px 16px 16px 16px;
+      padding: 10px 16px 44px 16px;
       // transition: .75s;
       text-transform: capitalize;
       font-size: 35px;
-      line-height: .8;
-      z-index: 10;
+      // line-height: .8;
+      z-index: 99;
 
       &:hover {
         background-color: $q10purpleLT;
@@ -199,14 +220,9 @@ $q10purpleDK: #9F3F95;
         padding-bottom: 14px;
         border-bottom: 4px solid $q10purpleDK;
       }
-      .mainTab-subtxt {
-        color: $gray400;
-        background: none !important;
-        font-size: 18px;
-        z-index: -1;
-      }
     } // button
   } // mainTab
+
   .collectionWrapper {
     box-shadow: 0px 3px 14px -2px rgba(0,0,0,0.5);
     margin: 18px auto 0 auto;
@@ -236,8 +252,8 @@ $q10purpleDK: #9F3F95;
           cursor: pointer;
           padding: 14px 14px;
           font-size: 17px;
+          margin: 0 auto;
           // transition: .75s;
-          width: 20%;
 
           &:hover {
             padding-bottom: 14px;
@@ -245,9 +261,14 @@ $q10purpleDK: #9F3F95;
           }
         } // faceLink targetlink
       }
-
+      .faceLink {
+        width: 16.66%;
+      }
+      .targetlink {
+        width: 20%;
+      }
       .faceContent, .targetContent {
-          color: white;
+          // color: white;
           display: none;
           padding: 50px;
           text-align: center;
@@ -270,7 +291,6 @@ $q10purpleDK: #9F3F95;
       }
       .productInfo-details {
         position: relative;
-        // left: 0;
         width: 80%;
         margin: 0;
         padding-top: 30px;
@@ -282,27 +302,26 @@ $q10purpleDK: #9F3F95;
           width: 30%;
           img {
             width: 320px;
-            // display: inline-block;
           }
         }
         .productInfo-text {
           display: inline-block;
           width: 60%;
           text-align: left;
-          // top: 60px;
-          // position: absolute;
-          margin: 40px 0 0 40px;
+          margin: 0 0 0 40px;
 
+          .productInfo-title {
+            margin-bottom: 0;
+          }
+          h5 {
+            margin: 1rem 0;
+          }
           .productInfo-desc {
             margin: 20px 0;
           }
         } // productInfo-text
       } // productInfo-details
     } // main tab content
-
-    // #faceCare {
-    //   display: block;
-    // }
   } // collection wrapper
   .collection-cta {
     margin: 20px auto 0 auto;
@@ -328,6 +347,7 @@ $q10purpleDK: #9F3F95;
   } // productDesc-cta
 } // productTab
 .suggestedRegimen {
+  position: relative;
   text-align: center;
   background-color: $q10purple;
   margin: 0 auto;
@@ -340,10 +360,24 @@ $q10purpleDK: #9F3F95;
     margin-bottom: 54px;
     color: #fff;
   }
+    .regimenTab-underlay {
+      width: 79%;
+      z-index: 1;
+      margin: 0 auto;
+
+      .regimenTab-subtxt {
+        text-align: center;
+        color: $gray400;
+        background: none;
+        width: 49.8%;
+        font-size: 18px;
+        display: inline-block;
+      }
+    }
   .regimenTab {
     width: 85%;
-    margin: 0 auto;
-    padding:0 40px 10px 40px;
+    margin: -94px auto 0 auto;
+    padding: 0 40px 10px 40px;
     background-color: #FFF;
     overflow: hidden;
 
@@ -352,25 +386,16 @@ $q10purpleDK: #9F3F95;
       color: $gray400;
       float: left;
       border-top: none;
-      border-right: 1px solid $gray400;
+      border-right: none;
       border-bottom: 2px solid $gray400;
       border-left: none;
       outline: none;
       cursor: pointer;
-      padding: 14px 16px 16px 16px;
-      font-size: 17px;
+      padding: 14px 16px 44px 16px;
+      font-size: 35px;
 
-      &:last-child {
-        border-right: none;
-      }
       &:hover {
         background-color: $q10purpleLT;
-      }
-
-      &.active {
-        color: $q10purpleDK;
-        padding-bottom: 14px;
-        border-bottom: 4px solid $q10purpleDK;
       }
     } // button
   } // regimen Tab
@@ -469,7 +494,7 @@ $q10purpleDK: #9F3F95;
     }
   }
   #commentsSlider {
-    margin: -70px auto 0 auto;
+    margin: -55px auto 0 auto;
 
     .slick-list {
       margin-left: auto;
