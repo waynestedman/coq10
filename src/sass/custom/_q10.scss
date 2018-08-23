@@ -13,8 +13,8 @@ $q10purpleDK: #9F3F95;
   }
   .learn-cta {
     cursor: pointer;
-    text-transform: uppercase;
-    margin: 0;
+    margin: 0 auto;
+    text-align: center;
   }
   .tabActive {
     color: $q10purpleDK !important;
@@ -205,7 +205,7 @@ $q10purpleDK: #9F3F95;
       border-left: none;
       outline: none;
       cursor: pointer;
-      padding: 10px 16px 44px 16px;
+      padding: 10px 16px 43px 16px;
       // transition: .75s;
       text-transform: capitalize;
       font-size: 35px;
@@ -215,11 +215,11 @@ $q10purpleDK: #9F3F95;
       &:hover {
         background-color: $q10purpleLT;
       }
-      &.active {
-        color: $q10purpleDK;
-        padding-bottom: 14px;
-        border-bottom: 4px solid $q10purpleDK;
-      }
+      // &.active {
+      //   color: $q10purpleDK;
+      //   padding-bottom: 14px;
+      //   border-bottom: 4px solid $q10purpleDK;
+      // }
     } // button
   } // mainTab
 
@@ -360,21 +360,8 @@ $q10purpleDK: #9F3F95;
     margin-bottom: 54px;
     color: #fff;
   }
-    .regimenTab-underlay {
-      width: 79%;
-      z-index: 1;
-      margin: 0 auto;
-
-      .regimenTab-subtxt {
-        text-align: center;
-        color: $gray400;
-        background: none;
-        width: 49.8%;
-        font-size: 18px;
-        display: inline-block;
-      }
-    }
   .regimenTab {
+    position: relative;
     width: 85%;
     margin: -94px auto 0 auto;
     padding: 0 40px 10px 40px;
@@ -391,14 +378,29 @@ $q10purpleDK: #9F3F95;
       border-left: none;
       outline: none;
       cursor: pointer;
-      padding: 14px 16px 44px 16px;
+      padding: 14px 16px 43px 16px;
       font-size: 35px;
+      z-index: 99;
 
       &:hover {
         background-color: $q10purpleLT;
       }
     } // button
   } // regimen Tab
+  .regimenTab-underlay {
+    width: 79%;
+    z-index: 1;
+    margin: 20px auto 0 auto;
+
+    .regimenTab-subtxt {
+      text-align: center;
+      color: $gray400;
+      background: none;
+      width: 49.8%;
+      // font-size: 18px;
+      display: inline-block;
+    }
+  } // regimenTab-underlay
   .regimenTabContent {
     display: none;
 
@@ -415,14 +417,19 @@ $q10purpleDK: #9F3F95;
         .product {
           width: 20%;
 
-          .dc-cta, .psn-cta {
+          .oil-cta, .coq10-cta {
             display: none;
+
+            .coq10-btn {
+              padding: 20px;
+              background-color: $q10purple;
+            }
           }
           img {
             width: 150px;
             margin: 0 auto;
           }
-          .psn-icon {
+          .oil-icon {
             height: 527px;
             width: 150px;
           }
@@ -486,7 +493,7 @@ $q10purpleDK: #9F3F95;
 
   .quotes {
     margin: 0 auto;
-    opacity: 0.2;
+    opacity: 0.1;
 
     img {
       width: 80px;
@@ -533,6 +540,7 @@ $q10purpleDK: #9F3F95;
     text-align: left;
 
     .learn-cta {
+      text-transform: uppercase;
       margin-top: 40px;
     }
   } // learnBox

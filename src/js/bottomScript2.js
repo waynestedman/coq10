@@ -1,5 +1,5 @@
 $(document).ready(function () {
-// Collection
+// Set intial tab states
     $("#faceCare").css("display", "block");
     $("#faceCareMain").addClass("tabActive");
     $("#faceProd-btn1").addClass("subTabActive");
@@ -8,6 +8,7 @@ $(document).ready(function () {
     $("#regimenCoreBtn").addClass("tabActive");
     $("#core1").css("display", "block");
 
+// Collection
     function faceCare() {
       $(".faceButtons").click(function(subEvent) {
         var subTarget = $( subEvent.target );
@@ -38,7 +39,7 @@ $(document).ready(function () {
       $("button").removeClass("tabActive");
       target.addClass("tabActive");
       $(".mainTab-subtxt").removeClass("tabActive");
-      
+
       if (target.is("#faceCareMain")) {
         $("#faceCare").css("display", "block");
         $("#targetCare").css("display", "none");
@@ -60,6 +61,8 @@ $(document).ready(function () {
       var target = $( event.target );
       $("button").removeClass("tabActive");
       target.addClass("tabActive");
+      $(".regimenTab-subtxt").removeClass("tabActive");
+
       if (target.is("#regimenCoreBtn")) {
         $("#regimenCore").css("display", "block");
         $("#regimenSimple").css("display", "none");
@@ -71,5 +74,5 @@ $(document).ready(function () {
       } else {
         console.log("Regimen selection error!");
       } // if else
-    });// mainTab click event
+    });// Regimen Tab click event
 }); // Document Ready

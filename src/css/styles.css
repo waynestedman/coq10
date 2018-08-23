@@ -195,8 +195,8 @@ body {
 
 .content-wrapper .learn-cta {
   cursor: pointer;
-  text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .content-wrapper .tabActive {
@@ -390,7 +390,7 @@ body {
   border-left: none;
   outline: none;
   cursor: pointer;
-  padding: 10px 16px 44px 16px;
+  padding: 10px 16px 43px 16px;
   text-transform: capitalize;
   font-size: 35px;
   z-index: 99;
@@ -398,12 +398,6 @@ body {
 
 .collection .mainTab .mainTablinks:hover {
   background-color: #F8E4F9;
-}
-
-.collection .mainTab .mainTablinks.active {
-  color: #9F3F95;
-  padding-bottom: 14px;
-  border-bottom: 4px solid #9F3F95;
 }
 
 .collection .collectionWrapper {
@@ -552,22 +546,8 @@ body {
   color: #fff;
 }
 
-.suggestedRegimen .regimenTab-underlay {
-  width: 79%;
-  z-index: 1;
-  margin: 0 auto;
-}
-
-.suggestedRegimen .regimenTab-underlay .regimenTab-subtxt {
-  text-align: center;
-  color: #BDBDBD;
-  background: none;
-  width: 49.8%;
-  font-size: 18px;
-  display: inline-block;
-}
-
 .suggestedRegimen .regimenTab {
+  position: relative;
   width: 85%;
   margin: -94px auto 0 auto;
   padding: 0 40px 10px 40px;
@@ -585,12 +565,27 @@ body {
   border-left: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px 44px 16px;
+  padding: 14px 16px 43px 16px;
   font-size: 35px;
+  z-index: 99;
 }
 
 .suggestedRegimen .regimenTab .regimenTablinks:hover {
   background-color: #F8E4F9;
+}
+
+.suggestedRegimen .regimenTab-underlay {
+  width: 79%;
+  z-index: 1;
+  margin: 20px auto 0 auto;
+}
+
+.suggestedRegimen .regimenTab-underlay .regimenTab-subtxt {
+  text-align: center;
+  color: #BDBDBD;
+  background: none;
+  width: 49.8%;
+  display: inline-block;
 }
 
 .suggestedRegimen .regimenTabContent {
@@ -612,8 +607,13 @@ body {
   width: 20%;
 }
 
-.suggestedRegimen .regimenTabContent .regimenDetails .product .dc-cta, .suggestedRegimen .regimenTabContent .regimenDetails .product .psn-cta {
+.suggestedRegimen .regimenTabContent .regimenDetails .product .oil-cta, .suggestedRegimen .regimenTabContent .regimenDetails .product .coq10-cta {
   display: none;
+}
+
+.suggestedRegimen .regimenTabContent .regimenDetails .product .oil-cta .coq10-btn, .suggestedRegimen .regimenTabContent .regimenDetails .product .coq10-cta .coq10-btn {
+  padding: 20px;
+  background-color: #BD8CBF;
 }
 
 .suggestedRegimen .regimenTabContent .regimenDetails .product img {
@@ -621,7 +621,7 @@ body {
   margin: 0 auto;
 }
 
-.suggestedRegimen .regimenTabContent .regimenDetails .product .psn-icon {
+.suggestedRegimen .regimenTabContent .regimenDetails .product .oil-icon {
   height: 527px;
   width: 150px;
 }
@@ -690,7 +690,7 @@ body {
 
 .comments .quotes {
   margin: 0 auto;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 .comments .quotes img {
@@ -741,6 +741,7 @@ body {
 }
 
 .learn .learnBox .learn-cta {
+  text-transform: uppercase;
   margin-top: 40px;
 }
 
