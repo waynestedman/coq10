@@ -123,10 +123,6 @@ body {
   line-height: 1.4;
 }
 
-.content-wrapper .weight400 {
-  font-weight: 400;
-}
-
 .content-wrapper a {
   text-decoration: none;
   color: #212121;
@@ -403,6 +399,7 @@ body {
 .collection .collectionWrapper {
   box-shadow: 0px 3px 14px -2px rgba(0, 0, 0, 0.5);
   margin: 18px auto 0 auto;
+  padding-bottom: 20px;
   width: 90%;
 }
 
@@ -415,8 +412,11 @@ body {
 }
 
 .collection .collectionWrapper .mainTabContent .faceButtons, .collection .collectionWrapper .mainTabContent .targetButtons {
-  height: 85px;
+  margin: 0 auto;
   text-align: center;
+  display: flex;
+  align-content: stretch;
+  flex-wrap: nowrap;
 }
 
 .collection .collectionWrapper .mainTabContent .faceButtons .faceLink, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink, .collection .collectionWrapper .mainTabContent .targetButtons .faceLink, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink {
@@ -424,22 +424,20 @@ body {
   border-right: none;
   border-bottom: none;
   border-left: none;
-  float: left;
   outline: none;
+  text-transform: none;
   background-color: #EEEEEE;
   cursor: pointer;
-  padding: 14px 14px;
+  padding: 12px 14px;
   font-size: 17px;
-  margin: 0 auto;
+  margin: 0;
+  display: inline-block;
+  max-width: 360px;
 }
 
 .collection .collectionWrapper .mainTabContent .faceButtons .faceLink:hover, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .faceLink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink:hover {
   padding-bottom: 14px;
   background-color: #F8E4F9 !important;
-}
-
-.collection .collectionWrapper .mainTabContent .faceLink {
-  width: 16.66%;
 }
 
 .collection .collectionWrapper .mainTabContent .targetlink {

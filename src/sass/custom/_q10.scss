@@ -226,6 +226,7 @@ $q10purpleDK: #9F3F95;
   .collectionWrapper {
     box-shadow: 0px 3px 14px -2px rgba(0,0,0,0.5);
     margin: 18px auto 0 auto;
+    padding-bottom: 20px;
     width: 90%;
 
     .mainTabContent {
@@ -236,9 +237,13 @@ $q10purpleDK: #9F3F95;
       animation: fadeEffect 1s;
 
       .faceButtons, .targetButtons {
-        height: 85px;
+        // height: 85px;
+        margin: 0 auto;
         text-align: center;
-        // overflow: auto;
+        display: flex;
+        align-content: stretch;
+        flex-wrap: nowrap;
+        // overflow-x: scroll;
         // white-space: nowrap;
 
         .faceLink, .targetlink {
@@ -246,13 +251,16 @@ $q10purpleDK: #9F3F95;
           border-right: none;
           border-bottom: none;
           border-left: none;
-          float: left;
+          // float: left;
           outline: none;
+          text-transform: none;
           background-color: $gray200;
           cursor: pointer;
-          padding: 14px 14px;
+          padding: 12px 14px;
           font-size: 17px;
-          margin: 0 auto;
+          margin: 0;
+          display: inline-block;
+          max-width: 360px;
           // transition: .75s;
 
           &:hover {
@@ -262,7 +270,7 @@ $q10purpleDK: #9F3F95;
         } // faceLink targetlink
       }
       .faceLink {
-        width: 16.66%;
+        // width: 16.66%;
       }
       .targetlink {
         width: 20%;
