@@ -129,7 +129,7 @@ body {
 
 .content-wrapper a {
   text-decoration: none;
-  color: #212121;
+  color: #424649;
   cursor: pointer;
 }
 
@@ -210,19 +210,25 @@ body {
 
 .content-wrapper .tabActive {
   color: #9F3F95 !important;
+  font-weight: 600;
   padding-bottom: 42px !important;
   border-bottom: 4px solid #9F3F95 !important;
 }
 
 .content-wrapper .subTabActive {
   border-bottom: none !important;
-  color: #9F3F95;
+  color: #9F3F95 !important;
+  font-weight: 400;
   background-color: #FFF !important;
   border-bottom: 2px solid #9F3F95 !important;
 }
 
 .hero {
   position: relative;
+}
+
+.hero .hero-img {
+  max-height: 550px;
 }
 
 .hero .heroBox {
@@ -251,7 +257,6 @@ body {
   color: #FFF;
   text-align: center;
   padding: 10px;
-  text-transform: uppercase;
 }
 
 .info {
@@ -261,16 +266,17 @@ body {
 
 .info .infoImg-left {
   margin-top: 0;
-  width: 16%;
-  float: left;
+  width: 30%;
+  position: absolute;
 }
 
 .info .infoBox {
+  position: relative;
   text-align: center;
   display: inline-block;
   background-color: #F8E4F9;
   width: 70%;
-  margin: 40px 0 0 0;
+  margin: 40px 0 0 15%;
   padding: 0 80px 40px 80px;
   -webkit-box-shadow: -1px -1px 15px 3px rgba(150, 150, 150, 0.6);
   box-shadow: -1px -1px 15px 3px rgba(150, 150, 150, 0.6);
@@ -280,7 +286,7 @@ body {
   margin-bottom: 0;
 }
 
-.info .infoBox h4 {
+.info .infoBox h5 {
   margin: 0.5rem auto 2rem auto;
   line-height: 1;
 }
@@ -298,9 +304,13 @@ body {
   text-transform: uppercase;
 }
 
+.info .infoBox .benefits h3 {
+  text-align: center;
+}
+
 .info .infoImg-right {
   position: absolute;
-  top: 150px;
+  top: 253px;
   right: 0;
   width: 40%;
 }
@@ -393,6 +403,7 @@ body {
 
 .collection .mainTab .mainTablinks {
   width: 50%;
+  font-size: 35px;
   color: #BDBDBD;
   float: left;
   border-top: none;
@@ -403,7 +414,6 @@ body {
   cursor: pointer;
   padding: 10px 16px 43px 16px;
   text-transform: capitalize;
-  font-size: 35px;
   z-index: 99;
 }
 
@@ -449,20 +459,17 @@ body {
   text-transform: none;
   background-color: #EEEEEE;
   cursor: pointer;
-  padding: 12px 14px;
-  font-size: 17px;
+  padding: 12px 12px;
+  font-size: 18px;
+  color: #BDBDBD;
   margin: 0;
   display: inline-block;
   max-width: 360px;
 }
 
 .collection .collectionWrapper .mainTabContent .faceButtons .faceLink:hover, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .faceLink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink:hover {
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   background-color: #F8E4F9 !important;
-}
-
-.collection .collectionWrapper .mainTabContent .targetlink {
-  width: 20%;
 }
 
 .collection .collectionWrapper .mainTabContent .faceContent, .collection .collectionWrapper .mainTabContent .targetContent {
@@ -471,22 +478,6 @@ body {
   text-align: center;
   -webkit-animation: fadeEffect 1.25s;
   animation: fadeEffect 1.25s;
-}
-
-.collection .collectionWrapper .mainTabContent span {
-  float: right;
-  margin-right: -47px;
-  font-size: 30px;
-  height: 44px;
-  cursor: pointer;
-  border: 1px solid #EEEEEE;
-  color: #9F3F95;
-  padding: 0 10px;
-  margin-top: 20px;
-}
-
-.collection .collectionWrapper .mainTabContent span:hover {
-  background-color: #F8E4F9;
 }
 
 .collection .collectionWrapper .mainTabContent .productInfo-details {
@@ -522,6 +513,7 @@ body {
 }
 
 .collection .collectionWrapper .mainTabContent .productInfo-details .productInfo-text .productInfo-title {
+  font-weight: 400;
   margin-bottom: 0;
 }
 
@@ -538,9 +530,9 @@ body {
   text-align: center;
 }
 
-.collection .collection-cta p {
+.collection .collection-cta h6 {
   margin: 0 auto;
-  width: 30%;
+  width: 50%;
   padding: 10px 20px;
   text-transform: uppercase;
   background-color: #9F3F95;
@@ -548,12 +540,12 @@ body {
   border: 1px solid #BD8CBF;
 }
 
-.collection .collection-cta p:hover {
+.collection .collection-cta h6:hover {
   color: #9F3F95;
   background-color: #F8E4F9;
 }
 
-.collection .collection-cta p a {
+.collection .collection-cta h6 a {
   color: #FFF;
 }
 
@@ -562,20 +554,27 @@ body {
   text-align: center;
   background-color: #BD8CBF;
   margin: 0 auto;
+  padding-top: 10px;
   padding-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
 }
 
 .suggestedRegimen h2 {
   margin-bottom: 54px;
   color: #fff;
+}
+
+.suggestedRegimen .regimenTab-underlay {
+  width: 79%;
+  z-index: 1;
+  margin: 20px auto 0 auto;
+}
+
+.suggestedRegimen .regimenTab-underlay .regimenTab-subtxt {
+  text-align: center;
+  color: #BDBDBD;
+  background: none;
+  width: 49.8%;
+  display: inline-block;
 }
 
 .suggestedRegimen .regimenTab {
@@ -599,25 +598,13 @@ body {
   cursor: pointer;
   padding: 14px 16px 43px 16px;
   font-size: 35px;
+  text-transform: none;
   z-index: 99;
 }
 
 .suggestedRegimen .regimenTab .regimenTablinks:hover {
   background-color: #F8E4F9;
-}
-
-.suggestedRegimen .regimenTab-underlay {
-  width: 79%;
-  z-index: 1;
-  margin: 20px auto 0 auto;
-}
-
-.suggestedRegimen .regimenTab-underlay .regimenTab-subtxt {
-  text-align: center;
-  color: #BDBDBD;
-  background: none;
-  width: 49.8%;
-  display: inline-block;
+  z-index: 98;
 }
 
 .suggestedRegimen .regimenTabContent {
@@ -666,23 +653,11 @@ body {
   width: 150px;
 }
 
-.suggestedRegimen .regimenTabContent .regimenDetails .product h3 {
+.suggestedRegimen .regimenTabContent .regimenDetails .product h4 {
   font-size: 84px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
-.suggestedRegimen .regimenTabContent .regimenDetails .product h3 span {
-  font-size: 44px;
-  margin: 26px 6px 0 0;
-}
-
-.suggestedRegimen .regimenTabContent .regimenDetails .product h5 {
-  font-size: 34px;
+.suggestedRegimen .regimenTabContent .regimenDetails .product h3 {
   margin-top: 0;
   margin-bottom: 2rem;
 }
@@ -713,7 +688,8 @@ body {
 
 .suggestedRegimen .regimenTabContent .regimenCTA .regimenCTA-1 a, .suggestedRegimen .regimenTabContent .regimenCTA .regimenCTA-2 a {
   color: #FFF;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .suggestedRegimen .regimenTabContent .regimenCTA .regimenCTA-1 {
@@ -722,10 +698,6 @@ body {
 
 .suggestedRegimen .regimenTabContent .regimenCTA .regimenCTA-2 {
   width: 60%;
-}
-
-.suggestedRegimen .regimenTabContent .dc-blog, .suggestedRegimen .regimenTabContent .oc-blog {
-  margin: 10px auto;
 }
 
 .comments {
@@ -759,17 +731,23 @@ body {
   max-width: 1280px;
 }
 
-.comments #commentsSlider .comment h5 {
-  margin-top: -10px;
-  margin-bottom: 20px;
+.comments #commentsSlider .comment h4 {
+  font-size: 60px;
+  text-transform: none;
 }
 
-.comments #commentsSlider .comment p {
+.comments #commentsSlider .comment h6 {
   margin: 20px auto;
   width: 50%;
 }
 
+.comments #commentsSlider .comment .commentProduct {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
 .comments #commentsSlider blockquote {
+  font-size: 18px;
   font-weight: 300;
   margin: 0 auto;
 }
@@ -789,7 +767,14 @@ body {
 
 .learn .learnBox .learn-cta {
   text-transform: uppercase;
-  margin-top: 40px;
+  margin: 40px 0 0 0;
+  text-align: left;
+}
+
+.learn .learnBox .learn-cta a {
+  color: #424649;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .learn .learn-img img {
