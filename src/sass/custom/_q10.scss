@@ -15,6 +15,15 @@ $q10purpleDK: #9F3F95;
     cursor: pointer;
     margin: 0 auto;
     text-align: center;
+
+    &:hover {
+      color: $q10purpleDK;
+      text-decoration: underline;
+
+      a {
+        color: $q10purpleDK;
+      }
+    }
   }
   .tabActive {
     color: $q10purpleDK !important;
@@ -35,7 +44,9 @@ $q10purpleDK: #9F3F95;
   position: relative;
 
   .hero-img {
+    max-width: 1280px;
     max-height: 550px;
+    margin: 0;
   }
   .heroBox {
     position: absolute;
@@ -60,7 +71,13 @@ $q10purpleDK: #9F3F95;
       color: #FFF;
       text-align: center;
       padding: 10px;
-      // text-transform: uppercase;
+
+      &:hover {
+        color: $q10purpleDK;
+        background-color: $q10purpleLT;
+        border: 1px solid $q10purpleDK;
+        text-decoration: none;
+      }
     }
   }
 } // hero
@@ -87,7 +104,7 @@ $q10purpleDK: #9F3F95;
       margin-bottom: 0;
     }
     h5 {
-      margin: 0.5rem auto 1rem auto;
+      margin: 0.5rem auto 2.4rem auto;
       line-height: 1;
     }
     .benefits {
@@ -111,7 +128,7 @@ $q10purpleDK: #9F3F95;
   } // infoBox
   .infoImg-right {
     position: absolute;
-    top: 213px;
+    top: 267px;
     right: 0;
     width: 40%;
 
@@ -121,16 +138,22 @@ $q10purpleDK: #9F3F95;
   }
 } // info
 .ingredients {
-  margin: 0 auto 5% auto;
+  margin: 0 auto;
 
   .ingredients-box{
-    background: linear-gradient(-21.6deg, $q10purpleLT 50%, $q10purple 50%);
+    background: linear-gradient(-21.19deg, $q10purpleLT 50%, $q10purple 50%);
     text-align: center;
     // margin-bottom: 5%;
     padding-bottom: 5%;
+
+    h2 {
+      color: #FFF;
+      padding-top: 20px;
+      margin-bottom: 0;
+    }
   } // ingredients-box
   #ingredientsDesc {
-    margin: 5% auto 0 auto;
+    margin: 30px auto 0 auto;
     width: 80%;
     background-color: #FFF;
 
@@ -143,13 +166,14 @@ $q10purpleDK: #9F3F95;
       width: 320px;
     }
     .ingredient-text {
-      text-align: left;
+      text-align: center;
       margin: 0 auto;
       padding-top: 30px;
       width: 75%;
 
       h5 {
-        margin-bottom: 10px;
+        font-weight: 300;
+        margin: 10px 0;
       }
     }
     .ingredient-prop {
@@ -174,7 +198,8 @@ $q10purpleDK: #9F3F95;
   padding-bottom: 50px;
 
   h2 {
-    margin: 4rem auto 4rem auto;
+    margin: 4rem auto;
+    padding-bottom: 2rem;
     text-align: center;
   }
   .mainTab-underlay {
@@ -247,8 +272,9 @@ $q10purpleDK: #9F3F95;
         margin: 0 auto;
         text-align: center;
         display: flex;
-        align-content: stretch;
+        align-items: stretch;
         flex-wrap: nowrap;
+        justify-content: center;
         // overflow-x: scroll;
         // white-space: nowrap;
 
@@ -279,9 +305,9 @@ $q10purpleDK: #9F3F95;
       // .faceLink {
       //   width: 16.66%;
       // }
-      // .targetlink {
-      //   width: 20%;
-      // }
+      .targetlink {
+        width: 20%;
+      }
       .faceContent, .targetContent {
           // color: white;
           display: none;
@@ -352,12 +378,17 @@ $q10purpleDK: #9F3F95;
       font-weight: 400;
       border: 1px solid $q10purple;
 
+      a {
+        color: #FFF;
+      }
       &:hover {
         color: $q10purpleDK;
         background-color: $q10purpleLT;
-      }
-      a {
-        color: #FFF;
+        border: 1px solid $q10purpleDK;
+        text-decoration: none;
+        a {
+          color: $q10purpleDK;
+        }
       }
     }
   } // collection-cta
@@ -463,24 +494,27 @@ $q10purpleDK: #9F3F95;
         h3 {
           font-size: 33px;
           margin-top: 0;
-          margin-bottom: 2rem;
+          margin-bottom: 0.5rem;
         }
         p {
           // width: 90%;
           margin: 0 auto;
         }
       } // product
-    } // productDetails
-
-      // .dc-blog, .oc-blog {
-      //   margin: 10px auto;
-      // } // DC & OC blog
+    } // regimenDetails
   } // regimenTabContent
+  #regimenSimple {
+    .regimenDetails {
+      .product {
+        max-width: 33%;
+      }
+    }
+  } // #regimenSimple
   .regimenCTA {
     background-color: #FFF;
     width: 90%;
     margin: 0 auto 30px auto;
-    padding: 0 40px 20px 40px;
+    padding: 14px 40px 20px 40px;
     display: flex;
     justify-content: space-between;
 
@@ -495,6 +529,19 @@ $q10purpleDK: #9F3F95;
         color: #FFF;
         font-size: 20px;
         font-weight: 400;
+      }
+      &:hover {
+        padding: 14px 0;
+        color: $q10purpleDK;
+        background-color: $q10purpleLT;
+        border: 1px solid $q10purpleDK;
+        cursor: pointer;
+        text-decoration: none;
+
+        a {
+          color: $q10purpleDK;
+          text-decoration: none;
+        }
       }
     }
     .regimenCTA-1 {
@@ -569,10 +616,8 @@ $q10purpleDK: #9F3F95;
       margin: 40px 0 0 0;
       text-align: left;
 
-      a {
-        color: $gray700;
-        font-size: 20px;
-        font-weight: 400;
+      &:hover {
+        color: $q10purpleDK;
       }
     }
   } // learnBox

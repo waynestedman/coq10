@@ -1,1 +1,10 @@
+Dev folder:
 https://www.dhccare.com/media/wysiwyg/dev_test/cq
+
+Ingredients:
+/content/ingredients
+https://www.dhccare.com/media/wysiwyg/content/ingredients
+
+CoQ10:
+/content/collection/coq10
+https://www.dhccare.com/media/wysiwyg/content/collection/coq10

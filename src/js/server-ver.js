@@ -3,8 +3,8 @@ require([
   'jquery',
   'slick'
   ], function ($) {
-jQuery(document).ready(function(){
-jQuery('#ingredientsDesc').slick({
+$(document).ready(function(){
+$('#ingredientsDesc').slick({
     arrows: false,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -15,7 +15,7 @@ jQuery('#ingredientsDesc').slick({
     cssEase: 'ease-in-out',
     pauseOnHover: true
 });
-  jQuery('#commentsSlider').slick({
+  $('#commentsSlider').slick({
     dots: false,
     arrows: false,
     autoplay: true,
@@ -30,78 +30,87 @@ jQuery('#ingredientsDesc').slick({
 
 // *********************** Page Bottom *************************************** //
 <script type="text/javascript" xml="space">// <![CDATA[
-    function openCare(evt, careName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("mainTabContent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("mainTablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(careName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-    // Get the element with id="defaultOpenMain" and click on it
-    document.getElementById("defaultOpenMain").click();
-// ]]></script>
-<script type="text/javascript" xml="space">// <![CDATA[
-    function openFace(prodName1, elmnt) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "#EEEEEE";
-            tablinks[i].style.color = "#9E9E9E";
-            tablinks[i].style.borderBottom = "none";
-        }
-        document.getElementById(prodName1).style.display = "block";
-        elmnt.style.borderBottom = "2px solid #913788";
-        elmnt.style.color = "#913788";
-        elmnt.style.backgroundColor = "#FFFFFF";
-    }
-    // Get the element with id="defaultOpen1" open it & set active
-    document.getElementById("defaultOpen1").click();
-// ]]></script>
-<script type="text/javascript" xml="space">// <![CDATA[
-    function openTarget(prodName2, elmnt) {
-        var i, targetcontent, targetlink;
-        targetcontent = document.getElementsByClassName("targetcontent");
-        for (i = 0; i < targetcontent.length; i++) {
-            targetcontent[i].style.display = "none";
-        }
-        targetlink = document.getElementsByClassName("targetlink");
-        for (i = 0; i < targetlink.length; i++) {
-            targetlink[i].style.backgroundColor = "#EEEEEE";
-            targetlink[i].style.color = "#9E9E9E";
-            targetlink[i].style.borderBottom = "none";
-        }
-        document.getElementById(prodName2).style.display = "block";
-        elmnt.style.borderBottom = "2px solid #913788";
-        elmnt.style.color = "#913788";
-        elmnt.style.backgroundColor = "#FFFFFF";
-    }
-    // Get the element with id="defaultOpen2" open it & set active
-    document.getElementById("defaultOpen2").click();
-// ]]></script>
-<script type="text/javascript" xml="space">// <![CDATA[
-    function openRegimen(evt, regimenName) {
-        var i, regimencontent, regimenlinks;
-        regimencontent = document.getElementsByClassName("regimenTabContent");
-        for (i = 0; i < regimencontent.length; i++) {
-            regimencontent[i].style.display = "none";
-        }
-        regimenlinks = document.getElementsByClassName("regimenTablinks");
-        for (i = 0; i < regimenlinks.length; i++) {
-            regimenlinks[i].className = regimenlinks[i].className.replace(" active", "");
-        }
-        document.getElementById(regimenName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-    // Get the element with id="defaultOpenRegimen" and click on it
-    document.getElementById("defaultOpenRegimen").click();
+  require([
+    'jquery',
+    'slick'
+    ], function ($) {
+      $(document).ready(function () {
+      // Set intial tab states
+        $("#faceCare").css("display", "block");
+        $("#faceCareMain").addClass("tabActive");
+        $("#faceProd-btn1").addClass("subTabActive");
+        $("#faceProduct1").css("display", "block");
+        $("#regimenCore").css("display", "block");
+        $("#regimenCoreBtn").addClass("tabActive");
+        $("#core1").css("display", "block");
+
+      // Collection
+        function faceCare() {
+          $(".faceButtons").click(function(subEvent) {
+            var subTarget = $( subEvent.target );
+            var i;
+            $("button").removeClass("subTabActive");
+            subTarget.addClass("subTabActive");
+            $(".faceContent").css("display", "none");
+            i = subTarget.data("id");
+            $("#faceProduct" + i).css("display", "block");
+          }); // faceButtons sub-event
+        }; // face function
+        function targetCare() {
+          $(".targetButtons").click(function(subEvent) {
+            var subTarget = $( subEvent.target );
+            var i;
+            $("button").removeClass("subTabActive");
+            subTarget.addClass("subTabActive");
+            $(".targetContent").css("display", "none");
+            i = subTarget.data("id");
+            $("#targetProduct" + i).css("display", "block");
+          }); // targetButtons sub-event
+        }; // targetCare function
+
+        faceCare();
+
+        $(".mainTab").click(function(event) {
+          var target = $( event.target );
+          $("button").removeClass("tabActive");
+          target.addClass("tabActive");
+          $(".mainTab-subtxt").removeClass("tabActive");
+
+          if (target.is("#faceCareMain")) {
+            $("#faceCare").css("display", "block");
+            $("#targetCare").css("display", "none");
+            $("#faceProduct1").css("display", "block");
+            $("#faceProd-btn1").addClass("subTabActive");
+            faceCare();
+          } else if (target.is("#targetCareMain")) {
+            $("#faceCare").css("display", "none");
+            $("#targetCare").css("display", "block");
+            $("#targetProduct1").css("display", "block");
+            $("#targetProd-btn1").addClass("subTabActive");
+            targetCare();
+          } else {
+            console.log("Collection selection error!");
+          } // if else
+        });// mainTab click event
+      // Regimen
+        $(".regimenTab").click(function(event) {
+          var target = $( event.target );
+          $("button").removeClass("tabActive");
+          target.addClass("tabActive");
+          $(".regimenTab-subtxt").removeClass("tabActive");
+
+          if (target.is("#regimenCoreBtn")) {
+            $("#regimenCore").css("display", "block");
+            $("#regimenSimple").css("display", "none");
+            $("core1").css("display", "block");
+          } else if (target.is("#regimenSimpleBtn")) {
+            $("#regimenCore").css("display", "none");
+            $("#regimenSimple").css("display", "block");
+            $("#simple1").css("display", "block");
+          } else {
+            console.log("Regimen selection error!");
+          } // if else
+        });// Regimen Tab click event
+      }); // Document Ready
+    });
 // ]]></script>

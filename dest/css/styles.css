@@ -208,6 +208,15 @@ body {
   text-align: center;
 }
 
+.content-wrapper .learn-cta:hover, .content-wrapper .coq10-btn:hover {
+  color: #9F3F95;
+  text-decoration: underline;
+}
+
+.content-wrapper .learn-cta:hover a, .content-wrapper .coq10-btn:hover a {
+  color: #9F3F95;
+}
+
 .content-wrapper .tabActive {
   color: #9F3F95 !important;
   font-weight: 600;
@@ -228,7 +237,9 @@ body {
 }
 
 .hero .hero-img {
+  max-width: 1280px;
   max-height: 550px;
+  margin: 0;
 }
 
 .hero .heroBox {
@@ -259,6 +270,13 @@ body {
   padding: 10px;
 }
 
+.hero .heroBox .cta:hover {
+  color: #9F3F95;
+  background-color: #F8E4F9;
+  border: 1px solid #9F3F95;
+  text-decoration: none;
+}
+
 .info {
   position: relative;
   margin-bottom: 68px;
@@ -287,7 +305,7 @@ body {
 }
 
 .info .infoBox h5 {
-  margin: 0.5rem auto 1rem auto;
+  margin: 0.5rem auto 2.4rem auto;
   line-height: 1;
 }
 
@@ -310,24 +328,30 @@ body {
 
 .info .infoImg-right {
   position: absolute;
-  top: 213px;
+  top: 267px;
   right: 0;
   width: 40%;
 }
 
 .ingredients {
-  margin: 0 auto 5% auto;
+  margin: 0 auto;
 }
 
 .ingredients .ingredients-box {
-  background: -o-linear-gradient(111.6deg, #F8E4F9 50%, #BD8CBF 50%);
-  background: linear-gradient(-21.6deg, #F8E4F9 50%, #BD8CBF 50%);
+  background: -o-linear-gradient(111.19deg, #F8E4F9 50%, #BD8CBF 50%);
+  background: linear-gradient(-21.19deg, #F8E4F9 50%, #BD8CBF 50%);
   text-align: center;
   padding-bottom: 5%;
 }
 
+.ingredients .ingredients-box h2 {
+  color: #FFF;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
 .ingredients #ingredientsDesc {
-  margin: 5% auto 0 auto;
+  margin: 30px auto 0 auto;
   width: 80%;
   background-color: #FFF;
 }
@@ -343,14 +367,15 @@ body {
 }
 
 .ingredients #ingredientsDesc .ingredient-text {
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
   padding-top: 30px;
   width: 75%;
 }
 
 .ingredients #ingredientsDesc .ingredient-text h5 {
-  margin-bottom: 10px;
+  font-weight: 300;
+  margin: 10px 0;
 }
 
 .ingredients #ingredientsDesc .ingredient-prop {
@@ -374,7 +399,8 @@ body {
 }
 
 .collection h2 {
-  margin: 4rem auto 4rem auto;
+  margin: 4rem auto;
+  padding-bottom: 2rem;
   text-align: center;
 }
 
@@ -444,10 +470,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: stretch;
-  align-content: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .collection .collectionWrapper .mainTabContent .faceButtons .faceLink, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink, .collection .collectionWrapper .mainTabContent .targetButtons .faceLink, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink {
@@ -470,6 +500,10 @@ body {
 .collection .collectionWrapper .mainTabContent .faceButtons .faceLink:hover, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .faceLink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink:hover {
   padding-bottom: 12px;
   background-color: #F8E4F9 !important;
+}
+
+.collection .collectionWrapper .mainTabContent .targetlink {
+  width: 20%;
 }
 
 .collection .collectionWrapper .mainTabContent .faceContent, .collection .collectionWrapper .mainTabContent .targetContent {
@@ -540,13 +574,19 @@ body {
   border: 1px solid #BD8CBF;
 }
 
+.collection .collection-cta h6 a {
+  color: #FFF;
+}
+
 .collection .collection-cta h6:hover {
   color: #9F3F95;
   background-color: #F8E4F9;
+  border: 1px solid #9F3F95;
+  text-decoration: none;
 }
 
-.collection .collection-cta h6 a {
-  color: #FFF;
+.collection .collection-cta h6:hover a {
+  color: #9F3F95;
 }
 
 .suggestedRegimen {
@@ -659,18 +699,22 @@ body {
 .suggestedRegimen .regimenTabContent .regimenDetails .product h3 {
   font-size: 33px;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .suggestedRegimen .regimenTabContent .regimenDetails .product p {
   margin: 0 auto;
 }
 
+.suggestedRegimen #regimenSimple .regimenDetails .product {
+  max-width: 33%;
+}
+
 .suggestedRegimen .regimenCTA {
   background-color: #FFF;
   width: 90%;
   margin: 0 auto 30px auto;
-  padding: 0 40px 20px 40px;
+  padding: 14px 40px 20px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -691,6 +735,20 @@ body {
   color: #FFF;
   font-size: 20px;
   font-weight: 400;
+}
+
+.suggestedRegimen .regimenCTA .regimenCTA-1:hover, .suggestedRegimen .regimenCTA .regimenCTA-2:hover {
+  padding: 14px 0;
+  color: #9F3F95;
+  background-color: #F8E4F9;
+  border: 1px solid #9F3F95;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.suggestedRegimen .regimenCTA .regimenCTA-1:hover a, .suggestedRegimen .regimenCTA .regimenCTA-2:hover a {
+  color: #9F3F95;
+  text-decoration: none;
 }
 
 .suggestedRegimen .regimenCTA .regimenCTA-1 {
@@ -772,10 +830,8 @@ body {
   text-align: left;
 }
 
-.learn .learnBox .learn-cta a {
-  color: #424649;
-  font-size: 20px;
-  font-weight: 400;
+.learn .learnBox .learn-cta:hover {
+  color: #9F3F95;
 }
 
 .learn .learn-img img {
