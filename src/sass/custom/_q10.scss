@@ -462,16 +462,17 @@ $q10purpleDK: #9F3F95;
       background-color: #FFF;
       width: 90%;
       margin: -90px auto 0 auto;
-      padding: 90px 40px 10px 40px;
+      padding: 90px 20px 10px 20px;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: baseline;
 
       .product {
-        max-width: 25%;
+        // max-width: 25%;
         margin: 0 auto;
+        flex: 1 0 auto;
 
         .oil-cta, .coq10-cta {
           display: none;
@@ -504,18 +505,11 @@ $q10purpleDK: #9F3F95;
           margin: 0 auto;
         }
         #core1, #simple1 {
-          
+
         }
       } // product
     } // regimenDetails
   } // regimenTabContent
-  #regimenSimple {
-    .regimenDetails {
-      .product {
-        max-width: 33%;
-      }
-    }
-  } // #regimenSimple
   .regimenCTA {
     background-color: #FFF;
     width: 90%;
@@ -551,10 +545,10 @@ $q10purpleDK: #9F3F95;
       }
     }
     .regimenCTA-1 {
-      width: 25%;
+      width: 21%;
     }
     .regimenCTA-2 {
-      width: 73%;
+      width: 75%;
     }
   } // regimen CTA
 } // suggestedRegimen
