@@ -618,7 +618,7 @@ body {
   text-align: center;
   color: #BDBDBD;
   background: none;
-  width: 49.8%;
+  width: 49%;
   display: inline-block;
 }
 
@@ -774,6 +774,7 @@ body {
 }
 
 .comments .quotes img {
+  margin: 0 auto;
   width: 80px;
   height: 80px;
 }

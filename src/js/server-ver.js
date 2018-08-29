@@ -31,8 +31,7 @@ $('#ingredientsDesc').slick({
 // *********************** Page Bottom *************************************** //
 <script type="text/javascript" xml="space">// <![CDATA[
   require([
-    'jquery',
-    'slick'
+    'jquery'
     ], function ($) {
       $(document).ready(function () {
       // Set intial tab states
@@ -44,7 +43,7 @@ $('#ingredientsDesc').slick({
         $("#regimenCoreBtn").addClass("tabActive");
         $("#core1").css("display", "block");
 
-      // Collection
+    // Collection
         function faceCare() {
           $(".faceButtons").click(function(subEvent) {
             var subTarget = $( subEvent.target );
@@ -72,7 +71,7 @@ $('#ingredientsDesc').slick({
 
         $(".mainTab").click(function(event) {
           var target = $( event.target );
-          $("button").removeClass("tabActive");
+          $(".mainTab .mainTablinks").removeClass("tabActive");
           target.addClass("tabActive");
           $(".mainTab-subtxt").removeClass("tabActive");
 
@@ -92,10 +91,10 @@ $('#ingredientsDesc').slick({
             console.log("Collection selection error!");
           } // if else
         });// mainTab click event
-      // Regimen
+    // Regimen
         $(".regimenTab").click(function(event) {
           var target = $( event.target );
-          $("button").removeClass("tabActive");
+          $(".regimenTab .regimenTablinks").removeClass("tabActive");
           target.addClass("tabActive");
           $(".regimenTab-subtxt").removeClass("tabActive");
 

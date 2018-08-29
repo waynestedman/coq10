@@ -421,7 +421,7 @@ $q10purpleDK: #9F3F95;
       text-align: center;
       color: $gray400;
       background: none;
-      width: 49.8%;
+      width: 49%;
       // font-size: 18px;
       display: inline-block;
     }
@@ -563,6 +563,7 @@ $q10purpleDK: #9F3F95;
     opacity: 0.1;
 
     img {
+      margin: 0 auto;
       width: 80px;
       height: 80px;
     }
