@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     $(".mainTab").click(function(event) {
       var target = $( event.target );
-      $("button").removeClass("tabActive");
+      $(".mainTab .mainTablinks").removeClass("tabActive");
       target.addClass("tabActive");
       $(".mainTab-subtxt").removeClass("tabActive");
 
@@ -59,7 +59,7 @@ $(document).ready(function () {
 // Regimen
     $(".regimenTab").click(function(event) {
       var target = $( event.target );
-      $("button").removeClass("tabActive");
+      $(".regimenTab .regimenTablinks").removeClass("tabActive");
       target.addClass("tabActive");
       $(".regimenTab-subtxt").removeClass("tabActive");
 
