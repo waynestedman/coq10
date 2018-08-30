@@ -504,9 +504,6 @@ $q10purpleDK: #9F3F95;
           // width: 90%;
           margin: 0 auto;
         }
-        #core1, #simple1 {
-
-        }
       } // product
     } // regimenDetails
   } // regimenTabContent
@@ -593,7 +590,7 @@ $q10purpleDK: #9F3F95;
         margin-top: 0;
         margin-bottom: 20px;
       }
-    }
+    } //comment
     blockquote {
       font-size: 18px;
       font-weight: 300;
@@ -605,6 +602,11 @@ $q10purpleDK: #9F3F95;
   position: relative;
   display: inline-block;
 
+  .learn-img {
+    img {
+      margin: 0 !important;
+    }
+  } // learn-img
   .learnBox {
     position: absolute;
     top: 8%;
@@ -622,9 +624,4 @@ $q10purpleDK: #9F3F95;
       }
     }
   } // learnBox
-  .learn-img {
-    img {
-      margin: 0 !important;
-    }
-  } // learn-img
 } // learn
