@@ -36,19 +36,26 @@
     padding-bottom: 20px;
 
     .hero-img {
-      height: 260px;
-      min-width: 350px;
+      position: absolute;
+      // min-width: 350px;
     }
     .heroBox {
       position: relative;
       width: 95%;
       margin: 0 auto;
       text-align: center;
-      right: unset;
-      padding: unset;
+      right: inherit;
+      padding: inherit;
+      padding-top: 78%;
 
+      h1 {
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+      }
       p {
-        margin: 1rem 0 1.5rem 0;
+        width: 94%;
+        margin: 1rem auto 1.5rem auto;
       }
       .cta {
         margin: 0 auto;
@@ -57,7 +64,7 @@
   } // hero
   .info {
     position: relative;
-    margin-bottom: 120px;
+    margin-bottom: 138px;
 
     .infoImg-left {
       top: 0;
@@ -75,6 +82,11 @@
 
         .benefit {
           width: 90%;
+          margin: 30px auto;
+
+          .benefit-title {
+            margin-bottom: 1rem;
+          }
         }
         h3, .learn-cta {
           text-align: left;
@@ -83,13 +95,13 @@
     } // infoBox
     .infoImg-right {
       width: 45%;
-      top: unset;
-      bottom: -124px;
+      top: inherit;
+      bottom: -142px;
     }
   } // info
   .ingredients {
     .ingredients-box{
-      background: linear-gradient(-56deg, $q10purpleLT 50%, $q10purple 50%);
+      background: linear-gradient(-53deg, $q10purpleLT 50%, $q10purple 50%);
     } // ingredients-box
     #ingredientsDesc {
       width: 90%;
@@ -121,12 +133,40 @@
     } // ingredientsDesc
   } //ingredients
   .collection {
+    .mainTab-underlay {
+      width: 95%;
+      padding-left: inherit;
+      display: flex;
+      align-items: center;
+
+      .mainTab-subtxt {
+        width: 49%;
+        top: 0;
+        font-size: 15px;
+        line-height: 1.2;
+      }
+    } // mainTab-underlay
+    .mainTab {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+
+      .mainTablinks {
+        font-size: 23px;
+        line-height: 1;
+        padding: 0 0 44px 0 !important;
+      } // mainTablinks
+      .tabActive {
+        padding-bottom: 43px !important;
+      }
+
+    } //mainTab
     .collectionWrapper {
       // box-shadow: none;
       width: 95%;
 
       .mainTabContent {
-        padding: unset;
+        padding: inherit;
 
         .productInfo-details {
           flex-direction: column;
@@ -150,7 +190,7 @@
           // overflow-y: hidden;
           white-space: nowrap;
           -webkit-overflow-scrolling: touch;
-          // width: inherit;
+          // width: inherit; **
 
           &:-webkit-scrollbar {
             display: none;
@@ -210,6 +250,9 @@
             font-size: 60px;
             margin: 1rem auto;
           }
+          p {
+            width: 82.3%;
+          }
           .oil-icon {
             width: 110px;
           }
@@ -239,10 +282,21 @@
             } // hover
             .coq10-btn {
               padding: 0;
-              background-color: unset;
+              background-color: inherit;
             }
           }
         } // product
+        #core1 {
+          h3 {
+            width: 78%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+          }
+          p {
+            width: 80%;
+          }
+        } // #core1
       } //  regimenDetails
     } // regimenTabContent
     .regimenCTA {
@@ -255,7 +309,7 @@
       .regimenCTA-2 {
         width: 100%;
         margin: 0 auto;
-        padding: 10px;
+        padding: 15px;
         a {
           font-size: 15px;
         }
@@ -267,14 +321,15 @@
 
     .quotes {
       position: absolute;
-      left: 37%;
+      left: 40%;
     }
 
     #commentsSlider {
       margin-top: 0;
 
       .comment {
-        width: 335px !important;
+        width: 10% !important;
+        margin: 0 auto;
 
         .commentProduct {
           margin-top: 30px;
@@ -313,6 +368,12 @@
 
   } // learn
 } // Mobile & Tablet - everything smaller than 1024
+@media only screen and (min-width: 439px) and (max-width: 468px) {
+  .suggestedRegimen .regimenTabContent .regimenDetails .product .oil-cta {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+} // min 439 to max 468 - Mobile exception
 
 @media only screen and (min-width: 640px) and (max-width: 1024px) {
 
@@ -320,5 +381,3 @@
 @media only screen and (min-width: 830px) and (max-width: 1024px) {
 
 } // min 830 to max 1024 - Tablet exceptions
-// @media only screen and (min-width: 380px) and (max-width: 500px) {
-// } // min 376 to max 424 - Mobile exceptions

@@ -14,6 +14,7 @@ $(document).ready(function(){
     dots: false,
     arrows: false,
     autoplay: true,
+    // infinite: true,
     autoplaySpeed: 4000,
     fade: true,
     speed: 1200,
