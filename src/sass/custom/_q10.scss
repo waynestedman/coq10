@@ -27,7 +27,7 @@ $q10purpleDK: #9F3F95;
   .tabActive {
     color: $q10purpleDK !important;
     font-weight: 600;
-    background-color: #FFF;
+    // background-color: #FFF;
     padding-bottom: 42px !important;
     border-bottom: 4px solid $q10purpleDK !important;
   }
@@ -100,13 +100,14 @@ $q10purpleDK: #9F3F95;
     width: 70%;
     margin: 70px 0 0 15%;
     padding: 0 80px 40px 80px;
-    box-shadow: -1px -1px 15px 3px rgba(150,150,150,0.6);
+    box-shadow: 0px 3px 14px -2px rgba(0,0,0,0.4);
+    // box-shadow: -1px -1px 15px 3px rgba(150,150,150,0.6);
 
     h2 {
       margin-bottom: 0;
     }
     h5 {
-      margin: 0.5rem auto 2.4rem auto;
+      margin: 10px auto;
       line-height: 1;
     }
     .benefits {
@@ -123,9 +124,9 @@ $q10purpleDK: #9F3F95;
       h3 {
         text-align: center;
       }
-      // .learn-cta {
-      //
-      // }
+      .learn-cta {
+        text-transform: uppercase;
+      }
     } // benefits
   } // infoBox
   .infoImg-right {
@@ -217,7 +218,7 @@ $q10purpleDK: #9F3F95;
       text-align: center;
       color: $gray400;
       background: none;
-      width: 49.8%;
+      width: 49%;
       font-size: 18px;
       display: inline-block;
     }
@@ -310,6 +311,7 @@ $q10purpleDK: #9F3F95;
           // color: white;
           display: none;
           padding: 50px;
+          height: 512px;
           text-align: center;
           animation: fadeEffect 1.25s;
       }
@@ -452,7 +454,7 @@ $q10purpleDK: #9F3F95;
       .product {
         // max-width: 25%;
         margin: 0 auto;
-        flex: 1 0 auto;
+        flex: 0 1 auto;
 
         .oil-cta, .coq10-cta {
           display: none;
@@ -533,16 +535,17 @@ $q10purpleDK: #9F3F95;
   text-align: center;
   background-color: $q10purpleLT;
   padding: 40px 0 0 0;
-  height: 400px;
+  height: 450px;
 
   .quotes {
     margin: 0 auto;
     opacity: 0.1;
+    height: 80px;
 
     img {
       margin: 0 auto;
-      width: 80px;
-      height: 80px;
+      width: 110px;
+      height: 110px;
     }
   }
   #commentsSlider {
@@ -553,13 +556,12 @@ $q10purpleDK: #9F3F95;
       margin-right: auto;
     }
     .comment {
-      // margin-left: auto;
-      // margin-right: auto;
-      width: 60% !important;
+      // width: 60% !important;
+      width: 10% !important;
       max-width: 1280px;
 
       h4 {
-        font-size: 60px;
+        font-size: 50px;
         text-transform: none;
       }
       h6 {
@@ -567,7 +569,8 @@ $q10purpleDK: #9F3F95;
         width: 70%;
       }
       .commentProduct {
-        margin-top: 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
         margin-bottom: 20px;
       }
     } //comment

@@ -4,9 +4,9 @@ $(document).ready(function () {
     $("#faceCareMain").addClass("tabActive");
     $("#faceProd-btn1").addClass("subTabActive");
     $("#faceProduct1").css("display", "block");
-    $("#regimenCore").css("display", "block");
-    $("#regimenCoreBtn").addClass("tabActive");
-    $("#core1").css("display", "block");
+    $("#regimenSimple").css("display", "block");
+    $("#regimenSimpleBtn").addClass("tabActive");
+    $("#csimple").css("display", "block");
 
 // Collection
     function faceCare() {

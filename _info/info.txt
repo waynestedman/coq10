@@ -20,4 +20,11 @@ https://www.dhccare.com/media/wysiwyg/content/common
 faceCare()
 targetCare()
 
+<p class="targetlink" id="targetProd-btn1" onctouchstart="targetCare()" data-id="1">CoQ10 Eye Cream</p>
+
  onctouchstart="targetCare()"
+
+
+UK "Shop Oil Cleansers" --> https://www.dhcuk.co.uk/double-cleanse
+
+US "Shop Oil Cleansers" --> https://www.dhccare.com/shop/skincare/cleansers-exfoliants.html
