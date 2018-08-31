@@ -15,3 +15,9 @@ https://www.dhccare.com/media/wysiwyg/content/common
 
 
 <!-- <span onclick="this.parentElement.style.display='none'">x</span> -->
+
+
+faceCare()
+targetCare()
+
+ onctouchstart="targetCare()"

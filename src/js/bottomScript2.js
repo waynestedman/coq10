@@ -10,7 +10,7 @@ $(document).ready(function () {
 
 // Collection
     function faceCare() {
-      $(".faceButtons").click(function(subEvent) {
+      $(".faceButtons").on('click touchstart', function(subEvent) {
         var subTarget = $( subEvent.target );
         var i;
         $("p").removeClass("subTabActive");
@@ -21,7 +21,7 @@ $(document).ready(function () {
       }); // faceButtons sub-event
     }; // face function
     function targetCare() {
-      $(".targetButtons").click(function(subEvent) {
+      $(".targetButtons").on('click touchstart', function(subEvent) {
         var subTarget = $( subEvent.target );
         var i;
         $("p").removeClass("subTabActive");
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
     faceCare();
 
-    $(".mainTab").click(function(event) {
+    $(".mainTab").on('click touchstart', function(event) {
       var target = $( event.target );
       $(".mainTab .mainTablinks").removeClass("tabActive");
       target.addClass("tabActive");
@@ -57,7 +57,7 @@ $(document).ready(function () {
       } // if else
     });// mainTab click event
 // Regimen
-    $(".regimenTab").click(function(event) {
+    $(".regimenTab").on('click touchstart', function(event) {
       var target = $( event.target );
       $(".regimenTab .regimenTablinks").removeClass("tabActive");
       target.addClass("tabActive");
