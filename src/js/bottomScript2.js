@@ -13,7 +13,7 @@ $(document).ready(function () {
       $(".faceButtons").click(function(subEvent) {
         var subTarget = $( subEvent.target );
         var i;
-        $("button").removeClass("subTabActive");
+        $("p").removeClass("subTabActive");
         subTarget.addClass("subTabActive");
         $(".faceContent").css("display", "none");
         i = subTarget.data("id");
@@ -24,7 +24,7 @@ $(document).ready(function () {
       $(".targetButtons").click(function(subEvent) {
         var subTarget = $( subEvent.target );
         var i;
-        $("button").removeClass("subTabActive");
+        $("p").removeClass("subTabActive");
         subTarget.addClass("subTabActive");
         $(".targetContent").css("display", "none");
         i = subTarget.data("id");

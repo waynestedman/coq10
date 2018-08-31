@@ -172,10 +172,6 @@ body {
   text-transform: uppercase;
 }
 
-.content-wrapper {
-  /* Go from zero to full opacity */
-}
-
 .content-wrapper .text-purple {
   color: #9F3F95;
 }
@@ -207,6 +203,7 @@ body {
 .content-wrapper .tabActive {
   color: #9F3F95 !important;
   font-weight: 600;
+  background-color: #FFF;
   padding-bottom: 42px !important;
   border-bottom: 4px solid #9F3F95 !important;
 }
@@ -432,10 +429,6 @@ body {
   z-index: 99;
 }
 
-.collection .mainTab .mainTablinks:hover {
-  background-color: #F8E4F9;
-}
-
 .collection .collectionWrapper {
   box-shadow: 0px 3px 14px -2px rgba(0, 0, 0, 0.4);
   margin: 18px auto 0 auto;
@@ -467,7 +460,7 @@ body {
   border-left: none;
   outline: none;
   text-transform: none;
-  background-color: #EEEEEE;
+  background-color: #FFF;
   cursor: pointer;
   padding: 12px 12px;
   font-size: 18px;
@@ -479,7 +472,6 @@ body {
 
 .collection .collectionWrapper .mainTabContent .faceButtons .faceLink:hover, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .faceLink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink:hover {
   padding-bottom: 12px;
-  background-color: #F8E4F9 !important;
 }
 
 .collection .collectionWrapper .mainTabContent .targetlink {
@@ -615,7 +607,6 @@ body {
 }
 
 .suggestedRegimen .regimenTab .regimenTablinks:hover {
-  background-color: #F8E4F9;
   z-index: 98;
 }
 
@@ -883,10 +874,13 @@ body {
   .info .infoImg-right {
     width: 45%;
     top: inherit;
-    bottom: -142px;
+    bottom: -138px;
   }
   .ingredients .ingredients-box {
     background: linear-gradient(-53deg, #F8E4F9 50%, #BD8CBF 50%);
+  }
+  .ingredients .ingredients-box h2 {
+    margin-bottom: 20px;
   }
   .ingredients #ingredientsDesc {
     width: 90%;
@@ -906,7 +900,7 @@ body {
     height: 14px;
   }
   .ingredients #ingredientsDesc .slick-dots li button:before {
-    font-size: 10px;
+    font-size: 30px;
   }
   .collection .mainTab-underlay {
     width: 95%;
@@ -1040,13 +1034,13 @@ body {
     padding: 0;
     background-color: inherit;
   }
-  .suggestedRegimen .regimenTabContent .regimenDetails #core1 h3 {
+  .suggestedRegimen .regimenTabContent .regimenDetails #core1 h3, .suggestedRegimen .regimenTabContent .regimenDetails #simple1 h3 {
     width: 78%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
-  .suggestedRegimen .regimenTabContent .regimenDetails #core1 p {
+  .suggestedRegimen .regimenTabContent .regimenDetails #core1 p, .suggestedRegimen .regimenTabContent .regimenDetails #simple1 p {
     width: 80%;
   }
   .suggestedRegimen .regimenCTA {
@@ -1093,13 +1087,15 @@ body {
     font-size: 15px;
   }
   .learn .learnBox {
-    top: 62%;
     left: 0;
     width: 100%;
-    margin: 0 auto;
+    margin: 90% auto 0 auto;
     padding: 0 14px;
     text-align: center;
     background-color: #FFF;
+  }
+  .learn .learnBox h2 {
+    margin-top: 0;
   }
   .learn .learnBox .learn-cta {
     margin: 20px auto;

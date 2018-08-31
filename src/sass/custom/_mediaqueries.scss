@@ -96,12 +96,16 @@
     .infoImg-right {
       width: 45%;
       top: inherit;
-      bottom: -142px;
+      bottom: -138px;
     }
   } // info
   .ingredients {
-    .ingredients-box{
+    .ingredients-box {
       background: linear-gradient(-53deg, $q10purpleLT 50%, $q10purple 50%);
+
+      h2 {
+        margin-bottom: 20px;
+      }
     } // ingredients-box
     #ingredientsDesc {
       width: 90%;
@@ -125,7 +129,7 @@
           height: 14px;
 
           button:before {
-            font-size: 10px;
+            font-size: 30px; // good size for server
             // line-height: 16px;
           } // button:before
         } // li
@@ -286,7 +290,7 @@
             }
           }
         } // product
-        #core1 {
+        #core1, #simple1 {
           h3 {
             width: 78%;
             margin-left: auto;
@@ -349,17 +353,19 @@
     }
   } // comments
   .learn {
-
     .learnBox {
       // position: relative;
-      top: 62%;
+      // top: 62%;
       left: 0;
       width: 100%;
-      margin: 0 auto;
+      margin: 90% auto 0 auto;
       padding: 0 14px;
       text-align: center;
       background-color: #FFF;
 
+      h2 {
+        margin-top: 0;
+      }
       .learn-cta {
         margin: 20px auto;
         text-align: center;
