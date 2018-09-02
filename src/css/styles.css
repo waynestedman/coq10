@@ -185,6 +185,22 @@ body {
   }
 }
 
+.content-wrapper .clearfix {
+  display: block;
+}
+
+.content-wrapper .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* html .content-wrapper .clearfix {
+  height: 1px;
+}
+
 .content-wrapper .learn-cta, .content-wrapper .coq10-btn {
   cursor: pointer;
   margin: 0 auto;
@@ -221,8 +237,11 @@ body {
 
 .hero .hero-img {
   max-width: 1280px;
-  max-height: 550px;
   margin: 0;
+}
+
+.hero .hero-img img {
+  max-height: 550px;
 }
 
 .hero .heroBox {
@@ -236,7 +255,7 @@ body {
 
 .hero .heroBox h1 {
   margin-bottom: 1.5rem;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .hero .heroBox h5 {
@@ -318,7 +337,7 @@ body {
 
 .info .infoImg-right {
   position: absolute;
-  top: 272px;
+  bottom: 0;
   right: 0;
   width: 40%;
 }
@@ -893,6 +912,11 @@ body {
     margin: 0 auto;
     padding-bottom: 20px;
   }
+  .ingredients #ingredientsDesc .ingredientImg {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .ingredients #ingredientsDesc .ingredient-text {
     text-align: center;
     padding-top: 0;
@@ -1146,35 +1170,63 @@ body {
     margin-top: -20px;
   }
   .hero .heroBox {
-    top: 9%;
+    top: 10%;
     padding: 0;
-    width: 52%;
+    width: 54%;
   }
   .hero .heroBox p {
     margin: 2rem 0;
   }
+  .info {
+    margin-bottom: 40px;
+  }
   .info .infoBox {
-    padding-right: 40px;
-    padding-left: 40px;
+    margin-top: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .info .infoBox .benefits .benefit {
+    width: 75%;
   }
   .info .infoImg-right {
-    top: 368px;
+    bottom: -44px;
   }
-  .info .ingredients #ingredientsDesc {
+  .ingredients #ingredientsDesc {
     width: 90%;
+    padding-bottom: 20px;
+  }
+  .ingredients #ingredientsDesc .ingredientImg {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ingredients #ingredientsDesc .ingredient-text {
+    padding-top: 0;
+    margin-top: -10px;
   }
   .collection .collectionWrapper {
     width: 95%;
   }
-  .collection .collectionWrapper .mainTabContent .faceButtons .faceLink, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink, .collection .collectionWrapper .mainTabContent .targetButtons .faceLink, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink {
-    font-size: 16px;
-    padding: 8px 6px;
+  .collection .collectionWrapper .mainTabContent .faceButtons, .collection .collectionWrapper .mainTabContent .targetButtons {
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
   }
-  .collection .collectionWrapper .mainTabContent .faceButtons .faceLink:hover, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .faceLink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink:hover {
+  .collection .collectionWrapper .mainTabContent .faceButtons .facelink, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink, .collection .collectionWrapper .mainTabContent .targetButtons .facelink, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .collection .collectionWrapper .mainTabContent .faceButtons .facelink:hover, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .facelink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink:hover {
     padding-bottom: 8px;
   }
   .collection .collectionWrapper .mainTabContent .faceContent, .collection .collectionWrapper .mainTabContent .targetContent {
     padding: 40px;
+    height: 400px;
+  }
+  .collection .collectionWrapper .mainTabContent .faceContent .productInfo-details, .collection .collectionWrapper .mainTabContent .targetContent .productInfo-details {
+    width: 90%;
+    padding-top: 0;
   }
   .suggestedRegimen .regimenTabContent .regimenDetails .product h3 {
     font-size: 28px;
@@ -1194,6 +1246,50 @@ body {
   }
   .learn .learnBox {
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  .hero {
+    min-height: 500px;
+  }
+  .hero .heroBox {
+    top: 8%;
+  }
+  .hero .heroBox .cta {
+    width: 50%;
+  }
+  .collection .collectionWrapper .mainTabContent .faceContent, .collection .collectionWrapper .mainTabContent .targetContent {
+    padding: 30px;
+  }
+  .collection .collectionWrapper .mainTabContent .faceContent .productInfo-details, .collection .collectionWrapper .mainTabContent .targetContent .productInfo-details {
+    width: 100%;
+  }
+  .collection .collectionWrapper .mainTabContent .faceContent .productInfo-details .productInfo-text, .collection .collectionWrapper .mainTabContent .targetContent .productInfo-details .productInfo-text {
+    width: 100%;
+    margin-left: 0;
+  }
+  .suggestedRegimen .regimenCTA .regimenCTA-1 a, .suggestedRegimen .regimenCTA .regimenCTA-2 a {
+    line-height: 1;
+    font-size: 18px;
+  }
+  .suggestedRegimen .regimenCTA .regimenCTA-1 {
+    padding: 12px 0;
+    width: 23%;
+  }
+  .suggestedRegimen .regimenCTA .regimenCTA-1:hover {
+    padding: 11px 0;
+  }
+  .suggestedRegimen .regimenCTA .regimenCTA-2 {
+    padding: 22px 0 12px 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 861px) {
+  .collection .collectionWrapper .mainTabContent .targetButtons {
+    overflow-x: unset;
+    white-space: unset;
+    -webkit-overflow-scrolling: unset;
   }
 }
 

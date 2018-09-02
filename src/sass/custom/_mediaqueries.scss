@@ -112,6 +112,11 @@
       margin: 0 auto;
       padding-bottom: 20px;
 
+      .ingredientImg {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
       .ingredient-text {
         text-align: center;
         padding-top: 0;
@@ -191,7 +196,6 @@
           justify-content: flex-start;
           flex-wrap: nowrap;
           overflow-x: scroll;
-          // overflow-y: hidden;
           white-space: nowrap;
           -webkit-overflow-scrolling: touch;
           // width: inherit; **
@@ -415,10 +419,10 @@
       // margin-left: -10px;
     }
     .heroBox {
-      top: 9%;
+      top: 10%;
       padding: 0;
       // right: 2;
-      width: 52%;
+      width: 54%;
 
       p {
         margin: 2rem 0;
@@ -426,36 +430,68 @@
     } // heroBox
   } // hero
   .info {
+    margin-bottom: 40px;
+
     .infoBox {
-      padding-right: 40px;
-      padding-left: 40px;
+      margin-top: 40px;
+      padding-right: 30px;
+      padding-left: 30px;
+
+      .benefits {
+        .benefit {
+          width: 75%;
+        }
+      }
     }
     .infoImg-right {
-      top: 368px;
-    }
-    .ingredients #ingredientsDesc {
-      width: 90%;
+      bottom: -44px;
     }
   } // info
-
-
+  .ingredients {
+    #ingredientsDesc {
+      width: 90%;
+      padding-bottom: 20px;
+      
+      .ingredientImg {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+      } // ingredientImg
+      .ingredient-text {
+        padding-top: 0;
+        margin-top: -10px;
+      }
+    } // #ingredientsDesc
+  } // ingredients
   .collection {
     .collectionWrapper {
       width: 95%;
 
       .mainTabContent {
         .faceButtons, .targetButtons {
-          .faceLink, .targetlink {
-            font-size: 16px;
-            padding: 8px 6px;
+          overflow-x: scroll;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+          justify-content: flex-start;
 
-          &:hover {
-            padding-bottom: 8px;
-          }
-          }
+          .facelink, .targetlink {
+            font-size: 16px;
+            padding: 10px;
+            // padding: 8px 6px;
+
+            &:hover {
+              padding-bottom: 8px;
+            } // hover
+          } // facelink targetlink
         }
         .faceContent, .targetContent {
           padding: 40px;
+          height: 400px;
+
+          .productInfo-details {
+            width: 90%;
+            padding-top: 0;
+          } // productInfo-details
         }
       } // mainTabContent
     }
@@ -493,6 +529,68 @@
     }
   }
 } // min 600 to max 1024 - Tablet
-@media only screen and (max-width: 1024px) and (min-width: 830px) {
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  .hero {
+    min-height: 500px;
 
-} // min 830 to max 1024 - Tablet exceptions
+    .heroBox {
+      top: 8%;
+
+      .cta {
+        width: 50%;
+      } // cta
+    } // heroBox
+  } // hero
+  .collection {
+    .collectionWrapper {
+      .mainTabContent {
+        .faceContent, .targetContent {
+          padding: 30px;
+
+          .productInfo-details {
+            width: 100%;
+
+            .productInfo-text {
+              width: 100%;
+              margin-left: 0;
+            }
+          }
+        }
+      } // mainTabContent
+    } // collectionWrapper
+  } // collection
+  .suggestedRegimen {
+    .regimenCTA {
+      .regimenCTA-1, .regimenCTA-2 {
+        a {
+          line-height: 1;
+          font-size: 18px;
+        }
+      } // cta-1 cta-2
+      .regimenCTA-1 {
+        padding: 12px 0;
+        width: 23%;
+
+        &:hover {
+          padding: 11px 0;
+        }
+      } // CTA-1
+      .regimenCTA-2 {
+        padding: 22px 0 12px 0;
+      } // CTA-2
+    } // regimenCTA
+  } // suggestedRegimen
+} // min 600 to max 800 - Tablet exceptions
+@media only screen and (max-width: 1024px) and (min-width: 861px) {
+  .collection {
+    .collectionWrapper {
+      .mainTabContent {
+        .targetButtons {
+          overflow-x: unset;
+          white-space: unset;
+          -webkit-overflow-scrolling: unset;
+        }
+      }
+    }
+  }
+} // min 861 to max 1024 - Tablet exceptions

@@ -10,6 +10,10 @@ $q10purpleDK: #9F3F95;
       from {opacity: 0;}
       to {opacity: 1;}
   }
+  .clearfix {
+    @include clearfix;
+    // position: relative;
+  }
   .learn-cta, .coq10-btn {
     cursor: pointer;
     margin: 0 auto;
@@ -41,11 +45,16 @@ $q10purpleDK: #9F3F95;
 }
 .hero {
   position: relative;
+  // min-height: 500px;
 
   .hero-img {
     max-width: 1280px;
-    max-height: 550px;
+    // max-height: 550px;
     margin: 0;
+
+    img {
+      max-height: 550px;
+    }
   }
   .heroBox {
     position: absolute;
@@ -57,7 +66,7 @@ $q10purpleDK: #9F3F95;
 
     h1 {
       margin-bottom: 1.5rem;
-      line-height: 1.2;
+      line-height: 1.1;
     }
     h5 {
       margin: 0;
@@ -131,7 +140,8 @@ $q10purpleDK: #9F3F95;
   } // infoBox
   .infoImg-right {
     position: absolute;
-    top: 272px;
+    // top: 272px;
+    bottom: 0;
     right: 0;
     width: 40%;
 
