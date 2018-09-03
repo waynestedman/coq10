@@ -53,7 +53,7 @@ $q10purpleDK: #9F3F95;
     margin: 0;
 
     img {
-      max-height: 550px;
+      max-height: 780px;
     }
   }
   .heroBox {
@@ -73,33 +73,39 @@ $q10purpleDK: #9F3F95;
       line-height: 1.2;
     }
     p {
-      margin: 2.5rem 0 4rem 0;
+      margin: 2rem 0 4rem 0;
     }
     .cta {
-      width: 40%;
-      margin: 0;
+      // width: 40%;
+      margin-bottom: 0;
       background-color: $q10purpleDK;
-      color: #FFF;
       text-align: center;
-      padding: 10px;
+      padding: 14px 80px;
+      color: #FFF;
 
       &:hover {
         color: $q10purpleDK;
         background-color: $q10purpleLT;
         border: 1px solid $q10purpleDK;
         text-decoration: none;
+        padding: 13px 80px;
+        color: $q10purpleDK;
       }
     }
   }
 } // hero
 .info {
   position: relative;
-  margin-bottom: 68px;
+  padding-bottom: 70px;
 
   .infoImg-left {
     margin-top: 0;
     width: 30%;
     position: absolute;
+
+    img {
+      margin: 0 !important;
+    }
   }
   .infoBox {
     position: relative;
@@ -141,7 +147,7 @@ $q10purpleDK: #9F3F95;
   .infoImg-right {
     position: absolute;
     // top: 272px;
-    bottom: 0;
+    bottom: -25px;
     right: 0;
     width: 40%;
 
@@ -161,7 +167,7 @@ $q10purpleDK: #9F3F95;
 
     h2 {
       color: #FFF;
-      padding-top: 20px;
+      padding-top: 30px;
       margin-bottom: 0;
     }
   } // ingredients-box
@@ -199,7 +205,7 @@ $q10purpleDK: #9F3F95;
       li {
         button:before {
           color: $q10purple;
-          font-size: 14px;
+          font-size: 30px;
           line-height: 20px;
         }
       }
@@ -208,11 +214,11 @@ $q10purpleDK: #9F3F95;
 } // ingredients
 .collection {
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 
   h2 {
-    margin: 4rem auto;
-    padding-bottom: 2rem;
+    margin: 60px auto 30px auto;
+    padding-bottom: 2.9rem;
     text-align: center;
   }
   .mainTab-underlay {
@@ -360,30 +366,26 @@ $q10purpleDK: #9F3F95;
       } // productInfo-details
     } // main tab content
   } // collection wrapper
-  .collection-cta {
+  .collectionCta {
     margin: 20px auto 0 auto;
     text-align: center;
 
-    h6 {
+    .collection-cta {
       margin: 0 auto;
       width: 50%;
-      padding: 10px 20px;
       text-transform: uppercase;
       background-color: $q10purpleDK;
       font-weight: 400;
       border: 1px solid $q10purple;
+      padding: 14px 160px;
+      color: #FFF;
 
-      a {
-        color: #FFF;
-      }
       &:hover {
         color: $q10purpleDK;
         background-color: $q10purpleLT;
         border: 1px solid $q10purpleDK;
         text-decoration: none;
-        a {
-          color: $q10purpleDK;
-        }
+        padding: 13px 160px;
       }
     }
   } // collection-cta
@@ -395,12 +397,11 @@ $q10purpleDK: #9F3F95;
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 30px;
-  // display: flex;
-  // flex-direction: column;
-  // text-align: center;
 
   h2 {
+    margin-top: 30px;
     margin-bottom: 54px;
+    padding-bottom: 30px;
     color: #fff;
   }
   .regimenTab-underlay {
@@ -414,7 +415,6 @@ $q10purpleDK: #9F3F95;
       color: $gray400;
       background: none;
       width: 49%;
-      // font-size: 18px;
       display: inline-block;
     }
   } // regimenTab-underlay
@@ -423,7 +423,6 @@ $q10purpleDK: #9F3F95;
     width: 90%;
     margin: -98px auto 0 auto;
     padding: 0 40px 10px 40px;
-    // background-color: #FFF;
     overflow: hidden;
 
     .regimenTablinks {
@@ -442,7 +441,6 @@ $q10purpleDK: #9F3F95;
       z-index: 99;
 
       &:hover {
-        // background-color: $q10purpleLT;
         z-index: 98;
       }
     } // button
@@ -462,8 +460,7 @@ $q10purpleDK: #9F3F95;
       align-items: baseline;
 
       .product {
-        // max-width: 25%;
-        margin: 0 auto;
+        margin: 1.2rem auto 0 auto;
         flex: 0 1 auto;
 
         .oil-cta, .coq10-cta {
@@ -484,8 +481,8 @@ $q10purpleDK: #9F3F95;
         }
         h4 {
           font-size: 84px;
-          // display: flex;
-          // justify-content: center;
+          margin: 1rem auto;
+          line-height: 1;
         }
         h3 {
           font-size: 33px;
@@ -493,7 +490,6 @@ $q10purpleDK: #9F3F95;
           margin-bottom: 0.5rem;
         }
         p {
-          // width: 90%;
           margin: 0 auto;
         }
       } // product
@@ -503,42 +499,60 @@ $q10purpleDK: #9F3F95;
     background-color: #FFF;
     width: 90%;
     margin: 0 auto 30px auto;
-    padding: 14px 40px 20px 40px;
+    padding: 20px 10px;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
 
-    .regimenCTA-1, .regimenCTA-2 {
+    .regCTA-btn1 {
+      text-align: center;
       display: inline-block;
-      background-color: $q10purpleDK;
-      color: #FFF;
-      padding: 16px 0;
+      cursor: pointer;
       text-transform: uppercase;
+      margin: 20px auto;
+      width: 25%;
 
-      a {
+      .regimenCTA-1 {
         color: #FFF;
+        background-color: $q10purpleDK;
         font-size: 20px;
         font-weight: 400;
-      }
-      &:hover {
-        padding: 14px 0;
-        color: $q10purpleDK;
-        background-color: $q10purpleLT;
-        border: 1px solid $q10purpleDK;
-        cursor: pointer;
         text-decoration: none;
+        padding: 14px 20px;
 
-        a {
+        &:hover {
+          padding: 13px 20px;
           color: $q10purpleDK;
+          background-color: $q10purpleLT;
+          border: 1px solid $q10purpleDK;
           text-decoration: none;
         }
-      }
-    }
-    .regimenCTA-1 {
-      width: 21%;
-    }
-    .regimenCTA-2 {
-      width: 75%;
-    }
+      } // regimenCTA-1
+    } // regCTA-btn1
+    .regCTA-btn2 {
+      text-align: center;
+      display: inline-block;
+      cursor: pointer;
+      text-transform: uppercase;
+      margin: 20px auto;
+      width: 70%;
+
+      .regimenCTA-2 {
+        color: #FFF;
+        background-color: $q10purpleDK;
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        padding: 14px 260px;
+
+        &:hover {
+          padding: 13px 260px;
+          color: $q10purpleDK;
+          background-color: $q10purpleLT;
+          border: 1px solid $q10purpleDK;
+          text-decoration: none;
+        }
+      } // regimenCTA-2
+    } // regCTA-btn2
   } // regimen CTA
 } // suggestedRegimen
 .comments {
@@ -609,7 +623,7 @@ $q10purpleDK: #9F3F95;
 
     .learn-cta {
       text-transform: uppercase;
-      margin: 40px 0 0 0;
+      margin: 20px 0 0 0;
       text-align: left;
 
       &:hover {

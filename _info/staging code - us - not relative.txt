@@ -1,0 +1,1939 @@
+<script type="text/javascript" xml="space">// <![CDATA[
+require([
+  'jquery',
+  'slick'
+  ], function ($) {
+$(document).ready(function(){
+$('#ingredientsDesc').slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    infinite: true,
+    speed: 2000,
+    fade: true,
+    cssEase: 'ease-in-out',
+    pauseOnHover: true
+});
+  $('#commentsSlider').slick({
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    fade: true,
+    speed: 1200,
+    cssEase: 'ease-in-out'
+   }); // comments slider
+});
+});
+// ]]></script>
+<style xml="space"><!--
+.cms-page-view .column.main img {
+  margin: 0 auto;
+}
+
+.columns .column.main {
+  padding-bottom: 0;
+}
+
+.modal-popup .modal-footer {
+  display: none;
+}
+
+.content-wrapper {
+  font-weight: 300;
+  max-width: 1280px;
+  margin: 0 auto;
+  line-height: 1.4;
+  background: #fff;
+}
+
+.content-wrapper .row {
+  margin: 0;
+}
+
+.content-wrapper .column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.content-wrapper .block-title {
+  text-align: center;
+  margin: 0;
+}
+
+.content-wrapper .widget .block-title > strong {
+  font-size: 4rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+.content-wrapper .block.widget .products-grid .product-item {
+  margin: 0;
+}
+
+.content-wrapper .widget.block-products-list .add-button {
+  font-weight: 400;
+}
+
+.content-wrapper .widget.block-products-list .add-button:hover {
+  background: #00388D;
+  border: 1px solid #00388D;
+  color: #fff;
+}
+
+.content-wrapper .product-item-link {
+  text-transform: none;
+}
+
+.content-wrapper .widget.block-products-list .product-item-name {
+  height: 52px;
+}
+
+.content-wrapper .price-wrapper {
+  font-weight: 400;
+}
+
+.content-wrapper h1 {
+  font-size: 60px;
+  line-height: 1.3;
+}
+
+.content-wrapper h2 {
+  font-size: 50px;
+  line-height: 1.3;
+}
+
+.content-wrapper h3 {
+  font-size: 35px;
+  line-height: 1.3;
+}
+
+.content-wrapper h4 {
+  font-size: 40px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.content-wrapper h5 {
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: 300;
+  margin-top: 2.6rem;
+  margin-bottom: .4rem;
+}
+
+.content-wrapper h6 {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.content-wrapper p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.content-wrapper a {
+  text-decoration: none;
+  color: #424649;
+  cursor: pointer;
+}
+
+.content-wrapper button {
+  color: #424649;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #424649;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.content-wrapper li {
+  font-size: 16px;
+}
+
+.content-wrapper .cta {
+  font-weight: 400;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.content-wrapper .cta:hover {
+  text-decoration: underline;
+}
+
+.content-wrapper .slick-list {
+  margin-left: -18px;
+}
+
+.content-wrapper .slick-prev, .content-wrapper .slick-next {
+  font-size: 0;
+}
+
+.content-wrapper .slick-arrow {
+  background: none;
+}
+
+.content-wrapper .linkCTA {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.content-wrapper .text-purple {
+  color: #9F3F95;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content-wrapper .clearfix {
+  display: block;
+}
+
+.content-wrapper .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* html .content-wrapper .clearfix {
+  height: 1px;
+}
+
+.content-wrapper .learn-cta, .content-wrapper .coq10-btn {
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-wrapper .learn-cta:hover, .content-wrapper .coq10-btn:hover {
+  color: #9F3F95;
+  text-decoration: underline;
+}
+
+.content-wrapper .learn-cta:hover a, .content-wrapper .coq10-btn:hover a {
+  color: #9F3F95;
+}
+
+.content-wrapper .tabActive {
+  color: #9F3F95 !important;
+  font-weight: 600;
+  padding-bottom: 42px !important;
+  border-bottom: 4px solid #9F3F95 !important;
+}
+
+.content-wrapper .subTabActive {
+  border-bottom: none !important;
+  color: #9F3F95 !important;
+  font-weight: 400;
+  background-color: #FFF !important;
+  border-bottom: 2px solid #9F3F95 !important;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero .hero-img {
+  max-width: 1280px;
+  margin: 0;
+}
+
+.hero .hero-img img {
+  max-height: 780px;
+}
+
+.hero .heroBox {
+  position: absolute;
+  top: 14%;
+  right: 2%;
+  margin: 0;
+  padding: 0 20px;
+  width: 50%;
+}
+
+.hero .heroBox h1 {
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.hero .heroBox h5 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero .heroBox p {
+  margin: 2rem 0 4rem 0;
+}
+
+.hero .heroBox .cta {
+  margin-bottom: 0;
+  background-color: #9F3F95;
+  text-align: center;
+  padding: 14px 80px;
+  color: #FFF;
+}
+
+.hero .heroBox .cta:hover {
+  color: #9F3F95;
+  background-color: #F8E4F9;
+  border: 1px solid #9F3F95;
+  text-decoration: none;
+  padding: 13px 80px;
+  color: #9F3F95;
+}
+
+.info {
+  position: relative;
+  padding-bottom: 70px;
+}
+
+.info .infoImg-left {
+  margin-top: 0;
+  width: 30%;
+  position: absolute;
+}
+
+.info .infoImg-left img {
+  margin: 0 !important;
+}
+
+.info .infoBox {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  background-color: #F8E4F9;
+  width: 70%;
+  margin: 70px 0 0 15%;
+  padding: 0 80px 40px 80px;
+  -webkit-box-shadow: 0px 3px 14px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 3px 14px -2px rgba(0, 0, 0, 0.4);
+}
+
+.info .infoBox h2 {
+  margin-bottom: 0;
+}
+
+.info .infoBox h5 {
+  margin: 10px auto;
+  line-height: 1;
+}
+
+.info .infoBox .benefits {
+  text-align: left;
+}
+
+.info .infoBox .benefits .benefit {
+  width: 60%;
+  margin: 40px 0;
+}
+
+.info .infoBox .benefits .benefit .benefit-title {
+  text-transform: uppercase;
+}
+
+.info .infoBox .benefits h3 {
+  text-align: center;
+}
+
+.info .infoBox .benefits .learn-cta {
+  text-transform: uppercase;
+}
+
+.info .infoImg-right {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  width: 40%;
+}
+
+.ingredients {
+  margin: 0 auto;
+}
+
+.ingredients .ingredients-box {
+  background: -o-linear-gradient(111.19deg, #F8E4F9 50%, #BD8CBF 50%);
+  background: linear-gradient(-21.19deg, #F8E4F9 50%, #BD8CBF 50%);
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.ingredients .ingredients-box h2 {
+  color: #FFF;
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+
+.ingredients #ingredientsDesc {
+  margin: 30px auto 0 auto;
+  width: 80%;
+  background-color: #FFF;
+}
+
+.ingredients #ingredientsDesc .ingredientImg {
+  margin: 0 40px;
+  float: left;
+  display: inline-block;
+}
+
+.ingredients #ingredientsDesc img {
+  width: 320px;
+}
+
+.ingredients #ingredientsDesc .ingredient-text {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 75%;
+}
+
+.ingredients #ingredientsDesc .ingredient-text h3 {
+  margin-bottom: 0.5rem;
+}
+
+.ingredients #ingredientsDesc .ingredient-text h5 {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 0 0 18px 0;
+}
+
+.ingredients #ingredientsDesc .slick-dots {
+  bottom: -10px;
+}
+
+.ingredients #ingredientsDesc .slick-dots li button:before {
+  color: #BD8CBF;
+  font-size: 30px;
+  line-height: 20px;
+}
+
+.collection {
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.collection h2 {
+  margin: 60px auto 30px auto;
+  padding-bottom: 2.9rem;
+  text-align: center;
+}
+
+.collection .mainTab-underlay {
+  width: 100%;
+  z-index: 1;
+  padding-left: 2px;
+  margin: 0 auto;
+}
+
+.collection .mainTab-underlay .mainTab-subtxt {
+  text-align: center;
+  color: #BDBDBD;
+  background: none;
+  width: 49%;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.collection .mainTab {
+  position: relative;
+  overflow: hidden;
+  background: none;
+  margin-top: -94px;
+}
+
+.collection .mainTab .mainTablinks {
+  width: 50%;
+  font-size: 35px;
+  color: #BDBDBD;
+  float: left;
+  border-top: none;
+  border-right: none;
+  border-bottom: 2px solid #BDBDBD;
+  border-left: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px 43px 16px;
+  text-transform: capitalize;
+  z-index: 99;
+}
+
+.collection .collectionWrapper {
+  -webkit-box-shadow: 0px 3px 14px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 3px 14px -2px rgba(0, 0, 0, 0.4);
+  margin: 18px auto 0 auto;
+  padding-bottom: 20px;
+  width: 90%;
+}
+
+.collection .collectionWrapper .mainTabContent {
+  display: none;
+  padding: 0 12px;
+  margin: 0 auto;
+  border-top: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+.collection .collectionWrapper .mainTabContent .faceButtons, .collection .collectionWrapper .mainTabContent .targetButtons {
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.collection .collectionWrapper .mainTabContent .faceButtons .faceLink, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink, .collection .collectionWrapper .mainTabContent .targetButtons .faceLink, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  outline: none;
+  text-transform: none;
+  background-color: #FFF;
+  cursor: pointer;
+  padding: 12px 12px;
+  font-size: 18px;
+  color: #BDBDBD;
+  margin: 0;
+  display: inline-block;
+  max-width: 360px;
+}
+
+.collection .collectionWrapper .mainTabContent .faceButtons .faceLink:hover, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .faceLink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink:hover {
+  padding-bottom: 12px;
+}
+
+.collection .collectionWrapper .mainTabContent .targetlink {
+  width: 20%;
+}
+
+.collection .collectionWrapper .mainTabContent .faceContent, .collection .collectionWrapper .mainTabContent .targetContent {
+  display: none;
+  padding: 50px;
+  height: 512px;
+  text-align: center;
+  -webkit-animation: fadeEffect 1.25s;
+  animation: fadeEffect 1.25s;
+}
+
+.collection .collectionWrapper .mainTabContent .productInfo-details {
+  position: relative;
+  width: 80%;
+  margin: 0;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.collection .collectionWrapper .mainTabContent .productInfo-details a {
+  width: 30%;
+}
+
+.collection .collectionWrapper .mainTabContent .productInfo-details a img {
+  width: 320px;
+}
+
+.collection .collectionWrapper .mainTabContent .productInfo-details .productInfo-text {
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+  margin: 0 0 0 40px;
+}
+
+.collection .collectionWrapper .mainTabContent .productInfo-details .productInfo-text .productInfo-title {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.collection .collectionWrapper .mainTabContent .productInfo-details .productInfo-text h5 {
+  margin: 1rem 0;
+}
+
+.collection .collectionWrapper .mainTabContent .productInfo-details .productInfo-text .productInfo-desc {
+  margin: 20px 0;
+}
+
+.collection .collectionCta {
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+
+.collection .collectionCta .collection-cta {
+  margin: 0 auto;
+  width: 50%;
+  text-transform: uppercase;
+  background-color: #9F3F95;
+  font-weight: 400;
+  border: 1px solid #BD8CBF;
+  padding: 14px 160px;
+  color: #FFF;
+}
+
+.collection .collectionCta .collection-cta:hover {
+  color: #9F3F95;
+  background-color: #F8E4F9;
+  border: 1px solid #9F3F95;
+  text-decoration: none;
+  padding: 13px 160px;
+}
+
+.suggestedRegimen {
+  position: relative;
+  text-align: center;
+  background-color: #BD8CBF;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.suggestedRegimen h2 {
+  margin-top: 30px;
+  margin-bottom: 54px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.suggestedRegimen .regimenTab-underlay {
+  width: 90%;
+  z-index: 1;
+  margin: 18px auto 0 auto;
+  padding: 0 40px 0 40px;
+}
+
+.suggestedRegimen .regimenTab-underlay .regimenTab-subtxt {
+  text-align: center;
+  color: #BDBDBD;
+  background: none;
+  width: 49%;
+  display: inline-block;
+}
+
+.suggestedRegimen .regimenTab {
+  position: relative;
+  width: 90%;
+  margin: -98px auto 0 auto;
+  padding: 0 40px 10px 40px;
+  overflow: hidden;
+}
+
+.suggestedRegimen .regimenTab .regimenTablinks {
+  width: 50%;
+  color: #BDBDBD;
+  float: left;
+  border-top: none;
+  border-right: none;
+  border-bottom: 2px solid #BDBDBD;
+  border-left: none;
+  outline: none;
+  cursor: pointer;
+  padding: 18px 16px 43px 16px;
+  font-size: 35px;
+  text-transform: none;
+  z-index: 99;
+}
+
+.suggestedRegimen .regimenTab .regimenTablinks:hover {
+  z-index: 98;
+}
+
+.suggestedRegimen .regimenTabContent {
+  display: none;
+}
+
+.suggestedRegimen .regimenTabContent .regimenDetails {
+  background-color: #FFF;
+  width: 90%;
+  margin: -90px auto 0 auto;
+  padding: 90px 20px 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.suggestedRegimen .regimenTabContent .regimenDetails .product {
+  margin: 1.2rem auto 0 auto;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.suggestedRegimen .regimenTabContent .regimenDetails .product .oil-cta, .suggestedRegimen .regimenTabContent .regimenDetails .product .coq10-cta {
+  display: none;
+}
+
+.suggestedRegimen .regimenTabContent .regimenDetails .product .oil-cta .coq10-btn, .suggestedRegimen .regimenTabContent .regimenDetails .product .coq10-cta .coq10-btn {
+  padding: 20px;
+  background-color: #BD8CBF;
+}
+
+.suggestedRegimen .regimenTabContent .regimenDetails .product img {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.suggestedRegimen .regimenTabContent .regimenDetails .product h4 {
+  font-size: 84px;
+  margin: 1rem auto;
+  line-height: 1;
+}
+
+.suggestedRegimen .regimenTabContent .regimenDetails .product h3 {
+  font-size: 33px;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.suggestedRegimen .regimenTabContent .regimenDetails .product p {
+  margin: 0 auto;
+}
+
+.suggestedRegimen .regimenCTA {
+  background-color: #FFF;
+  width: 90%;
+  margin: 0 auto 30px auto;
+  padding: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.suggestedRegimen .regimenCTA .regCTA-btn1 {
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 20px auto;
+  width: 25%;
+}
+
+.suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1 {
+  color: #FFF;
+  background-color: #9F3F95;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+.suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1:hover {
+  padding: 13px 20px;
+  color: #9F3F95;
+  background-color: #F8E4F9;
+  border: 1px solid #9F3F95;
+  text-decoration: none;
+}
+
+.suggestedRegimen .regimenCTA .regCTA-btn2 {
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 20px auto;
+  width: 70%;
+}
+
+.suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2 {
+  color: #FFF;
+  background-color: #9F3F95;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 14px 260px;
+}
+
+.suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2:hover {
+  padding: 13px 260px;
+  color: #9F3F95;
+  background-color: #F8E4F9;
+  border: 1px solid #9F3F95;
+  text-decoration: none;
+}
+
+.comments {
+  text-align: center;
+  background-color: #F8E4F9;
+  padding: 40px 0 0 0;
+  height: 450px;
+}
+
+.comments .quotes {
+  margin: 0 auto;
+  opacity: 0.1;
+  height: 80px;
+}
+
+.comments .quotes img {
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+}
+
+.comments #commentsSlider {
+  margin: -55px auto 0 auto;
+}
+
+.comments #commentsSlider .slick-list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comments #commentsSlider .comment {
+  width: 10% !important;
+  max-width: 1280px;
+}
+
+.comments #commentsSlider .comment h4 {
+  font-size: 50px;
+  text-transform: none;
+}
+
+.comments #commentsSlider .comment h6 {
+  margin: 20px auto;
+  width: 70%;
+}
+
+.comments #commentsSlider .comment .commentProduct {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.comments #commentsSlider blockquote {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+.learn {
+  position: relative;
+  display: inline-block;
+}
+
+.learn .learn-img img {
+  margin: 0 !important;
+}
+
+.learn .learnBox {
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  width: 40%;
+  text-align: left;
+}
+
+.learn .learnBox .learn-cta {
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+  text-align: left;
+}
+
+.learn .learnBox .learn-cta:hover {
+  color: #9F3F95;
+}
+
+@media only screen and (max-width: 599px) {
+  .cms-page-view .column.main p {
+    margin: 0 auto 10px auto;
+  }
+  .content-wrapper h1 {
+    font-size: 45px;
+  }
+  .content-wrapper h2 {
+    font-size: 35px;
+  }
+  .content-wrapper h3 {
+    font-size: 25px;
+  }
+  .content-wrapper h4 {
+    font-size: 60px;
+  }
+  .content-wrapper h5 {
+    font-size: 22px;
+  }
+  .content-wrapper h6 {
+    font-size: 15px;
+  }
+  .content-wrapper p {
+    font-size: 15px;
+  }
+  .content-wrapper .slick-list {
+    margin-left: 0;
+  }
+  .content-wrapper .tabActive {
+    padding-bottom: 29px !important;
+  }
+  .hero {
+    background-color: #f5f5f5;
+    padding-bottom: 20px;
+  }
+  .hero .hero-img {
+    position: absolute;
+  }
+  .hero .heroBox {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    right: inherit;
+    padding: inherit;
+    padding-top: 78%;
+  }
+  .hero .heroBox h1 {
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .heroBox p {
+    width: 94%;
+    margin: 1.5rem auto !important;
+  }
+  .hero .heroBox .cta {
+    margin: 0 auto;
+  }
+  .info {
+    position: relative;
+    padding-top: 10px;
+    margin-top: -20px;
+    margin-bottom: 138px;
+  }
+  .info .infoImg-left {
+    top: 20px;
+    width: 50%;
+  }
+  .info .infoBox {
+    width: 90%;
+    top: 60px;
+    margin: 0 auto;
+    padding: 10px;
+    display: block;
+  }
+  .info .infoBox .benefits {
+    text-align: center;
+  }
+  .info .infoBox .benefits .benefit {
+    width: 90%;
+    margin: 30px auto;
+  }
+  .info .infoBox .benefits .benefit .benefit-title {
+    margin-bottom: 1rem;
+  }
+  .info .infoBox .benefits h3, .info .infoBox .benefits .learn-cta {
+    text-align: left;
+  }
+  .info .infoImg-right {
+    width: 45%;
+    top: inherit;
+    bottom: -138px;
+  }
+  .ingredients .ingredients-box {
+    padding-bottom: 50px;
+    background: -o-linear-gradient(143deg, #F8E4F9 50%, #BD8CBF 50%);
+    background: linear-gradient(-53deg, #F8E4F9 50%, #BD8CBF 50%);
+  }
+  .ingredients .ingredients-box h2 {
+    margin-bottom: 30px;
+  }
+  .ingredients #ingredientsDesc {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .ingredients #ingredientsDesc .ingredientImg {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ingredients #ingredientsDesc .ingredient-text {
+    text-align: center;
+    padding-top: 0;
+    width: 90%;
+  }
+  .ingredients #ingredientsDesc .ingredient-text h5 {
+    font-size: 20px;
+  }
+  .ingredients #ingredientsDesc .slick-dots {
+    bottom: -4px;
+  }
+  .ingredients #ingredientsDesc .slick-dots li {
+    width: 14px;
+    height: 14px;
+  }
+  .ingredients #ingredientsDesc .slick-dots li button:before {
+    font-size: 30px;
+  }
+  .collection .mainTab-underlay {
+    width: 95%;
+    padding-left: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .collection .mainTab-underlay .mainTab-subtxt {
+    width: 49%;
+    top: 0;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  .collection .mainTab {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .collection .mainTab .mainTablinks {
+    font-size: 23px;
+    line-height: 1;
+    padding: 0 0 44px 0 !important;
+  }
+  .collection .mainTab .tabActive {
+    padding-bottom: 43px !important;
+  }
+  .collection .collectionWrapper {
+    width: 95%;
+  }
+  .collection .collectionWrapper .mainTabContent {
+    padding: inherit;
+  }
+  .collection .collectionWrapper .mainTabContent .productInfo-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  .collection .collectionWrapper .mainTabContent .productInfo-details a {
+    width: 100%;
+  }
+  .collection .collectionWrapper .mainTabContent .productInfo-details .productInfo-text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .collection .collectionWrapper .mainTabContent .faceButtons, .collection .collectionWrapper .mainTabContent .targetButtons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  .collection .collectionWrapper .mainTabContent .faceButtons:-webkit-scrollbar, .collection .collectionWrapper .mainTabContent .targetButtons:-webkit-scrollbar {
+    display: none;
+  }
+  .collection .collectionWrapper .mainTabContent .faceButtons .tablink, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink, .collection .collectionWrapper .mainTabContent .targetButtons .tablink, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink {
+    width: 45%;
+    height: 44px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    font-size: 14px;
+  }
+  .collection .collectionWrapper .mainTabContent .faceContent, .collection .collectionWrapper .mainTabContent .targetContent {
+    height: 732px;
+    padding: 30px;
+  }
+  .collection .collectionCta .collection-cta {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .collection .collectionCta .collection-cta:hover {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .suggestedRegimen h2 {
+    margin: 20px 0 30px 0;
+  }
+  .suggestedRegimen .regimenTab-underlay {
+    width: 95%;
+    margin-top: 0;
+    padding: 20px 0 0 0;
+  }
+  .suggestedRegimen .regimenTab-underlay .regimenTab-subtxt {
+    font-size: 15px;
+  }
+  .suggestedRegimen .regimenTab {
+    width: 95%;
+    padding: 0;
+    margin-top: -80px;
+  }
+  .suggestedRegimen .regimenTab .regimenTablinks {
+    font-size: 25px;
+    padding-top: 6px;
+    padding-bottom: 30px;
+  }
+  .suggestedRegimen .regimenTabContent .regimenDetails {
+    width: 95%;
+    margin-top: -68px;
+    padding-top: 70px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .suggestedRegimen .regimenTabContent .regimenDetails .product {
+    width: 50%;
+    margin: 20px auto 0 auto;
+  }
+  .suggestedRegimen .regimenTabContent .regimenDetails .product h3 {
+    line-height: 1.1;
+  }
+  .suggestedRegimen .regimenTabContent .regimenDetails .product h4 {
+    font-size: 60px;
+    margin: 1rem auto;
+  }
+  .suggestedRegimen .regimenTabContent .regimenDetails .product p {
+    width: 82.3%;
+  }
+  .suggestedRegimen .regimenTabContent .regimenDetails .product .oil-icon {
+    width: 110px;
+  }
+  .suggestedRegimen .regimenTabContent .regimenDetails .product .regCTA .oil-cta, .suggestedRegimen .regimenTabContent .regimenDetails .product .regCTA .coq10-cta {
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: #9F3F95;
+    padding: 10px;
+    margin: 10px 4px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .suggestedRegimen .regimenTabContent .regimenDetails .product .regCTA .oil-cta:hover, .suggestedRegimen .regimenTabContent .regimenDetails .product .regCTA .coq10-cta:hover {
+    color: #9F3F95;
+    background-color: #F8E4F9;
+    border: 1px solid #9F3F95;
+    padding: 9px 10px;
+    text-decoration: none;
+  }
+  .suggestedRegimen .regimenTabContent .regimenDetails .product .regCTA .oil-cta:hover a, .suggestedRegimen .regimenTabContent .regimenDetails .product .regCTA .coq10-cta:hover a {
+    color: #9F3F95;
+  }
+  .suggestedRegimen .regimenTabContent .regimenDetails #core1 h3, .suggestedRegimen .regimenTabContent .regimenDetails #simple1 h3 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .suggestedRegimen .regimenTabContent .regimenDetails #core1 p, .suggestedRegimen .regimenTabContent .regimenDetails #simple1 p {
+    width: 80%;
+  }
+  .suggestedRegimen .regimenTabContent .regimenDetails #simple3 {
+    width: 95%;
+  }
+  .suggestedRegimen .regimenCTA {
+    width: 95%;
+    padding: 20px 10px;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn1 {
+    display: none;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn2 {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 14px 30px;
+    font-size: 15px;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2:hover {
+    padding: 13px 30px;
+  }
+  .comments {
+    padding: 0 0 20px 0;
+    height: unset;
+    max-height: 450px;
+  }
+  .comments .quotes {
+    position: absolute;
+    left: 38%;
+  }
+  .comments #commentsSlider {
+    margin-top: 0;
+  }
+  .comments #commentsSlider .comment {
+    padding-top: 18px;
+    margin: 0 auto;
+  }
+  .comments #commentsSlider .comment .commentProduct {
+    margin-top: 30px;
+  }
+  .comments #commentsSlider .comment h4 {
+    font-size: 35px;
+    line-height: 1;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .comments #commentsSlider .comment h6 {
+    margin: 10px auto;
+  }
+  .comments #commentsSlider blockquote {
+    font-size: 15px;
+  }
+  .learn .learnBox {
+    left: 0;
+    width: 100%;
+    margin: 90% auto 0 auto;
+    padding: 0 14px;
+    text-align: center;
+    background-color: #FFF;
+  }
+  .learn .learnBox h2 {
+    margin-top: 0;
+  }
+  .learn .learnBox .learn-cta {
+    margin: 20px auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 468px) and (min-width: 439px) {
+  .suggestedRegimen .regimenTabContent .regimenDetails .product .oil-cta {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 592px) and (min-width: 483px) {
+  .suggestedRegimen .regimenTabContent .regimenDetails #core1 h3, .suggestedRegimen .regimenTabContent .regimenDetails #simple1 h3 {
+    width: 63%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+  .content-wrapper h1 {
+    font-size: 50px;
+  }
+  .content-wrapper h2 {
+    font-size: 45px;
+  }
+  .content-wrapper h3 {
+    font-size: 28px;
+  }
+  .content-wrapper h4 {
+    font-size: 50px;
+  }
+  .content-wrapper h5 {
+    font-size: 20px;
+  }
+  .content-wrapper p {
+    font-size: 16px;
+  }
+  .hero {
+    background-color: #f5f5f5;
+    padding-bottom: 4%;
+  }
+  .hero .hero-img {
+    margin-top: -20px;
+  }
+  .hero .heroBox {
+    top: 10%;
+    padding: 0;
+    width: 54%;
+  }
+  .hero .heroBox p {
+    margin: 2rem 0;
+  }
+  .info {
+    margin-bottom: -25px;
+  }
+  .info .infoBox {
+    margin-top: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .info .infoBox .benefits .benefit {
+    width: 75%;
+  }
+  .info .infoBox .benefits h3 {
+    font-size: 24px;
+  }
+  .info .infoBox .benefits h6 {
+    font-size: 18px;
+  }
+  .info .infoImg-right {
+    bottom: 0;
+  }
+  .ingredients #ingredientsDesc {
+    width: 90%;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  .ingredients #ingredientsDesc .ingredientImg {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ingredients #ingredientsDesc .ingredient-text {
+    padding-top: 0;
+    margin-top: -10px;
+  }
+  .collection .collectionWrapper {
+    width: 95%;
+  }
+  .collection .collectionWrapper .mainTabContent .faceButtons, .collection .collectionWrapper .mainTabContent .targetButtons {
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .collection .collectionWrapper .mainTabContent .faceButtons .facelink, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink, .collection .collectionWrapper .mainTabContent .targetButtons .facelink, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .collection .collectionWrapper .mainTabContent .faceButtons .facelink:hover, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .facelink:hover, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink:hover {
+    padding-bottom: 8px;
+  }
+  .collection .collectionWrapper .mainTabContent .faceContent, .collection .collectionWrapper .mainTabContent .targetContent {
+    padding: 40px;
+    height: 400px;
+  }
+  .collection .collectionWrapper .mainTabContent .faceContent .productInfo-details, .collection .collectionWrapper .mainTabContent .targetContent .productInfo-details {
+    width: 90%;
+    padding-top: 0;
+  }
+  .suggestedRegimen .regimenTabContent .regimenDetails .product h3 {
+    font-size: 28px;
+  }
+  .suggestedRegimen .regimenTabContent .regimenDetails .product h4 {
+    font-size: 80px;
+  }
+  .suggestedRegimen .regimenCTA {
+    padding: 0;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1 {
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 12px;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1:hover {
+    padding: 13px 14px;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2 {
+    padding-left: 140px;
+    padding-right: 140px;
+    font-size: 12px;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2:hover {
+    padding: 13px 140px;
+  }
+  .comments #commentsSlider .comment h4 {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+  .learn {
+    min-height: 340px;
+  }
+  .learn .learn-img {
+    margin-top: 20px;
+  }
+  .learn .learnBox {
+    width: 50%;
+  }
+  .learn .learnBox h2 {
+    margin-top: 0;
+    line-height: 1.1;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  .hero {
+    min-height: 500px;
+  }
+  .hero .heroBox {
+    top: 8%;
+  }
+  .hero .heroBox .cta {
+    width: 50%;
+  }
+  .collection .collectionWrapper .mainTabContent .faceContent, .collection .collectionWrapper .mainTabContent .targetContent {
+    padding: 30px;
+  }
+  .collection .collectionWrapper .mainTabContent .faceContent .productInfo-details, .collection .collectionWrapper .mainTabContent .targetContent .productInfo-details {
+    width: 100%;
+  }
+  .collection .collectionWrapper .mainTabContent .faceContent .productInfo-details .productInfo-text, .collection .collectionWrapper .mainTabContent .targetContent .productInfo-details .productInfo-text {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 600px) {
+  .suggestedRegimen .regimenCTA {
+    padding: 0 10px;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn1 {
+    width: 25%;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1:hover {
+    padding: 13px 8px;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2:hover {
+    padding: 13px 100px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 861px) {
+  .collection .collectionWrapper .mainTabContent .targetButtons {
+    overflow-x: unset;
+    white-space: unset;
+    -webkit-overflow-scrolling: unset;
+  }
+}
+--></style>
+<div class="content-wrapper"><section class="hero">
+<div class="hero-img"><picture> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-hero-m.jpg" media="(max-width: 599px)" /> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-hero-t.jpg" media="(max-width: 1024px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-hero.jpg" alt="the Coenzyme Q10 Collection" /> </picture></div>
+<div class="heroBox">
+<h1>The CoQ10 Collection</h1>
+<h5>The Gold Standard for Skin-Perfecting Care</h5>
+<p>CoQ10 is such a powerful, proven antioxidant that we’ve infused our largest ever range of Japanese face and body products with it. Protect your complexion from environmental damage, or reverse signs of past damage. Take action now against elasticity loss, dullness, dryness and fine lines with this revitalizing collection.</p>
+<h6><a class="cta" href="https://www.dhccare.com/shop/skincare/coenzyme-q10.html">Shop Now</a></h6>
+</div>
+<!-- <div class="clearfix"></div> --></section><section class="info">
+<div class="infoImg-left"><picture> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-samples-left-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-samples-left.jpg" alt="samples of CoQ10 products" /> </picture></div>
+<div class="infoBox">
+<h2>Coenzyme Q10</h2>
+<h5>(ubiquinone)</h5>
+<p>Coenzyme Q10, or ubiquinone (you-BIK-kwi-none), helps to promote cellular energy production and protect cells from harmful environmental stress. This golden-hued nutrient is found naturally in your skin, but as we age, coQ10 levels decrease dramatically.</p>
+<div class="benefits">
+<div class="benefit">
+<h5 class="benefit-title">Protects</h5>
+<p>Neutralizes free radicals from environmental and UV exposure</p>
+</div>
+<div class="benefit">
+<h5 class="benefit-title">Replenishes</h5>
+<p>Prevents coQ10 loss to maintain youthful‑looking skin</p>
+</div>
+<div class="benefit">
+<h5 class="benefit-title">Beautifies</h5>
+<p>Promotes your complexion’s brightness, smoothness and elasticity</p>
+</div>
+<h3>What Is CoQ10?</h3>
+<h6 class="learn-cta"><a href="https://www.dhccare.com/blog/what-is-coq10">Read More &gt;</a></h6>
+</div>
+<!-- Benefits --></div>
+<!-- infoBox -->
+<div class="infoImg-right"><picture> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-samples-right-m.png" media="(max-width: 599px)" /> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-samples-right-t.png" media="(max-width: 1024px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-samples-right.png" alt="more samples of CoQ10 products" /> </picture></div>
+</section><section class="ingredients">
+<div class="ingredients-box">
+<h2>Featured Ingredients</h2>
+<div id="ingredientsDesc">
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source src="https://www.dhccare.com/media/wysiwyg/content/ingredients/olive-fruit-oil-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/ingredients/olive-fruit-oil.jpg" alt="Olive Fruit Oil" /> </picture></div>
+<div class="ingredient-text">
+<h3>Olive Fruit Oil</h3>
+<h5>Antioxidant, moisturizes skin</h5>
+<p>Rich in antioxidants, olive oil maintains the skin’s moisture barrier and helps fight damage caused by free radicals without clogging pores. Our oil is sourced from an organic olive farm in southern Spain.</p>
+</div>
+</div>
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source src="https://www.dhccare.com/media/wysiwyg/content/ingredients/hydrolyzed-collagen-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/ingredients/hydrolyzed-collagen.jpg" alt="Hydrolyzed Collagen" /> </picture></div>
+<div class="ingredient-text">
+<h3>Hydrolyzed Collagen</h3>
+<h5>Protects and moisturizes</h5>
+<p>Skin-plumping collagen is processed into ultra-tiny peptides, making it more easily absorbed and leaving skin feeling soft and supple.</p>
+</div>
+</div>
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source src="https://www.dhccare.com/media/wysiwyg/content/ingredients/sodium-hyaluronate-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/ingredients/sodium-hyaluronate.jpg" alt="Sodium Hyaluronate" /> </picture></div>
+<div class="ingredient-text">
+<h3>Sodium Hyaluronate</h3>
+<h5>Nourishes and moisturizes</h5>
+<p>This easily absorbed nutrient and antioxidant helps to boost long-lasting moisture and revitalizes the skin’s outer layers.</p>
+</div>
+</div>
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source src="https://www.dhccare.com/media/wysiwyg/content/ingredients/vitamin-e-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/ingredients/vitamin-e.jpg" alt="Vitamin E" /> </picture></div>
+<div class="ingredient-text">
+<h3>Vitamin E</h3>
+<h5>Antioxidant, skin conditioner</h5>
+<p>Helps prevent the signs of premature aging by protecting skin against environmental pollution and free radicals, and helps the skin to retain moisture.</p>
+</div>
+</div>
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source src="https://www.dhccare.com/media/wysiwyg/content/ingredients/licorice-root-extract-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/ingredients/licorice-root-extract.jpg" alt="Licorice Root Extract" /> </picture></div>
+<div class="ingredient-text">
+<h3>Licorice Root Extract</h3>
+<h5>Soothes skin</h5>
+<p>This botanical ingredient helps to encourage skin’s suppleness.</p>
+</div>
+</div>
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source src="https://www.dhccare.com/media/wysiwyg/content/ingredients/aloe-leaf-extract-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/ingredients/aloe-leaf-extract.jpg" alt="Aloe Leaf Extract" /> </picture></div>
+<div class="ingredient-text">
+<h3>Aloe Leaf Extract</h3>
+<h5>Conditions</h5>
+<p>This soothing botanical ingredient imparts a calming effect on skin while protecting against oxidative stress.</p>
+</div>
+</div>
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source src="https://www.dhccare.com/media/wysiwyg/content/ingredients/olive-leaf-extract-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/ingredients/olive-leaf-extract.jpg" alt="Olive Leaf Extract" /> </picture></div>
+<div class="ingredient-text">
+<h3>Olive Leaf Extract</h3>
+<h5>Antioxidant, hydrating</h5>
+<p>The leaf of the olive tree helps protect the skin against pollution and helps to fight the visible signs of aging.</p>
+</div>
+</div>
+</div>
+<!-- ingredients descriptions --></div>
+<!-- ingredients box --></section><section class="collection">
+<h2>The Collection</h2>
+<div class="mainTab-underlay">
+<p class="mainTab-subtxt">firmer-looking, brighter skin</p>
+<p class="mainTab-subtxt">body care and more</p>
+</div>
+<div class="mainTab"><button id="faceCareMain" class="mainTablinks">Face Care</button> <button id="targetCareMain" class="mainTablinks">Targeted Care</button></div>
+<div class="collectionWrapper"><!-- Face Care -->
+<div id="faceCare" class="mainTabContent">
+<div id="faceProduct1" class="faceContent" data-id="1">
+<div class="productInfo-details"><a href="https://www.dhccare.com/coq10-washing-cream.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-washing-cream-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-washing-cream2.jpg" alt="CoQ10 Washing Cream" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhccare.com/coq10-washing-cream.html">CoQ10 Washing Cream</a></h3>
+<h5><a href="https://www.dhccare.com/coq10-washing-cream.html">Foaming cream facial cleanser</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/coq10-washing-cream.html">Luxurious, high-volume lather nourishes with coQ10, leaving skin feeling soft and free from impurities without stripping. Olive oil and squalane hydrate and protect skin’s natural moisture barrier. Pair with your preferred DHC cleansing oil for a Japanese double cleanse.</a></p>
+</div>
+</div>
+</div>
+<!-- face product 1 -->
+<div id="faceProduct2" class="faceContent" data-id="2">
+<div class="productInfo-details"><a href="https://www.dhccare.com/coq10-lotion.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-lotion-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-lotion2.jpg" alt="CoQ10 Lotion" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhccare.com/coq10-lotion.html">CoQ10 Lotion</a></h3>
+<h5><a href="https://www.dhccare.com/coq10-lotion.html">Alcohol-free toner for prepping skin for hydration</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/coq10-lotion.html">This hydrating toner fights damaging free radicals with coQ10 to promote collagen and elastin production. Applied after cleansing, it prepares skin for targeted treatments and more intensive moisture while delivering light antioxidant care.</a></p>
+</div>
+</div>
+</div>
+<!-- face product 2 -->
+<div id="faceProduct3" class="faceContent" data-id="3">
+<div class="productInfo-details"><a href="https://www.dhccare.com/coq10-face-milk.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-milk-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-milk2.jpg" alt="CoQ10 Milk" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhccare.com/coq10-face-milk.html">CoQ10 Milk</a></h3>
+<h5><a href="https://www.dhccare.com/coq10-face-milk.html">Lightweight daytime moisturizer</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/coq10-face-milk.html">Use this antioxidant-fueled facial milk to encourage firmness and help neutralize free radicals at the surface level. Olive oil, collagen and sodium hyaluronate hydrate and protect skin’s natural moisture barrier, and licorice root extract and serine soothe the complexion.</a></p>
+</div>
+</div>
+</div>
+<!-- face product 3 -->
+<div id="faceProduct4" class="faceContent" data-id="4">
+<div class="productInfo-details"><a href="https://www.dhccare.com/q10-cream.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-cream-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-cream2.jpg" alt="Q10 Cream" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhccare.com/q10-cream.html">Q10 Cream</a></h3>
+<h5><a href="https://www.dhccare.com/q10-cream.html">High-performance moisturizer</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/q10-cream.html">An age-defying complex of olive oil and olive leaf extract aids in soothing and revitalizing without clogging pores. Rich, firming emollient formula helps promotes collagen to maintain tone and resilience for supple, younger-looking skin.</a></p>
+</div>
+</div>
+</div>
+<!-- face product 4 -->
+<div id="faceProduct5" class="faceContent" data-id="5">
+<div class="productInfo-details"><a href="https://www.dhccare.com/coq10-eye-cream.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-eye-cream-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-eye-cream2.jpg" alt="CoQ10 Eye Cream" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhccare.com/coq10-eye-cream.html">CoQ10 Eye Cream</a></h3>
+<h5><a href="https://www.dhccare.com/coq10-eye-cream.html">Potent fine line treatment for the eyes</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/coq10-eye-cream.html">Fend off fine lines and crow’s feet with this luxurious cream. Vitamins A, C and E fight signs of visible aging, and shea butter and squalane deeply hydrate the delicate eye area. Olive oil-infused formula easily absorbs for layering over additional treatments and under makeup.</a></p>
+</div>
+</div>
+</div>
+<!-- face product 5 -->
+<div id="faceProduct6" class="faceContent" data-id="6">
+<div class="productInfo-details"><a href="https://www.dhccare.com/coq10-quick-gel-brightening-moisture.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-quick-gel-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-quick-gel2.jpg" alt="CoQ10 Quick Gel Brightening Moisture" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhccare.com/coq10-quick-gel-brightening-moisture.html">CoQ10 Quick Gel Brightening Moisture</a></h3>
+<h5><a href="https://www.dhccare.com/coq10-quick-gel-brightening-moisture.html">Multi-action gel cream for every skin type</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/coq10-quick-gel-brightening-moisture.html">Simplify your daily beauty routine with this fast-absorbing, all-in-one gel cream for all skin types. Creamy gel tones, primes and brightens with daisy extract and vitamin C while nourishing with olive fruit oil and locking in all-day moisture with sodium hyaluronate. For enhanced benefits, use it as a hydrating mask treatment.</a></p>
+</div>
+</div>
+</div>
+<!-- face product 6 -->
+<div class="faceButtons">
+<p id="faceProd-btn1" class="faceLink" data-id="1">CoQ10 Washing Cream</p>
+<p id="faceProd-btn2" class="faceLink" data-id="2">CoQ10 Lotion</p>
+<p id="faceProd-btn3" class="faceLink" data-id="3">CoQ10 Milk</p>
+<p id="faceProd-btn4" class="faceLink" data-id="4">Q10 Cream</p>
+<p id="faceProd-btn5" class="faceLink" data-id="5">CoQ10 Eye Cream</p>
+<p id="faceProd-btn6" class="faceLink" data-id="6">CoQ10 Quick Gel Brightening Moisture</p>
+</div>
+<!-- faceButtons --></div>
+<!-- Face Care --> <!-- targeted Care -->
+<div id="targetCare" class="mainTabContent">
+<div id="targetProduct1" class="targetContent" data-id="1">
+<div class="productInfo-details"><a href="https://www.dhccare.com/coq10-eye-cream.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-eye-cream-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-eye-cream2.jpg" alt="CoQ10 Eye Cream" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhccare.com/coq10-eye-cream.html">CoQ10 Eye Cream</a></h3>
+<h5><a href="https://www.dhccare.com/coq10-eye-cream.html">Potent fine line treatment for the eyes</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/coq10-eye-cream.html">Fend off fine lines and crow’s feet with this luxurious cream. Vitamins A, C and E fight signs of visible aging, and shea butter and squalane deeply hydrate the delicate eye area. Olive oil-infused formula easily absorbs for layering over additional treatments and under makeup.</a></p>
+</div>
+</div>
+</div>
+<!-- targeted product 1 -->
+<div id="targetProduct2" class="targetContent" data-id="2">
+<div class="productInfo-details"><a href="https://www.dhccare.com/coq10-neck-cream.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-neck-cream-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-neck-cream2.jpg" alt="CoQ10 Neck Cream" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhccare.com/coq10-neck-cream.html">CoQ10 Neck Cream</a></h3>
+<h5><a href="https://www.dhccare.com/coq10-neck-cream.html">Shea-based cream for neck and décolletage</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/coq10-neck-cream.html">Refines tone and texture of the delicate neck area with vitamins A, C and E. Serine and allantoin calm skin, and midweight, creamy texture absorbs quickly with no residue.</a></p>
+</div>
+</div>
+</div>
+<!-- targeted product 2 -->
+<div id="targetProduct3" class="targetContent" data-id="3">
+<div class="productInfo-details"><a href="https://www.dhccare.com/coq10-mask.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-mask-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-mask2.jpg" alt="Q10 Mask" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhccare.com/q10-mask.html">Q10 Mask</a></h3>
+<h5><a href="https://www.dhccare.com/q10-mask.html">Antioxidant-powered sheet mask for all skin types</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/q10-mask.html">This 20-minute treatment addresses elasticity loss with coQ10. Sodium hyaluronate and collagen help maintain skin’s natural moisture barrier. Serine, licorice root extract and aloe soothe, while the mask’s customizable Japanese design allows for a perfect fit.</a></p>
+</div>
+</div>
+</div>
+<!-- targeted product 3 -->
+<div id="targetProduct4" class="targetContent" data-id="4">
+<div class="productInfo-details"><a href="https://www.dhccare.com/q10-body-soap.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-body-soap-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-body-soap2.jpg" alt="Q10 Body Soap" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhccare.com/q10-body-soap.html">Q10 Body Soap</a></h3>
+<h5><a href="https://www.dhccare.com/q10-body-soap.html">Body bar for all skin types</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/q10-body-soap.html">One of our top-selling products, this gentle bar soap is formulated with antioxidant coQ10 and vitamin E to protect skin against environmental pollution and free radicals. Botanicals like carrot root extract revitalize skin’s appearance, and virgin olive oil and olive leaf extract nourish and hydrate.</a></p>
+</div>
+</div>
+</div>
+<!-- targeted product 4 -->
+<div id="targetProduct5" class="targetContent" data-id="5">
+<div class="productInfo-details"><a href="https://www.dhccare.com/coq10-hand-cream.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-hand-cream-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-hand-cream2.jpg" alt="CoQ10 Hand Cream" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhccare.com/coq10-hand-cream.html">CoQ10 Hand Cream</a></h3>
+<h5><a href="https://www.dhccare.com/coq10-hand-cream.html">Antioxidant hand cream</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/coq10-hand-cream.html">Soothing, rich cream hydrates hands while protecting them from moisture loss. Shea-based formula contains antioxidant-rich carrot root extract, vitamin E and olive leaf extract to nourish and protect. Lightweight texture absorbs easily.</a></p>
+</div>
+</div>
+</div>
+<!-- targeted product 5 -->
+<div class="targetButtons">
+<p id="targetProd-btn1" class="targetlink" data-id="1">CoQ10 Eye Cream</p>
+<p id="targetProd-btn2" class="targetlink" data-id="2">CoQ10 Neck Cream</p>
+<p id="targetProd-btn3" class="targetlink" data-id="3">Q10 Mask</p>
+<p id="targetProd-btn4" class="targetlink" data-id="4">Q10 Body Soap</p>
+<p id="targetProd-btn5" class="targetlink" data-id="5">CoQ10 Hand Cream</p>
+</div>
+<!-- targetButtons --></div>
+<!-- targetedCare --></div>
+<!-- collection wrapper -->
+<div class="collectionCta">
+<h6><a class="collection-cta" href="https://www.dhccare.com/shop/skincare/coenzyme-q10.html">Shop The Collection</a></h6>
+</div>
+</section><section class="suggestedRegimen">
+<h2>Suggested Regimen</h2>
+<div class="regimenTab-underlay">
+<p class="regimenTab-subtxt">Maximum care</p>
+<p class="regimenTab-subtxt">Streamlined care</p>
+</div>
+<div class="regimenTab"><button id="regimenCoreBtn" class="regimenTablinks">Core</button> <button id="regimenSimpleBtn" class="regimenTablinks">Simplified</button></div>
+<div id="regimenCore" class="regimenTabContent">
+<div class="regimenDetails">
+<div id="core1" class="product" data-id="1"><img class="oil-icon" src="https://www.dhccare.com/media/wysiwyg/content/common/oil-cleanse-icon.svg" alt="Oil Cleanse" />
+<div class="product-text">
+<h4>1</h4>
+<h3>Oil Cleanse</h3>
+<p>Choose an oil cleanser</p>
+</div>
+<div class="regCTA"><a class="oil-cta" href="https://www.dhccare.com/shop/skincare/double-cleanse.html">Shop Oil Cleansers</a></div>
+</div>
+<div id="core2" class="product" data-id="2"><img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/regimen/CoQ10-washing-cream.jpg" alt="CoQ10 Washing Cream" />
+<div class="product-text">
+<h4>2</h4>
+<h3>Lathering Cleanse</h3>
+<p>CoQ10 Washing Cream</p>
+</div>
+<div class="regCTA"><a class="coq10-cta" href="https://www.dhccare.com/shop/skincare/coenzyme-q10.html">Shop the Collection</a></div>
+</div>
+<div id="core3" class="product" data-id="3"><img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/regimen/CoQ10-lotion.jpg" alt="CoQ10 Lotion" />
+<div class="product-text">
+<h4>3</h4>
+<h3>Tone</h3>
+<p>CoQ10 Lotion</p>
+</div>
+</div>
+<div id="core4" class="product" data-id="4"><img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/regimen/CoQ10-milk-cream.jpg" alt="CoQ10 Milk or Q10 Cream" />
+<div class="product-text">
+<h4>4</h4>
+<h3>Moisturize</h3>
+<p>CoQ10 Milk or Q10 Cream</p>
+</div>
+</div>
+</div>
+<!-- regimen details --></div>
+<!-- regimen Core -->
+<div id="regimenSimple" class="regimenTabContent">
+<div class="regimenDetails">
+<div id="simple1" class="product" data-id="1"><img class="oil-icon" src="https://www.dhccare.com/media/wysiwyg/content/common/oil-cleanse-icon.svg" alt="Oil Cleanse" />
+<div class="product-text">
+<h4>1</h4>
+<h3>Oil Cleanse</h3>
+<p>Choose an oil cleanser</p>
+</div>
+<div class="regCTA"><a class="oil-cta" href="https://www.dhccare.com/shop/skincare/double-cleanse.html ">Shop Oil Cleansers</a></div>
+</div>
+<div id="simple2" class="product" data-id="2"><img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/regimen/CoQ10-washing-cream.jpg" alt="Lathering Cleanse" />
+<div class="product-text">
+<h4>2</h4>
+<h3>Lathering Cleanse</h3>
+<p>CoQ10 Washing Cream</p>
+</div>
+<div class="regCTA"><a class="coq10-cta" href="https://www.dhccare.com/shop/skincare/coenzyme-q10.html">Shop The Collection</a></div>
+</div>
+<div id="simple3" class="product" data-id="3"><picture> <!--  --> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/regimen/CoQ10-quick-gel-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/regimen/CoQ10-quick-gel.jpg" alt="CoQ10 Quick Gel Brightening Moisture" /> </picture>
+<div class="product-text">
+<h4>3</h4>
+<h3>Tone, Moisturize, Prime</h3>
+<p>CoQ10 Quick Gel Brightening Moisture</p>
+</div>
+</div>
+</div>
+<!-- regimen details --></div>
+<!-- regimen Simplified -->
+<div class="regimenCTA">
+<div class="regCTA-btn1"><a class="regimenCTA-1" href="https://www.dhccare.com/shop/skincare/cleansers-exfoliants.html">Shop Oil Cleansers</a></div>
+<div class="regCTA-btn2"><a class="regimenCTA-2" href="https://www.dhccare.com/shop/skincare/coenzyme-q10.html">Shop The Collection</a></div>
+</div>
+<!-- regimen cta --></section><section class="comments">
+<div class="quotes"><img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/quote-marks.svg" alt="" /></div>
+<div id="commentsSlider">
+<div class="comment one">
+<h6 class="commentProduct">Washing Cream</h6>
+<h4>Fantastic product</h4>
+<h6>This is the best cleanser I have ever used. It leaves my skin so soft and so clean, no matter what has been on it. I use it in the shower every day and I glow!</h6>
+<blockquote>Loric6961</blockquote>
+<blockquote>Montgomery, AL</blockquote>
+</div>
+<!-- comment 1 -->
+<div class="comment two">
+<h6 class="commentProduct">CoQ10 Lotion</h6>
+<h4>Fabulous!!</h4>
+<h6>This product is essential for my daily skin care routine. It prepares my face for the next step in my makeup application. It is also wonderful even when used alone on those days I choose not to apply makeup.</h6>
+<blockquote>Frances</blockquote>
+<blockquote>Pell City, Alabama</blockquote>
+</div>
+<!-- comment 2 -->
+<div class="comment three">
+<h6 class="commentProduct">CoQ10 Milk</h6>
+<h4>Great moisture under makeup</h4>
+<h6>I love the CoQ10 Milk because it's lightweight, but still does an excellent job of moisturizing.</h6>
+<blockquote>RoseGrace</blockquote>
+<blockquote>Los Angeles, CA</blockquote>
+</div>
+<!-- comment 3 -->
+<div class="comment four">
+<h6 class="commentProduct">Quick Gel Brightening Moisture</h6>
+<h4>Go-to</h4>
+<h6>This has been my go-to anti-aging for a couple of years now. I love how it leaves my face brighter and younger looking and is light, not greasy. Highly recommend!</h6>
+<blockquote>SPSA</blockquote>
+<blockquote>Southeast USA</blockquote>
+</div>
+<!-- comment 4 -->
+<div class="comment five">
+<h6 class="commentProduct">Q10 Cream</h6>
+<h4>Absolutely the BEST cream out there!</h4>
+<h6>I use Q10 both morning and night. It absorbs quickly so I can apply foundation about a minute or two after application. At night, oh my gosh, my skin drinks it in!! I LOVE Q10.</h6>
+<blockquote>Winegirl</blockquote>
+<blockquote>Santa Maria, CA</blockquote>
+</div>
+<!-- comment 5 -->
+<div class="comment six">
+<h6 class="commentProduct">CoQ10 Eye Cream</h6>
+<h4>Very pleased with this cream!</h4>
+<h6>I am so glad to have discovered this eye cream… Just knowing I have it on, it feels my skin is taken care of!</h6>
+<blockquote>Tammi57</blockquote>
+<blockquote>Orland Park, Il</blockquote>
+</div>
+<!-- comment 6 -->
+<div class="comment seven">
+<h6 class="commentProduct">Q10 Mask</h6>
+<h4>Fabulous product</h4>
+<h6>LOVED the way it made my skin look… I'm definitely going to add this in my facial care regime.</h6>
+<blockquote>mimiof6grnds</blockquote>
+<blockquote>Pensacola, FL</blockquote>
+</div>
+<!-- comment 7 -->
+<div class="comment eight">
+<h6 class="commentProduct">CoQ10 Neck Cream</h6>
+<h4>Excellent Product Overall</h4>
+<h6>This neck cream feels very rich and luxurious and makes my skin soft and supple. Using this product instead of my regular facial moisturizer not only reminds me to specifically take care of my neck and chest, but feels very luxurious and pampering.</h6>
+<blockquote>Rebecca28</blockquote>
+<blockquote>Central, IL</blockquote>
+</div>
+<!-- comment 8 -->
+<div class="comment nine">
+<h6 class="commentProduct">CoQ10 Hand Cream</h6>
+<h4>My hands need this cream</h4>
+<h6>I handle a lot of paper at work. My hands get dry and can crack. The Q10 hand cream every night at bedtime keeps the dryness under control and nearly eliminates the cracking all winter. It keeps them soft in summer. Excellent product. Thanks!!</h6>
+<blockquote>Frances 59</blockquote>
+<blockquote>Richmond, VA</blockquote>
+</div>
+<!-- comment 9 -->
+<div class="comment ten">
+<h6 class="commentProduct">Q10 Body Soap</h6>
+<h4>Since trying this, we've used no other brand!</h4>
+<h6>Love the foaminess, and the way it leaves no film! It rinses off quickly and completely!</h6>
+<blockquote>Kleo</blockquote>
+<blockquote>Boston, MA</blockquote>
+</div>
+<!-- comment 10 --></div>
+<!-- commentsSlider --></section><section class="learn">
+<div class="learn-img"><picture> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-learn-m.jpg" media="(max-width: 599px)" /> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-learn-t.jpg" media="(max-width: 1024px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-learn.jpg" alt="Learn about the CoQ10 products" /> </picture></div>
+<div class="learnBox">
+<h2>How to Use the CoQ10 Collection</h2>
+<p>Cleanse, tone, moisturize and spot-treat with our range of products infused with this powerful nutrient.</p>
+<h6 class="cta learn-cta"><a href="https://www.dhccare.com/blog/what-is-coq10">Learn More &gt;</a></h6>
+</div>
+</section></div>
+<!-- content wrapper -->
+<script type="text/javascript" xml="space">// <![CDATA[
+  require([
+    'jquery'
+    ], function ($) {
+      $(document).ready(function () {
+// Set intial tab states
+    $("#faceCare").css("display", "block");
+    $("#faceCareMain").addClass("tabActive");
+    $("#faceProd-btn1").addClass("subTabActive");
+    $("#faceProduct1").css("display", "block");
+    $("#regimenSimple").css("display", "block");
+    $("#regimenSimpleBtn").addClass("tabActive");
+    $("#csimple").css("display", "block");
+
+// Collection
+    function faceCare() {
+      $(".faceButtons").on('click touchstart', function(subEvent) {
+        var subTarget = $( subEvent.target );
+        var i;
+        $("p").removeClass("subTabActive");
+        subTarget.addClass("subTabActive");
+        $(".faceContent").css("display", "none");
+        i = subTarget.data("id");
+        $("#faceProduct" + i).css("display", "block");
+      }); // faceButtons sub-event
+    }; // face function
+    function targetCare() {
+      $(".targetButtons").on('click touchstart', function(subEvent) {
+        var subTarget = $( subEvent.target );
+        var i;
+        $("p").removeClass("subTabActive");
+        subTarget.addClass("subTabActive");
+        $(".targetContent").css("display", "none");
+        i = subTarget.data("id");
+        $("#targetProduct" + i).css("display", "block");
+      }); // targetButtons sub-event
+    }; // targetCare function
+
+    faceCare();
+
+    $(".mainTab").on('click touchstart', function(event) {
+      var target = $( event.target );
+      $(".mainTab .mainTablinks").removeClass("tabActive");
+      target.addClass("tabActive");
+      $(".mainTab-subtxt").removeClass("tabActive");
+
+      if (target.is("#faceCareMain")) {
+        $("#faceCare").css("display", "block");
+        $("#targetCare").css("display", "none");
+        $("#faceProduct1").css("display", "block");
+        $("#faceProd-btn1").addClass("subTabActive");
+        faceCare();
+      } else if (target.is("#targetCareMain")) {
+        $("#faceCare").css("display", "none");
+        $("#targetCare").css("display", "block");
+        $("#targetProduct1").css("display", "block");
+        $("#targetProd-btn1").addClass("subTabActive");
+        targetCare();
+      } else {
+        console.log("Collection selection error!");
+      } // if else
+    });// mainTab click event
+// Regimen
+    $(".regimenTab").on('click touchstart', function(event) {
+      var target = $( event.target );
+      $(".regimenTab .regimenTablinks").removeClass("tabActive");
+      target.addClass("tabActive");
+      $(".regimenTab-subtxt").removeClass("tabActive");
+
+      if (target.is("#regimenCoreBtn")) {
+        $("#regimenCore").css("display", "block");
+        $("#regimenSimple").css("display", "none");
+        $("core1").css("display", "block");
+      } else if (target.is("#regimenSimpleBtn")) {
+        $("#regimenCore").css("display", "none");
+        $("#regimenSimple").css("display", "block");
+        $("#simple1").css("display", "block");
+      } else {
+        console.log("Regimen selection error!");
+      } // if else
+    });// Regimen Tab click event
+}); // Document Ready
+    });
+// ]]></script>

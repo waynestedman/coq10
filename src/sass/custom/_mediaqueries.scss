@@ -1,4 +1,4 @@
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 599px) {
   .cms-page-view .column.main p {
     margin: 0 auto 10px auto;
   }
@@ -55,7 +55,7 @@
       }
       p {
         width: 94%;
-        margin: 1rem auto 1.5rem auto;
+        margin: 1.5rem auto !important;
       }
       .cta {
         margin: 0 auto;
@@ -64,10 +64,12 @@
   } // hero
   .info {
     position: relative;
+    padding-top: 10px;
+    margin-top: -20px;
     margin-bottom: 138px;
 
     .infoImg-left {
-      top: 0;
+      top: 20px;
       width: 50%;
     }
     .infoBox {
@@ -101,10 +103,11 @@
   } // info
   .ingredients {
     .ingredients-box {
+      padding-bottom: 50px;
       background: linear-gradient(-53deg, $q10purpleLT 50%, $q10purple 50%);
 
       h2 {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
       }
     } // ingredients-box
     #ingredientsDesc {
@@ -127,7 +130,7 @@
         }
       } // ingredient-text
       .slick-dots {
-        // bottom: -18px;
+        bottom: -4px;
 
         li {
           width: 14px;
@@ -171,7 +174,6 @@
 
     } //mainTab
     .collectionWrapper {
-      // box-shadow: none;
       width: 95%;
 
       .mainTabContent {
@@ -204,7 +206,6 @@
             display: none;
           }
           .tablink, .targetlink {
-            // display: inline-block;
             width: 45%;
             height: 44px;
             flex: 0 0 auto;
@@ -217,15 +218,21 @@
         }
       } // mainTabContent
     } // collectionWrapper
-    .collection-cta {
-      h6 {
-        width: 95%;
-      }
-    } // collection-cta
+    .collectionCta {
+      .collection-cta {
+        padding-left: 60px;
+        padding-right: 60px;
+
+        &:hover {
+          padding-left: 60px;
+          padding-right: 60px;
+        }
+      } // collection-cta
+    }
   } // collection
   .suggestedRegimen {
     h2 {
-      margin: 10px 0 40px 0;
+      margin: 20px 0 30px 0;
     }
     .regimenTab-underlay {
       width: 95%;
@@ -258,6 +265,9 @@
           width: 50%;
           margin: 20px auto 0 auto;
 
+          h3 {
+            line-height: 1.1;
+          }
           h4 {
             font-size: 60px;
             margin: 1rem auto;
@@ -268,39 +278,39 @@
           .oil-icon {
             width: 110px;
           }
-          .oil-cta, .coq10-cta {
-            display: inline-block;
-            text-transform: uppercase;
-            background-color: $q10purpleDK;
-            width: 95%;
-            padding: 10px;
-            margin: 10px auto;
+          .regCTA {
+            // width: 50%;
 
-            a {
+            .oil-cta, .coq10-cta {
+              display: inline-block;
+              text-transform: uppercase;
+              background-color: $q10purpleDK;
+              // width: 95%;
+              padding: 10px;
+              margin: 10px 4px;
               color: #FFF;
               font-size: 15px;
               font-weight: 400;
-            }
-            &:hover {
-              color: $q10purpleDK;
-              background-color: $q10purpleLT;
-              border: 1px solid $q10purpleDK;
-              padding: 8px;
 
-              a {
+              &:hover {
                 color: $q10purpleDK;
+                background-color: $q10purpleLT;
+                border: 1px solid $q10purpleDK;
+                padding: 9px 10px;
                 text-decoration: none;
-              }
-            } // hover
-            .coq10-btn {
-              padding: 0;
-              background-color: inherit;
+
+                a {
+                  color: $q10purpleDK;
+
+                }
+              } // hover
             }
           }
+
         } // product
         #core1, #simple1 {
           h3 {
-            width: 78%;
+            width: 80%;
             margin-left: auto;
             margin-right: auto;
             text-align: center;
@@ -309,38 +319,54 @@
             width: 80%;
           }
         } // #core1
+        #simple3 {
+          width: 95%;
+        }
       } //  regimenDetails
     } // regimenTabContent
     .regimenCTA {
       width: 95%;
       padding: 20px 10px;
 
-      .regimenCTA-1 {
+      .regCTA-btn1 {
         display: none;
-      }
-      .regimenCTA-2 {
-        width: 100%;
+      } // regCTA-btn1
+      .regCTA-btn2 {
+        // padding: 10px 0;
         margin: 0 auto;
-        padding: 15px;
-        a {
+        width: 90%;
+
+        // &:hover {
+        //   padding: 9px 0;
+        // }
+        .regimenCTA-2 {
+          text-align: center;
+          margin: 0 auto;
+          padding: 14px 30px;
           font-size: 15px;
+
+          &:hover {
+            padding: 13px 30px;
+          }
         }
-      } // regimenCTA-1 -2
+      } // regCTA-btn2
     } // regimenCTA
   } // suggestedRegimen
   .comments {
-    padding: 0;
+    padding: 0 0 20px 0;
+    height: unset;
+    max-height: 450px;
 
     .quotes {
       position: absolute;
-      left: 40%;
+      left: 38%;
     }
 
     #commentsSlider {
       margin-top: 0;
 
       .comment {
-        // width: 10% !important;
+        padding-top: 18px;
         margin: 0 auto;
 
         .commentProduct {
@@ -349,7 +375,8 @@
         h4 {
           font-size: 35px;
           line-height: 1;
-          margin-bottom: 0;
+          margin-bottom: 10px;
+          margin-top: 30px;
         }
         h6 {
           margin: 10px auto;
@@ -388,7 +415,15 @@
     padding-right: 20px;
   }
 } // min 439 to max 468 - Mobile exception
-
+@media only screen and (max-width: 592px) and (min-width: 483px) {
+  .suggestedRegimen .regimenTabContent .regimenDetails {
+    #core1, #simple1 {
+      h3 {
+        width: 63%;
+      }
+    }
+  }
+} // min 439 to max 468 - Mobile exception
 @media only screen and (max-width: 1024px) and (min-width: 600px) {
   .content-wrapper {
     h1 {
@@ -430,7 +465,8 @@
     } // heroBox
   } // hero
   .info {
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
+      margin-bottom: -25px;
 
     .infoBox {
       margin-top: 40px;
@@ -441,17 +477,24 @@
         .benefit {
           width: 75%;
         }
+        h3 {
+          font-size: 24px;
+        }
+        h6 {
+          font-size: 18px;
+        }
       }
     }
     .infoImg-right {
-      bottom: -44px;
+      bottom: 0;
     }
   } // info
   .ingredients {
     #ingredientsDesc {
       width: 90%;
       padding-bottom: 20px;
-      
+      margin-bottom: 10px;
+
       .ingredientImg {
         float: none;
         margin-left: auto;
@@ -506,26 +549,57 @@
       }
     }
     .regimenCTA {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 0;
+      // padding-left: 20px;
+      // padding-right: 20px;
 
-      .regimenCTA-2 {
-          padding-top: 32px;
-      } // regimenCTA-2
+      .regCTA-btn1 {
+        .regimenCTA-1 {
+          padding-left: 14px;
+          padding-right: 14px;
+          font-size: 12px;
+
+          &:hover {
+            padding: 13px 14px;
+          }
+        }
+      }
+      .regCTA-btn2 {
+        .regimenCTA-2 {
+            padding-left: 140px;
+            padding-right: 140px;
+            font-size: 12px;
+
+            &:hover {
+              padding: 13px 140px;
+            }
+        } // regimenCTA-2
+      }
     } // regimenCTA
   } // suggestedRegimen
   .comments {
     #commentsSlider {
       .comment {
         h4 {
-          font-size: 45px;
+          font-size: 40px;
+          line-height: 1.1;
         }
       }
     }
   }
   .learn {
+    min-height: 340px;
+
+    .learn-img {
+      margin-top: 20px;
+    }
     .learnBox {
-        width: 50%;
+      width: 50%;
+
+      h2 {
+        margin-top: 0;
+        line-height: 1.1;
+      }
     }
   }
 } // min 600 to max 1024 - Tablet
@@ -559,28 +633,41 @@
       } // mainTabContent
     } // collectionWrapper
   } // collection
+} // min 600 to max 800 - Tablet exceptions
+@media only screen and (max-width: 700px) and (min-width: 600px) {
   .suggestedRegimen {
     .regimenCTA {
-      .regimenCTA-1, .regimenCTA-2 {
-        a {
-          line-height: 1;
-          font-size: 18px;
-        }
-      } // cta-1 cta-2
-      .regimenCTA-1 {
-        padding: 12px 0;
-        width: 23%;
+      padding: 0;
+      .regCTA-btn1 {
+        width: 25%;
+        // margin: 16px;
 
-        &:hover {
-          padding: 11px 0;
+        .regimenCTA-1 {
+          padding-left: 8px;
+          padding-right: 8px;
+          font-size: 11px;
+
+          &:hover {
+            padding: 13px 8px;
+          }
         }
-      } // CTA-1
-      .regimenCTA-2 {
-        padding: 22px 0 12px 0;
-      } // CTA-2
+      }
+      .regCTA-btn2 {
+        // margin: 16px;
+
+        .regimenCTA-2 {
+            padding-left: 100px;
+            padding-right: 100px;
+            font-size: 11px;
+
+            &:hover {
+              padding: 13px 100px;
+            }
+        } // regimenCTA-2
+      }
     } // regimenCTA
   } // suggestedRegimen
-} // min 600 to max 800 - Tablet exceptions
+} // min 600 to max 700 - Tablet exceptions
 @media only screen and (max-width: 1024px) and (min-width: 861px) {
   .collection {
     .collectionWrapper {

@@ -241,7 +241,7 @@ body {
 }
 
 .hero .hero-img img {
-  max-height: 550px;
+  max-height: 780px;
 }
 
 .hero .heroBox {
@@ -264,16 +264,15 @@ body {
 }
 
 .hero .heroBox p {
-  margin: 2.5rem 0 4rem 0;
+  margin: 2rem 0 4rem 0;
 }
 
 .hero .heroBox .cta {
-  width: 40%;
-  margin: 0;
+  margin-bottom: 0;
   background-color: #9F3F95;
-  color: #FFF;
   text-align: center;
-  padding: 10px;
+  padding: 14px 80px;
+  color: #FFF;
 }
 
 .hero .heroBox .cta:hover {
@@ -281,17 +280,23 @@ body {
   background-color: #F8E4F9;
   border: 1px solid #9F3F95;
   text-decoration: none;
+  padding: 13px 80px;
+  color: #9F3F95;
 }
 
 .info {
   position: relative;
-  margin-bottom: 68px;
+  padding-bottom: 70px;
 }
 
 .info .infoImg-left {
   margin-top: 0;
   width: 30%;
   position: absolute;
+}
+
+.info .infoImg-left img {
+  margin: 0 !important;
 }
 
 .info .infoBox {
@@ -337,7 +342,7 @@ body {
 
 .info .infoImg-right {
   position: absolute;
-  bottom: 0;
+  bottom: -25px;
   right: 0;
   width: 40%;
 }
@@ -354,7 +359,7 @@ body {
 
 .ingredients .ingredients-box h2 {
   color: #FFF;
-  padding-top: 20px;
+  padding-top: 30px;
   margin-bottom: 0;
 }
 
@@ -397,18 +402,18 @@ body {
 
 .ingredients #ingredientsDesc .slick-dots li button:before {
   color: #BD8CBF;
-  font-size: 14px;
+  font-size: 30px;
   line-height: 20px;
 }
 
 .collection {
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 
 .collection h2 {
-  margin: 4rem auto;
-  padding-bottom: 2rem;
+  margin: 60px auto 30px auto;
+  padding-bottom: 2.9rem;
   text-align: center;
 }
 
@@ -546,34 +551,28 @@ body {
   margin: 20px 0;
 }
 
-.collection .collection-cta {
+.collection .collectionCta {
   margin: 20px auto 0 auto;
   text-align: center;
 }
 
-.collection .collection-cta h6 {
+.collection .collectionCta .collection-cta {
   margin: 0 auto;
   width: 50%;
-  padding: 10px 20px;
   text-transform: uppercase;
   background-color: #9F3F95;
   font-weight: 400;
   border: 1px solid #BD8CBF;
-}
-
-.collection .collection-cta h6 a {
+  padding: 14px 160px;
   color: #FFF;
 }
 
-.collection .collection-cta h6:hover {
+.collection .collectionCta .collection-cta:hover {
   color: #9F3F95;
   background-color: #F8E4F9;
   border: 1px solid #9F3F95;
   text-decoration: none;
-}
-
-.collection .collection-cta h6:hover a {
-  color: #9F3F95;
+  padding: 13px 160px;
 }
 
 .suggestedRegimen {
@@ -586,7 +585,9 @@ body {
 }
 
 .suggestedRegimen h2 {
+  margin-top: 30px;
   margin-bottom: 54px;
+  padding-bottom: 30px;
   color: #fff;
 }
 
@@ -650,7 +651,7 @@ body {
 }
 
 .suggestedRegimen .regimenTabContent .regimenDetails .product {
-  margin: 0 auto;
+  margin: 1.2rem auto 0 auto;
   flex: 0 1 auto;
 }
 
@@ -670,6 +671,8 @@ body {
 
 .suggestedRegimen .regimenTabContent .regimenDetails .product h4 {
   font-size: 84px;
+  margin: 1rem auto;
+  line-height: 1;
 }
 
 .suggestedRegimen .regimenTabContent .regimenDetails .product h3 {
@@ -686,45 +689,60 @@ body {
   background-color: #FFF;
   width: 90%;
   margin: 0 auto 30px auto;
-  padding: 14px 40px 20px 40px;
+  padding: 20px 10px;
   display: flex;
-  justify-content: space-between;
 }
 
-.suggestedRegimen .regimenCTA .regimenCTA-1, .suggestedRegimen .regimenCTA .regimenCTA-2 {
+.suggestedRegimen .regimenCTA .regCTA-btn1 {
+  text-align: center;
   display: inline-block;
-  background-color: #9F3F95;
-  color: #FFF;
-  padding: 16px 0;
+  cursor: pointer;
   text-transform: uppercase;
+  margin: 20px auto;
+  width: 25%;
 }
 
-.suggestedRegimen .regimenCTA .regimenCTA-1 a, .suggestedRegimen .regimenCTA .regimenCTA-2 a {
+.suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1 {
   color: #FFF;
+  background-color: #9F3F95;
   font-size: 20px;
   font-weight: 400;
+  text-decoration: none;
+  padding: 14px 20px;
 }
 
-.suggestedRegimen .regimenCTA .regimenCTA-1:hover, .suggestedRegimen .regimenCTA .regimenCTA-2:hover {
-  padding: 14px 0;
+.suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1:hover {
+  padding: 13px 20px;
   color: #9F3F95;
   background-color: #F8E4F9;
   border: 1px solid #9F3F95;
+  text-decoration: none;
+}
+
+.suggestedRegimen .regimenCTA .regCTA-btn2 {
+  text-align: center;
+  display: inline-block;
   cursor: pointer;
-  text-decoration: none;
+  text-transform: uppercase;
+  margin: 20px auto;
+  width: 70%;
 }
 
-.suggestedRegimen .regimenCTA .regimenCTA-1:hover a, .suggestedRegimen .regimenCTA .regimenCTA-2:hover a {
+.suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2 {
+  color: #FFF;
+  background-color: #9F3F95;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 14px 260px;
+}
+
+.suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2:hover {
+  padding: 13px 260px;
   color: #9F3F95;
+  background-color: #F8E4F9;
+  border: 1px solid #9F3F95;
   text-decoration: none;
-}
-
-.suggestedRegimen .regimenCTA .regimenCTA-1 {
-  width: 21%;
-}
-
-.suggestedRegimen .regimenCTA .regimenCTA-2 {
-  width: 75%;
 }
 
 .comments {
@@ -801,7 +819,7 @@ body {
 
 .learn .learnBox .learn-cta {
   text-transform: uppercase;
-  margin: 40px 0 0 0;
+  margin: 20px 0 0 0;
   text-align: left;
 }
 
@@ -809,7 +827,7 @@ body {
   color: #9F3F95;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 599px) {
   .cms-page-view .column.main p {
     margin: 0 auto 10px auto;
   }
@@ -863,17 +881,19 @@ body {
   }
   .hero .heroBox p {
     width: 94%;
-    margin: 1rem auto 1.5rem auto;
+    margin: 1.5rem auto !important;
   }
   .hero .heroBox .cta {
     margin: 0 auto;
   }
   .info {
     position: relative;
+    padding-top: 10px;
+    margin-top: -20px;
     margin-bottom: 138px;
   }
   .info .infoImg-left {
-    top: 0;
+    top: 20px;
     width: 50%;
   }
   .info .infoBox {
@@ -902,10 +922,11 @@ body {
     bottom: -138px;
   }
   .ingredients .ingredients-box {
+    padding-bottom: 50px;
     background: linear-gradient(-53deg, #F8E4F9 50%, #BD8CBF 50%);
   }
   .ingredients .ingredients-box h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .ingredients #ingredientsDesc {
     width: 90%;
@@ -924,6 +945,9 @@ body {
   }
   .ingredients #ingredientsDesc .ingredient-text h5 {
     font-size: 20px;
+  }
+  .ingredients #ingredientsDesc .slick-dots {
+    bottom: -4px;
   }
   .ingredients #ingredientsDesc .slick-dots li {
     width: 14px;
@@ -997,11 +1021,16 @@ body {
     height: 732px;
     padding: 30px;
   }
-  .collection .collection-cta h6 {
-    width: 95%;
+  .collection .collectionCta .collection-cta {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .collection .collectionCta .collection-cta:hover {
+    padding-left: 60px;
+    padding-right: 60px;
   }
   .suggestedRegimen h2 {
-    margin: 10px 0 40px 0;
+    margin: 20px 0 30px 0;
   }
   .suggestedRegimen .regimenTab-underlay {
     width: 95%;
@@ -1031,6 +1060,9 @@ body {
     width: 50%;
     margin: 20px auto 0 auto;
   }
+  .suggestedRegimen .regimenTabContent .regimenDetails .product h3 {
+    line-height: 1.1;
+  }
   .suggestedRegimen .regimenTabContent .regimenDetails .product h4 {
     font-size: 60px;
     margin: 1rem auto;
@@ -1041,35 +1073,28 @@ body {
   .suggestedRegimen .regimenTabContent .regimenDetails .product .oil-icon {
     width: 110px;
   }
-  .suggestedRegimen .regimenTabContent .regimenDetails .product .oil-cta, .suggestedRegimen .regimenTabContent .regimenDetails .product .coq10-cta {
+  .suggestedRegimen .regimenTabContent .regimenDetails .product .regCTA .oil-cta, .suggestedRegimen .regimenTabContent .regimenDetails .product .regCTA .coq10-cta {
     display: inline-block;
     text-transform: uppercase;
     background-color: #9F3F95;
-    width: 95%;
     padding: 10px;
-    margin: 10px auto;
-  }
-  .suggestedRegimen .regimenTabContent .regimenDetails .product .oil-cta a, .suggestedRegimen .regimenTabContent .regimenDetails .product .coq10-cta a {
+    margin: 10px 4px;
     color: #FFF;
     font-size: 15px;
     font-weight: 400;
   }
-  .suggestedRegimen .regimenTabContent .regimenDetails .product .oil-cta:hover, .suggestedRegimen .regimenTabContent .regimenDetails .product .coq10-cta:hover {
+  .suggestedRegimen .regimenTabContent .regimenDetails .product .regCTA .oil-cta:hover, .suggestedRegimen .regimenTabContent .regimenDetails .product .regCTA .coq10-cta:hover {
     color: #9F3F95;
     background-color: #F8E4F9;
     border: 1px solid #9F3F95;
-    padding: 8px;
-  }
-  .suggestedRegimen .regimenTabContent .regimenDetails .product .oil-cta:hover a, .suggestedRegimen .regimenTabContent .regimenDetails .product .coq10-cta:hover a {
-    color: #9F3F95;
+    padding: 9px 10px;
     text-decoration: none;
   }
-  .suggestedRegimen .regimenTabContent .regimenDetails .product .oil-cta .coq10-btn, .suggestedRegimen .regimenTabContent .regimenDetails .product .coq10-cta .coq10-btn {
-    padding: 0;
-    background-color: inherit;
+  .suggestedRegimen .regimenTabContent .regimenDetails .product .regCTA .oil-cta:hover a, .suggestedRegimen .regimenTabContent .regimenDetails .product .regCTA .coq10-cta:hover a {
+    color: #9F3F95;
   }
   .suggestedRegimen .regimenTabContent .regimenDetails #core1 h3, .suggestedRegimen .regimenTabContent .regimenDetails #simple1 h3 {
-    width: 78%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -1077,32 +1102,43 @@ body {
   .suggestedRegimen .regimenTabContent .regimenDetails #core1 p, .suggestedRegimen .regimenTabContent .regimenDetails #simple1 p {
     width: 80%;
   }
+  .suggestedRegimen .regimenTabContent .regimenDetails #simple3 {
+    width: 95%;
+  }
   .suggestedRegimen .regimenCTA {
     width: 95%;
     padding: 20px 10px;
   }
-  .suggestedRegimen .regimenCTA .regimenCTA-1 {
+  .suggestedRegimen .regimenCTA .regCTA-btn1 {
     display: none;
   }
-  .suggestedRegimen .regimenCTA .regimenCTA-2 {
-    width: 100%;
+  .suggestedRegimen .regimenCTA .regCTA-btn2 {
     margin: 0 auto;
-    padding: 15px;
+    width: 90%;
   }
-  .suggestedRegimen .regimenCTA .regimenCTA-2 a {
+  .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 14px 30px;
     font-size: 15px;
   }
+  .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2:hover {
+    padding: 13px 30px;
+  }
   .comments {
-    padding: 0;
+    padding: 0 0 20px 0;
+    height: unset;
+    max-height: 450px;
   }
   .comments .quotes {
     position: absolute;
-    left: 40%;
+    left: 38%;
   }
   .comments #commentsSlider {
     margin-top: 0;
   }
   .comments #commentsSlider .comment {
+    padding-top: 18px;
     margin: 0 auto;
   }
   .comments #commentsSlider .comment .commentProduct {
@@ -1111,7 +1147,8 @@ body {
   .comments #commentsSlider .comment h4 {
     font-size: 35px;
     line-height: 1;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    margin-top: 30px;
   }
   .comments #commentsSlider .comment h6 {
     margin: 10px auto;
@@ -1140,6 +1177,12 @@ body {
   .suggestedRegimen .regimenTabContent .regimenDetails .product .oil-cta {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 592px) and (min-width: 483px) {
+  .suggestedRegimen .regimenTabContent .regimenDetails #core1 h3, .suggestedRegimen .regimenTabContent .regimenDetails #simple1 h3 {
+    width: 63%;
   }
 }
 
@@ -1178,7 +1221,7 @@ body {
     margin: 2rem 0;
   }
   .info {
-    margin-bottom: 40px;
+    margin-bottom: -25px;
   }
   .info .infoBox {
     margin-top: 40px;
@@ -1188,12 +1231,19 @@ body {
   .info .infoBox .benefits .benefit {
     width: 75%;
   }
+  .info .infoBox .benefits h3 {
+    font-size: 24px;
+  }
+  .info .infoBox .benefits h6 {
+    font-size: 18px;
+  }
   .info .infoImg-right {
-    bottom: -44px;
+    bottom: 0;
   }
   .ingredients #ingredientsDesc {
     width: 90%;
     padding-bottom: 20px;
+    margin-bottom: 10px;
   }
   .ingredients #ingredientsDesc .ingredientImg {
     float: none;
@@ -1235,17 +1285,40 @@ body {
     font-size: 80px;
   }
   .suggestedRegimen .regimenCTA {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0;
   }
-  .suggestedRegimen .regimenCTA .regimenCTA-2 {
-    padding-top: 32px;
+  .suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1 {
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 12px;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1:hover {
+    padding: 13px 14px;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2 {
+    padding-left: 140px;
+    padding-right: 140px;
+    font-size: 12px;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2:hover {
+    padding: 13px 140px;
   }
   .comments #commentsSlider .comment h4 {
-    font-size: 45px;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+  .learn {
+    min-height: 340px;
+  }
+  .learn .learn-img {
+    margin-top: 20px;
   }
   .learn .learnBox {
     width: 50%;
+  }
+  .learn .learnBox h2 {
+    margin-top: 0;
+    line-height: 1.1;
   }
 }
 
@@ -1269,19 +1342,30 @@ body {
     width: 100%;
     margin-left: 0;
   }
-  .suggestedRegimen .regimenCTA .regimenCTA-1 a, .suggestedRegimen .regimenCTA .regimenCTA-2 a {
-    line-height: 1;
-    font-size: 18px;
+}
+
+@media only screen and (max-width: 700px) and (min-width: 600px) {
+  .suggestedRegimen .regimenCTA {
+    padding: 0;
   }
-  .suggestedRegimen .regimenCTA .regimenCTA-1 {
-    padding: 12px 0;
-    width: 23%;
+  .suggestedRegimen .regimenCTA .regCTA-btn1 {
+    width: 25%;
   }
-  .suggestedRegimen .regimenCTA .regimenCTA-1:hover {
-    padding: 11px 0;
+  .suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1 {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 11px;
   }
-  .suggestedRegimen .regimenCTA .regimenCTA-2 {
-    padding: 22px 0 12px 0;
+  .suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1:hover {
+    padding: 13px 8px;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2 {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 11px;
+  }
+  .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2:hover {
+    padding: 13px 100px;
   }
 }
 

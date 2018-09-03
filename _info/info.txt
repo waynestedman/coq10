@@ -41,3 +41,8 @@ https://www.dhcuk.co.uk/blog/what-is-coq10-uk
 
 How to use?
 same?
+
+
+***************
+.cms-page-view .column.main img {
+    margin: 20px auto;
