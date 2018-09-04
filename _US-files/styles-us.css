@@ -499,9 +499,9 @@ body {
   align-items: stretch;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .collection .collectionWrapper .mainTabContent .faceButtons .faceLink, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink, .collection .collectionWrapper .mainTabContent .targetButtons .faceLink, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink {
@@ -729,10 +729,6 @@ body {
   margin: 0 auto;
 }
 
-.suggestedRegimen .regimenTabContent .regimenDetails #simple1, .suggestedRegimen .regimenTabContent .regimenDetails #simple2 {
-  margin-left: 82px;
-}
-
 .suggestedRegimen .regimenCTA {
   background-color: #FFF;
   width: 90%;
@@ -749,7 +745,7 @@ body {
   cursor: pointer;
   text-transform: uppercase;
   margin: 20px auto;
-  width: 45%;
+  width: 25%;
 }
 
 .suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1 {
@@ -758,11 +754,11 @@ body {
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
-  padding: 14px 60px;
+  padding: 14px 20px;
 }
 
 .suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1:hover {
-  padding: 13px 60px;
+  padding: 13px 20px;
   color: #9F3F95;
   background-color: #F8E4F9;
   border: 1px solid #9F3F95;
@@ -775,7 +771,7 @@ body {
   cursor: pointer;
   text-transform: uppercase;
   margin: 20px auto;
-  width: 75%;
+  width: 70%;
 }
 
 .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2 {
@@ -784,11 +780,11 @@ body {
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
-  padding: 14px 140px;
+  padding: 14px 260px;
 }
 
 .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2:hover {
-  padding: 13px 140px;
+  padding: 13px 260px;
   color: #9F3F95;
   background-color: #F8E4F9;
   border: 1px solid #9F3F95;
@@ -824,7 +820,7 @@ body {
 }
 
 .comments #commentsSlider .comment {
-  width: 12.5% !important;
+  width: 10% !important;
   max-width: 1280px;
 }
 
@@ -1124,7 +1120,7 @@ body {
     flex-wrap: wrap;
   }
   .suggestedRegimen .regimenTabContent .regimenDetails .product {
-    width: 90%;
+    width: 50%;
     margin: 20px auto 0 auto;
   }
   .suggestedRegimen .regimenTabContent .regimenDetails .product h3 {
@@ -1169,11 +1165,8 @@ body {
   .suggestedRegimen .regimenTabContent .regimenDetails #core1 p, .suggestedRegimen .regimenTabContent .regimenDetails #simple1 p {
     width: 80%;
   }
-  .suggestedRegimen .regimenTabContent .regimenDetails #simple2 {
+  .suggestedRegimen .regimenTabContent .regimenDetails #simple3 {
     width: 95%;
-  }
-  .suggestedRegimen .regimenTabContent .regimenDetails #simple1, .suggestedRegimen .regimenTabContent .regimenDetails #simple2 {
-    margin-left: inherit;
   }
   .suggestedRegimen .regimenCTA {
     width: 95%;
@@ -1331,9 +1324,9 @@ body {
     overflow-x: scroll;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
   .collection .collectionWrapper .mainTabContent .faceButtons .facelink, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink, .collection .collectionWrapper .mainTabContent .targetButtons .facelink, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink {
     font-size: 16px;
@@ -1356,33 +1349,24 @@ body {
   .suggestedRegimen .regimenTabContent .regimenDetails .product h4 {
     font-size: 80px;
   }
-  .suggestedRegimen .regimenTabContent .regimenDetails #simple1, .suggestedRegimen .regimenTabContent .regimenDetails #simple2 {
-    margin-left: inherit;
-  }
   .suggestedRegimen .regimenCTA {
     padding: 0;
-  }
-  .suggestedRegimen .regimenCTA .regCTA-btn1 {
-    width: 38%;
   }
   .suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1 {
     padding-left: 14px;
     padding-right: 14px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1:hover {
     padding: 13px 14px;
   }
-  .suggestedRegimen .regimenCTA .regCTA-btn2 {
-    width: 54%;
-  }
   .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2 {
-    padding-left: 100px;
-    padding-right: 100px;
-    font-size: 14px;
+    padding-left: 140px;
+    padding-right: 140px;
+    font-size: 12px;
   }
   .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2:hover {
-    padding: 13px 100px;
+    padding: 13px 140px;
   }
   .comments #commentsSlider .comment h4 {
     font-size: 40px;
@@ -1430,7 +1414,7 @@ body {
     padding: 0;
   }
   .suggestedRegimen .regimenCTA .regCTA-btn1 {
-    width: 38%;
+    width: 25%;
   }
   .suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1 {
     padding-left: 8px;
@@ -1439,9 +1423,6 @@ body {
   }
   .suggestedRegimen .regimenCTA .regCTA-btn1 .regimenCTA-1:hover {
     padding: 13px 8px;
-  }
-  .suggestedRegimen .regimenCTA .regCTA-btn2 {
-    width: 62%;
   }
   .suggestedRegimen .regimenCTA .regCTA-btn2 .regimenCTA-2 {
     padding-left: 100px;

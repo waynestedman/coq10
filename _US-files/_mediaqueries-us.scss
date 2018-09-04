@@ -262,7 +262,7 @@
         flex-wrap: wrap;
 
         .product {
-          width: 90%;
+          width: 50%;
           margin: 20px auto 0 auto;
 
           h3 {
@@ -319,11 +319,8 @@
             width: 80%;
           }
         } // #core1
-        #simple2 {
+        #simple3 {
           width: 95%;
-        }
-        #simple1, #simple2 {
-          margin-left: inherit;
         }
       } //  regimenDetails
     } // regimenTabContent
@@ -518,7 +515,7 @@
           overflow-x: scroll;
           white-space: nowrap;
           -webkit-overflow-scrolling: touch;
-          justify-content: space-evenly;
+          justify-content: flex-start;
 
           .facelink, .targetlink {
             font-size: 16px;
@@ -543,17 +540,12 @@
     }
   } // collection
   .suggestedRegimen {
-    .regimenTabContent .regimenDetails {
-      .product {
-        h3 {
-          font-size: 28px;
-        }
-        h4 {
-          font-size: 80px;
-        }
+    .regimenTabContent .regimenDetails .product {
+      h3 {
+        font-size: 28px;
       }
-      #simple1, #simple2 {
-        margin-left: inherit;
+      h4 {
+        font-size: 80px;
       }
     }
     .regimenCTA {
@@ -562,12 +554,10 @@
       // padding-right: 20px;
 
       .regCTA-btn1 {
-        width: 38%;
-
         .regimenCTA-1 {
           padding-left: 14px;
           padding-right: 14px;
-          font-size: 14px;
+          font-size: 12px;
 
           &:hover {
             padding: 13px 14px;
@@ -575,15 +565,13 @@
         }
       }
       .regCTA-btn2 {
-        width: 54%;
-
         .regimenCTA-2 {
-            padding-left: 100px;
-            padding-right: 100px;
-            font-size: 14px;
+            padding-left: 140px;
+            padding-right: 140px;
+            font-size: 12px;
 
             &:hover {
-              padding: 13px 100px;
+              padding: 13px 140px;
             }
         } // regimenCTA-2
       }
@@ -651,7 +639,7 @@
     .regimenCTA {
       padding: 0;
       .regCTA-btn1 {
-        width: 38%;
+        width: 25%;
         // margin: 16px;
 
         .regimenCTA-1 {
@@ -665,13 +653,12 @@
         }
       }
       .regCTA-btn2 {
-        width: 62%;
+        // margin: 16px;
 
         .regimenCTA-2 {
             padding-left: 100px;
             padding-right: 100px;
             font-size: 11px;
-
 
             &:hover {
               padding: 13px 100px;

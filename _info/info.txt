@@ -29,6 +29,7 @@ UK "Shop Oil Cleansers" --> https://www.dhcuk.co.uk/double-cleanse
 
 US "Shop Oil Cleansers" --> https://www.dhccare.com/shop/skincare/cleansers-exfoliants.html
 
+
 UK "Shop the Collection" --> https://www.dhcuk.co.uk/shop/skincare/coenzyme-q10.html
 
 US "Shop the Collection" --> https://www.dhccare.com/shop/skincare/coenzyme-q10.html
@@ -40,7 +41,8 @@ https://www.dhccare.com/blog/what-is-coq10
 https://www.dhcuk.co.uk/blog/what-is-coq10-uk
 
 How to use?
-same?
+https://www.dhccare.com/blog/how-to-use-coq10
+https://www.dhcuk.co.uk/blog/how-to-use-coq10-uk
 
 
 ***************

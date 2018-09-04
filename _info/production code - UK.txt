@@ -1,24 +1,33 @@
-/* Focus
-$focus-outline-color: transparentize($action-color, 0.4);
-$focus-outline-width: 3px;
-$focus-outline: $focus-outline-width solid $focus-outline-color;
-$focus-outline-offset: 2px;
-
-// Animations
-$base-duration: 150ms;
-$base-timing: ease;
-*/
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  color: #424649;
-  background: #DDDDDD;
-}
-
+<script type="text/javascript" xml="space">// <![CDATA[
+require([
+  'jquery',
+  'slick'
+  ], function ($) {
+$(document).ready(function(){
+$('#ingredientsDesc').slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    infinite: true,
+    speed: 2000,
+    fade: true,
+    cssEase: 'ease-in-out',
+    pauseOnHover: true
+});
+  $('#commentsSlider').slick({
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    fade: true,
+    speed: 1200,
+    cssEase: 'ease-in-out'
+   }); // comments slider
+});
+});
+// ]]></script>
+<style xml="space"><!--
 .cms-page-view .column.main img {
   margin: 0 auto;
 }
@@ -1331,8 +1340,8 @@ body {
     overflow-x: scroll;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: space-evenly;
   }
   .collection .collectionWrapper .mainTabContent .faceButtons .facelink, .collection .collectionWrapper .mainTabContent .faceButtons .targetlink, .collection .collectionWrapper .mainTabContent .targetButtons .facelink, .collection .collectionWrapper .mainTabContent .targetButtons .targetlink {
@@ -1460,7 +1469,439 @@ body {
     -webkit-overflow-scrolling: unset;
   }
 }
+--></style>
+<div class="content-wrapper"><section class="hero">
+<div class="hero-img"><picture> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-hero-m.jpg" media="(max-width: 599px)" /> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-hero-t.jpg" media="(max-width: 1024px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-hero.jpg" alt="the Coenzyme Q10 Collection" /> </picture></div>
+<div class="heroBox">
+<h1>The CoQ10 Collection</h1>
+<h5>The Gold Standard for Skin-Perfecting Care</h5>
+<p>CoQ10 is such a powerful, proven antioxidant that we’ve infused our largest ever range of Japanese face and body products with it. Protect your complexion from environmental damage, or reverse signs of past damage. Take action now against elasticity loss, dullness, dryness and fine lines with this revitalising collection.</p>
+<h6><a class="cta" href="https://www.dhcuk.co.uk/shop/skincare/coenzyme-q10.html">Shop Now</a></h6>
+</div>
+<!-- <div class="clearfix"></div> --></section><section class="info">
+<div class="infoImg-left"><picture> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-samples-left-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-samples-left.jpg" alt="samples of CoQ10 products" /> </picture></div>
+<div class="infoBox">
+<h2>Coenzyme Q10</h2>
+<h5>(ubiquinone)</h5>
+<p>Coenzyme Q10, or ubiquinone (you-BIK-kwi-none), helps to promote cellular energy production and protect cells from harmful environmental stress. This golden-hued nutrient is found naturally in your skin, but as we age, coQ10 levels decrease dramatically.</p>
+<div class="benefits">
+<div class="benefit">
+<h5 class="benefit-title">Protects</h5>
+<p>Neutralises free radicals from environmental and UV exposure</p>
+</div>
+<div class="benefit">
+<h5 class="benefit-title">Replenishes</h5>
+<p>Prevents coQ10 loss to maintain youthful‑looking skin</p>
+</div>
+<div class="benefit">
+<h5 class="benefit-title">Beautifies</h5>
+<p>Promotes your complexion’s brightness, smoothness and elasticity</p>
+</div>
+<h3>What Is CoQ10?</h3>
+<h6 class="learn-cta"><a href="https://www.dhcuk.co.uk/blog/what-is-coq10-uk">Read More &gt;</a></h6>
+</div>
+<!-- Benefits --></div>
+<!-- infoBox -->
+<div class="infoImg-right"><picture> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-samples-right-m.png" media="(max-width: 599px)" /> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-samples-right-t.png" media="(max-width: 1024px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-samples-right.png" alt="more samples of CoQ10 products" /> </picture></div>
+</section><section class="ingredients">
+<div class="ingredients-box">
+<h2>Featured Ingredients</h2>
+<div id="ingredientsDesc">
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source src="https://www.dhccare.com/media/wysiwyg/content/ingredients/olive-fruit-oil-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/ingredients/olive-fruit-oil.jpg" alt="Olive Fruit Oil" /> </picture></div>
+<div class="ingredient-text">
+<h3>Olive Fruit Oil</h3>
+<h5>Antioxidant, moisturiser</h5>
+<p>Rich in antioxidants, olive oil maintains the skin’s moisture barrier and helps fight damage caused by free radicals without clogging pores. Our oil is sourced from an organic olive farm in southern Spain.</p>
+</div>
+</div>
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source src="https://www.dhccare.com/media/wysiwyg/content/ingredients/hydrolyzed-collagen-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/ingredients/hydrolyzed-collagen.jpg" alt="Hydrolyzed Collagen" /> </picture></div>
+<div class="ingredient-text">
+<h3>Hydrolysed Collagen</h3>
+<h5>Protects and moisturises</h5>
+<p>Skin-plumping collagen is processed into ultra-tiny peptides, making it more easily absorbed and leaving skin feeling soft and supple.</p>
+</div>
+</div>
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source src="https://www.dhccare.com/media/wysiwyg/content/ingredients/sodium-hyaluronate-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/ingredients/sodium-hyaluronate.jpg" alt="Sodium Hyaluronate" /> </picture></div>
+<div class="ingredient-text">
+<h3>Sodium Hyaluronate</h3>
+<h5>Nourishes and moisturises</h5>
+<p>This easily absorbed nutrient and antioxidant helps to boost long-lasting moisture and revitalises the skin’s outer layers.</p>
+</div>
+</div>
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source src="https://www.dhccare.com/media/wysiwyg/content/ingredients/vitamin-e-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/ingredients/vitamin-e.jpg" alt="Vitamin E" /> </picture></div>
+<div class="ingredient-text">
+<h3>Vitamin E</h3>
+<h5>Antioxidant, skin conditioner</h5>
+<p>Helps prevent the signs of premature ageing by protecting skin against environmental pollution and free radicals, and helps the skin to retain moisture.</p>
+</div>
+</div>
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source src="https://www.dhccare.com/media/wysiwyg/content/ingredients/licorice-root-extract-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/ingredients/licorice-root-extract.jpg" alt="Licorice Root Extract" /> </picture></div>
+<div class="ingredient-text">
+<h3>Liquorice Root Extract</h3>
+<h5>Soothes skin</h5>
+<p>This botanical ingredient helps to encourage skin’s suppleness.</p>
+</div>
+</div>
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source src="https://www.dhccare.com/media/wysiwyg/content/ingredients/aloe-leaf-extract-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/ingredients/aloe-leaf-extract.jpg" alt="Aloe Leaf Extract" /> </picture></div>
+<div class="ingredient-text">
+<h3>Aloe Leaf Extract</h3>
+<h5>Conditions</h5>
+<p>This soothing botanical ingredient imparts a calming effect on skin while protecting against oxidative stress.</p>
+</div>
+</div>
+<div class="ingredientDesc-long">
+<div class="ingredientImg"><picture> <source src="https://www.dhccare.com/media/wysiwyg/content/ingredients/olive-leaf-extract-m.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/ingredients/olive-leaf-extract.jpg" alt="Olive Leaf Extract" /> </picture></div>
+<div class="ingredient-text">
+<h3>Olive Leaf Extract</h3>
+<h5>Antioxidant, hydrating</h5>
+<p>The leaf of the olive tree helps protect the skin against pollution and helps to fight the visible signs of ageing.</p>
+</div>
+</div>
+</div>
+<!-- ingredients descriptions --></div>
+<!-- ingredients box --></section><section class="collection">
+<h2>The Collection</h2>
+<div class="mainTab-underlay">
+<p class="mainTab-subtxt">firmer-looking, brighter skin</p>
+<p class="mainTab-subtxt">body care and more</p>
+</div>
+<div class="mainTab"><button id="faceCareMain" class="mainTablinks">Face Care</button> <button id="targetCareMain" class="mainTablinks">Targeted Care</button></div>
+<div class="collectionWrapper"><!-- Face Care -->
+<div id="faceCare" class="mainTabContent">
+<div id="faceProduct1" class="faceContent" data-id="1">
+<div class="productInfo-details"><a href="https://www.dhcuk.co.uk/coq10-lotion.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-lotion-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-lotion2.jpg" alt="CoQ10 Lotion" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhcuk.co.uk/coq10-lotion.html">CoQ10 Lotion</a></h3>
+<h5><a href="https://www.dhcuk.co.uk/coq10-lotion.html">Alcohol-free toner for prepping skin for hydration</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhcuk.co.uk/coq10-lotion.html">This hydrating toner fights damaging free radicals with coQ10 to promote collagen and elastin production. Applied after cleansing, it prepares skin for targeted treatments and more intensive moisture while delivering light antioxidant care.</a></p>
+</div>
+</div>
+</div>
+<!-- face product 1 -->
+<div id="faceProduct2" class="faceContent" data-id="2">
+<div class="productInfo-details"><a href="https://www.dhcuk.co.uk/coq10-face-milk.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-milk-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-milk2.jpg" alt="CoQ10 Milk" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhcuk.co.uk/coq10-face-milk.html">CoQ10 Milk</a></h3>
+<h5><a href="https://www.dhcuk.co.uk/coq10-face-milk.html">Lightweight daytime moisturiser</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhcuk.co.uk/coq10-face-milk.html">Use this antioxidant-fuelled facial milk to encourage firmness and help neutralise free radicals at the surface level. Olive oil, collagen and sodium hyaluronate hydrate and protect skin’s natural moisture barrier, and liquorice root extract and serine soothe the complexion.</a></p>
+</div>
+</div>
+</div>
+<!-- face product 2 -->
+<div id="faceProduct3" class="faceContent" data-id="3">
+<div class="productInfo-details"><a href="https://www.dhcuk.co.uk/q10-cream.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-cream-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-cream2.jpg" alt="Q10 Cream" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhcuk.co.uk/q10-cream.html">Q10 Cream</a></h3>
+<h5><a href="https://www.dhcuk.co.uk/q10-cream.html">High-performance moisturiser</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhcuk.co.uk/q10-cream.html">Complex of olive oil and olive leaf extract aids in soothing and revitalising without clogging pores. Rich, firming emollient formula helps promote collagen to maintain tone and resilience for supple, younger-looking skin.</a></p>
+</div>
+</div>
+</div>
+<!-- face product 3 -->
+<div id="faceProduct4" class="faceContent" data-id="4">
+<div class="productInfo-details"><a href="https://www.dhcuk.co.uk/coq10-eye-cream.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-eye-cream-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-eye-cream2.jpg" alt="CoQ10 Eye Cream" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhcuk.co.uk/coq10-eye-cream.html">CoQ10 Eye Cream</a></h3>
+<h5><a href="https://www.dhcuk.co.uk/coq10-eye-cream.html">Potent fine line treatment for the eyes</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhcuk.co.uk/coq10-eye-cream.html">Fend off fine lines and crow’s feet with this luxurious cream. Vitamins A, C and E fight signs of visible ageing, and shea butter and squalane deeply hydrate the delicate eye area. Olive oil-infused formula easily absorbs for layering over additional treatments and under make-up.</a></p>
+</div>
+</div>
+</div>
+<!-- face product 4 -->
+<div id="faceProduct5" class="faceContent" data-id="5">
+<div class="productInfo-details"><a href="https://www.dhcuk.co.uk/coq10-quick-gel-brightening-moisture.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-quick-gel-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-quick-gel2.jpg" alt="CoQ10 Quick Gel Brightening Moisture" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhcuk.co.uk/coq10-quick-gel-brightening-moisture.html">CoQ10 Quick Gel Brightening Moisture</a></h3>
+<h5><a href="https://www.dhcuk.co.uk/coq10-quick-gel-brightening-moisture.html">Multi-action gel cream for every skin type</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhcuk.co.uk/coq10-quick-gel-brightening-moisture.html">Simplify your daily beauty routine with this fast-absorbing, all-in-one gel cream for all skin types. Creamy gel tones, primes and brightens with daisy extract and vitamin C while nourishing with olive fruit oil and locking in all-day moisture with sodium hyaluronate. For enhanced benefits, use it as a hydrating mask treatment.</a></p>
+</div>
+</div>
+</div>
+<!-- face product 5 -->
+<div class="faceButtons">
+<p id="faceProd-btn1" class="faceLink" data-id="1">CoQ10 Lotion</p>
+<p id="faceProd-btn2" class="faceLink" data-id="2">CoQ10 Milk</p>
+<p id="faceProd-btn3" class="faceLink" data-id="3">Q10 Cream</p>
+<p id="faceProd-btn4" class="faceLink" data-id="4">CoQ10 Eye Cream</p>
+<p id="faceProd-btn5" class="faceLink" data-id="5">CoQ10 Quick Gel Brightening Moisture</p>
+</div>
+<!-- faceButtons --></div>
+<!-- Face Care --> <!-- targeted Care -->
+<div id="targetCare" class="mainTabContent">
+<div id="targetProduct1" class="targetContent" data-id="1">
+<div class="productInfo-details"><a href="https://www.dhcuk.co.uk/coq10-eye-cream.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-eye-cream-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-eye-cream2.jpg" alt="CoQ10 Eye Cream" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhcuk.co.uk/coq10-eye-cream.html">CoQ10 Eye Cream</a></h3>
+<h5><a href="https://www.dhcuk.co.uk/coq10-eye-cream.html">Potent fine line treatment for the eyes</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhcuk.co.uk/coq10-eye-cream.html">Fend off fine lines and crow’s feet with this luxurious cream. Vitamins A, C and E fight signs of visible ageing, and shea butter and squalane deeply hydrate the delicate eye area. Olive oil-infused formula easily absorbs for layering over additional treatments and under make-up.</a></p>
+</div>
+</div>
+</div>
+<!-- targeted product 1 -->
+<div id="targetProduct2" class="targetContent" data-id="2">
+<div class="productInfo-details"><a href="https://www.dhcuk.co.uk/coq10-neck-cream.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-neck-cream-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-neck-cream2.jpg" alt="CoQ10 Neck Cream" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhcuk.co.uk/coq10-neck-cream.html">CoQ10 Neck Cream</a></h3>
+<h5><a href="https://www.dhcuk.co.uk/coq10-neck-cream.html">Shea-based cream for neck and décolletage</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhcuk.co.uk/coq10-neck-cream.html">Refines tone and texture of the delicate neck area with vitamins A, C and E. Serine and allantoin calm skin, and midweight, creamy texture absorbs quickly with no residue.</a></p>
+</div>
+</div>
+</div>
+<!-- targeted product 2 -->
+<div id="targetProduct3" class="targetContent" data-id="3">
+<div class="productInfo-details"><a href="https://www.dhcuk.co.uk/coq10-mask.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-mask-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-mask2.jpg" alt="Q10 Mask" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhcuk.co.uk/q10-mask.html">Q10 Mask</a></h3>
+<h5><a href="https://www.dhcuk.co.uk/q10-mask.html">Antioxidant-powered sheet mask for all skin types</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhcuk.co.uk/q10-mask.html">TThis 20-minute treatment addresses elasticity loss with coQ10. Sodium hyaluronate and collagen help maintain skin’s natural moisture barrier. Serine, liquorice root extract and aloe soothe, while the mask’s customisable Japanese design allows for a perfect fit.</a></p>
+</div>
+</div>
+</div>
+<!-- targeted product 3 -->
+<div id="targetProduct4" class="targetContent" data-id="4">
+<div class="productInfo-details"><a href="https://www.dhcuk.co.uk/coq10-hand-cream.html"> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-hand-cream-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-hand-cream2.jpg" alt="CoQ10 Hand Cream" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a href="https://www.dhcuk.co.uk/coq10-hand-cream.html">CoQ10 Hand Cream</a></h3>
+<h5><a href="https://www.dhcuk.co.uk/coq10-hand-cream.html">Antioxidant hand cream</a></h5>
+<p class="productInfo-desc"><a href="https://www.dhcuk.co.uk/coq10-hand-cream.html">Soothing, rich cream hydrates hands while protecting them from moisture loss. Shea-based formula contains antioxidant-rich carrot root extract, vitamin E and olive leaf extract to nourish and protect. Lightweight texture absorbs easily.</a></p>
+</div>
+</div>
+</div>
+<!-- targeted product 4 -->
+<div class="targetButtons">
+<p id="targetProd-btn1" class="targetlink" data-id="1">CoQ10 Eye Cream</p>
+<p id="targetProd-btn2" class="targetlink" data-id="2">CoQ10 Neck Cream</p>
+<p id="targetProd-btn3" class="targetlink" data-id="3">Q10 Mask</p>
+<p id="targetProd-btn4" class="targetlink" data-id="4">CoQ10 Hand Cream</p>
+</div>
+<!-- targetButtons --></div>
+<!-- targetedCare --></div>
+<!-- collection wrapper -->
+<div class="collectionCta">
+<h6><a class="collection-cta" href="https://www.dhcuk.co.uk/shop/skincare/coenzyme-q10.html">Shop The Collection</a></h6>
+</div>
+</section><section class="suggestedRegimen">
+<h2>Suggested Regimen</h2>
+<div class="regimenTab-underlay">
+<p class="regimenTab-subtxt">Maximum care</p>
+<p class="regimenTab-subtxt">Streamlined care</p>
+</div>
+<div class="regimenTab"><button id="regimenCoreBtn" class="regimenTablinks">Core</button> <button id="regimenSimpleBtn" class="regimenTablinks">Simplified</button></div>
+<div id="regimenCore" class="regimenTabContent">
+<div class="regimenDetails">
+<div id="core1" class="product" data-id="1"><img class="oil-icon" src="https://www.dhccare.com/media/wysiwyg/content/common/double-cleanse-icon.svg" alt="Oil Cleanse" />
+<div class="product-text">
+<h4>1&amp;2</h4>
+<h3>Double Cleanse</h3>
+<p>Choose an oil cleanser</p>
+</div>
+<div class="regCTA"><a class="oil-cta" href="https://www.dhcuk.co.uk/double-cleanse">Shop Oil Cleansers</a></div>
+</div>
+<div id="core2" class="product" data-id="2"><img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/regimen/CoQ10-lotion.jpg" alt="CoQ10 Lotion" />
+<div class="product-text">
+<h4>3</h4>
+<h3>Tone</h3>
+<p>CoQ10 Lotion</p>
+</div>
+</div>
+<div id="core4" class="product" data-id="4"><img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/regimen/CoQ10-milk-cream.jpg" alt="CoQ10 Milk or Q10 Cream" />
+<div class="product-text">
+<h4>4</h4>
+<h3>Moisturise</h3>
+<p>CoQ10 Milk or Q10 Cream</p>
+</div>
+</div>
+</div>
+<!-- regimen details --></div>
+<!-- regimen Core -->
+<div id="regimenSimple" class="regimenTabContent">
+<div class="regimenDetails">
+<div id="simple1" class="product" data-id="1"><img class="oil-icon" src="https://www.dhccare.com/media/wysiwyg/content/common/double-cleanse-icon.svg" alt="Oil Cleanse" />
+<div class="product-text">
+<h4>1&amp;2</h4>
+<h3>Double Cleanse</h3>
+<p>Choose an oil cleanser</p>
+</div>
+<!-- <div class="regCTA">
+              <a href="https://www.dhcuk.co.uk/double-cleanse" role="button" aria-disabled="true" class="oil-cta">Shop Oil Cleansers</a>
+            </div> --></div>
+<div id="simple2" class="product" data-id="2"><picture> <!--  --> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/regimen/CoQ10-quick-gel-m2.jpg" media="(max-width: 599px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/regimen/CoQ10-quick-gel.jpg" alt="CoQ10 Quick Gel Brightening Moisture" /> </picture>
+<div class="product-text">
+<h4>3</h4>
+<h3>Tone, Moisturise, Prime</h3>
+<p>CoQ10 Quick Gel Brightening Moisture</p>
+</div>
+</div>
+</div>
+<!-- regimen details --></div>
+<!-- regimen Simplified -->
+<div class="regimenCTA">
+<div class="regCTA-btn1"><a class="regimenCTA-1" href="https://www.dhcuk.co.uk/double-cleanse">Shop Oil Cleansers</a></div>
+<div class="regCTA-btn2"><a class="regimenCTA-2" href="https://www.dhcuk.co.uk/shop/skincare/coenzyme-q10.html">Shop The Collection</a></div>
+</div>
+<!-- regimen cta --></section><section class="comments">
+<div class="quotes"><img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/quote-marks.svg" alt="" /></div>
+<div id="commentsSlider">
+<div class="comment one">
+<h6 class="commentProduct">CoQ10 Lotion</h6>
+<h4>Fabulous!!</h4>
+<h6>This product is essential for my daily skin care routine. It prepares my face for the next step in my makeup application. It is also wonderful even when used alone on those days I choose not to apply makeup.</h6>
+<blockquote>Frances</blockquote>
+<blockquote>Pell City, Alabama</blockquote>
+</div>
+<!-- comment 1 -->
+<div class="comment two">
+<h6 class="commentProduct">CoQ10 Milk</h6>
+<h4>Great moisture under makeup</h4>
+<h6>I love the CoQ10 Milk because it's lightweight, but still does an excellent job of moisturizing.</h6>
+<blockquote>RoseGrace</blockquote>
+<blockquote>Los Angeles, CA</blockquote>
+</div>
+<!-- comment 2 -->
+<div class="comment three">
+<h6 class="commentProduct">Quick Gel Brightening Moisture</h6>
+<h4>Go-to</h4>
+<h6>This has been my go-to anti-aging for a couple of years now. I love how it leaves my face brighter and younger looking and is light, not greasy. Highly recommend!</h6>
+<blockquote>SPSA</blockquote>
+<blockquote>Southeast USA</blockquote>
+</div>
+<!-- comment 3 -->
+<div class="comment four">
+<h6 class="commentProduct">Q10 Cream</h6>
+<h4>Absolutely the BEST cream out there!</h4>
+<h6>I use Q10 both morning and night. It absorbs quickly so I can apply foundation about a minute or two after application. At night, oh my gosh, my skin drinks it in!! I LOVE Q10.</h6>
+<blockquote>Winegirl</blockquote>
+<blockquote>Santa Maria, CA</blockquote>
+</div>
+<!-- comment 4 -->
+<div class="comment five">
+<h6 class="commentProduct">CoQ10 Eye Cream</h6>
+<h4>Very pleased with this cream!</h4>
+<h6>I am so glad to have discovered this eye cream… Just knowing I have it on, it feels my skin is taken care of!</h6>
+<blockquote>Tammi57</blockquote>
+<blockquote>Orland Park, Il</blockquote>
+</div>
+<!-- comment 5 -->
+<div class="comment six">
+<h6 class="commentProduct">Q10 Mask</h6>
+<h4>Fabulous product</h4>
+<h6>LOVED the way it made my skin look… I'm definitely going to add this in my facial care regime.</h6>
+<blockquote>mimiof6grnds</blockquote>
+<blockquote>Pensacola, FL</blockquote>
+</div>
+<!-- comment 6 -->
+<div class="comment seven">
+<h6 class="commentProduct">CoQ10 Neck Cream</h6>
+<h4>Excellent Product Overall</h4>
+<h6>This neck cream feels very rich and luxurious and makes my skin soft and supple. Using this product instead of my regular facial moisturizer not only reminds me to specifically take care of my neck and chest, but feels very luxurious and pampering.</h6>
+<blockquote>Rebecca28</blockquote>
+<blockquote>Central, IL</blockquote>
+</div>
+<!-- comment 7 -->
+<div class="comment eight">
+<h6 class="commentProduct">CoQ10 Hand Cream</h6>
+<h4>My hands need this cream</h4>
+<h6>I handle a lot of paper at work. My hands get dry and can crack. The Q10 hand cream every night at bedtime keeps the dryness under control and nearly eliminates the cracking all winter. It keeps them soft in summer. Excellent product. Thanks!!</h6>
+<blockquote>Frances 59</blockquote>
+<blockquote>Richmond, VA</blockquote>
+</div>
+<!-- comment 8 --></div>
+<!-- commentsSlider --></section><section class="learn">
+<div class="learn-img"><picture> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-learn-m.jpg" media="(max-width: 599px)" /> <source srcset="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-learn-t.jpg" media="(max-width: 1024px)" /> <img src="https://www.dhccare.com/media/wysiwyg/content/collection/coq10/coq10-learn.jpg" alt="Learn about the CoQ10 products" /> </picture></div>
+<div class="learnBox">
+<h2>How to Use the CoQ10 Collection</h2>
+<p>Cleanse, tone, moisturise and spot-treat with our range of products infused with this powerful nutrient.</p>
+<h6 class="cta learn-cta"><a href="https://www.dhcuk.co.uk/blog/how-to-use-coq10-uk">Learn More &gt;</a></h6>
+</div>
+</section></div>
+<!-- content wrapper -->
+<script type="text/javascript" xml="space">// <![CDATA[
+  require([
+    'jquery'
+    ], function ($) {
+      $(document).ready(function () {
+// Set intial tab states
+    $("#faceCare").css("display", "block");
+    $("#faceCareMain").addClass("tabActive");
+    $("#faceProd-btn1").addClass("subTabActive");
+    $("#faceProduct1").css("display", "block");
+    $("#regimenSimple").css("display", "block");
+    $("#regimenSimpleBtn").addClass("tabActive");
+    $("#csimple").css("display", "block");
 
+// Collection
+    function faceCare() {
+      $(".faceButtons").on('click touchstart', function(subEvent) {
+        var subTarget = $( subEvent.target );
+        var i;
+        $("p").removeClass("subTabActive");
+        subTarget.addClass("subTabActive");
+        $(".faceContent").css("display", "none");
+        i = subTarget.data("id");
+        $("#faceProduct" + i).css("display", "block");
+      }); // faceButtons sub-event
+    }; // face function
+    function targetCare() {
+      $(".targetButtons").on('click touchstart', function(subEvent) {
+        var subTarget = $( subEvent.target );
+        var i;
+        $("p").removeClass("subTabActive");
+        subTarget.addClass("subTabActive");
+        $(".targetContent").css("display", "none");
+        i = subTarget.data("id");
+        $("#targetProduct" + i).css("display", "block");
+      }); // targetButtons sub-event
+    }; // targetCare function
 
+    faceCare();
 
-/*# sourceMappingURL=styles.css.map */
+    $(".mainTab").on('click touchstart', function(event) {
+      var target = $( event.target );
+      $(".mainTab .mainTablinks").removeClass("tabActive");
+      target.addClass("tabActive");
+      $(".mainTab-subtxt").removeClass("tabActive");
+
+      if (target.is("#faceCareMain")) {
+        $("#faceCare").css("display", "block");
+        $("#targetCare").css("display", "none");
+        $("#faceProduct1").css("display", "block");
+        $("#faceProd-btn1").addClass("subTabActive");
+        faceCare();
+      } else if (target.is("#targetCareMain")) {
+        $("#faceCare").css("display", "none");
+        $("#targetCare").css("display", "block");
+        $("#targetProduct1").css("display", "block");
+        $("#targetProd-btn1").addClass("subTabActive");
+        targetCare();
+      } else {
+        console.log("Collection selection error!");
+      } // if else
+    });// mainTab click event
+// Regimen
+    $(".regimenTab").on('click touchstart', function(event) {
+      var target = $( event.target );
+      $(".regimenTab .regimenTablinks").removeClass("tabActive");
+      target.addClass("tabActive");
+      $(".regimenTab-subtxt").removeClass("tabActive");
+
+      if (target.is("#regimenCoreBtn")) {
+        $("#regimenCore").css("display", "block");
+        $("#regimenSimple").css("display", "none");
+        $("core1").css("display", "block");
+      } else if (target.is("#regimenSimpleBtn")) {
+        $("#regimenCore").css("display", "none");
+        $("#regimenSimple").css("display", "block");
+        $("#simple1").css("display", "block");
+      } else {
+        console.log("Regimen selection error!");
+      } // if else
+    });// Regimen Tab click event
+}); // Document Ready
+    });
+// ]]></script>
