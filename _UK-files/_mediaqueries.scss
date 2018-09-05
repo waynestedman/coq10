@@ -1,0 +1,696 @@
+@media only screen and (max-width: 599px) {
+  .cms-page-view .column.main p {
+    margin: 0 auto 10px auto;
+  }
+  .content-wrapper {
+    h1 {
+      font-size: 45px;
+    }
+    h2 {
+      font-size: 35px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+    h4 {
+      font-size: 60px;
+    }
+    h5 {
+      font-size: 22px;
+    }
+    h6 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 15px;
+    }
+    .slick-list {
+      margin-left: 0;
+    }
+    .tabActive {
+      padding-bottom: 29px !important;
+    }
+  }
+  .hero {
+    background-color: #f5f5f5;
+    padding-bottom: 20px;
+
+    .hero-img {
+      position: absolute;
+      // min-width: 350px;
+    }
+    .heroBox {
+      position: relative;
+      width: 95%;
+      margin: 0 auto;
+      text-align: center;
+      right: inherit;
+      padding: inherit;
+      padding-top: 78%;
+
+      h1 {
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      p {
+        width: 94%;
+        margin: 1.5rem auto !important;
+      }
+      .cta {
+        margin: 0 auto;
+      }
+    }
+  } // hero
+  .info {
+    position: relative;
+    padding-top: 10px;
+    margin-top: -20px;
+    margin-bottom: 138px;
+
+    .infoImg-left {
+      top: 20px;
+      width: 50%;
+    }
+    .infoBox {
+      width: 90%;
+      top: 60px;
+      margin: 0 auto;
+      padding: 10px;
+      display: block;
+
+      .benefits {
+        text-align: center;
+
+        .benefit {
+          width: 90%;
+          margin: 30px auto;
+
+          .benefit-title {
+            margin-bottom: 1rem;
+          }
+        }
+        h3, .learn-cta {
+          text-align: left;
+        }
+      } // benfits
+    } // infoBox
+    .infoImg-right {
+      width: 45%;
+      top: inherit;
+      bottom: -138px;
+    }
+  } // info
+  .ingredients {
+    .ingredients-box {
+      padding-bottom: 50px;
+      background: linear-gradient(-53deg, $q10purpleLT 50%, $q10purple 50%);
+
+      h2 {
+        margin-bottom: 30px;
+      }
+    } // ingredients-box
+    #ingredientsDesc {
+      width: 90%;
+      margin: 0 auto;
+      padding-bottom: 20px;
+
+      .ingredientImg {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .ingredient-text {
+        text-align: center;
+        padding-top: 0;
+        width: 90%;
+
+        h5 {
+          font-size: 20px;
+        }
+      } // ingredient-text
+      .slick-dots {
+        bottom: -4px;
+
+        li {
+          width: 14px;
+          height: 14px;
+
+          button:before {
+            font-size: 30px; // good size for server
+            // line-height: 16px;
+          } // button:before
+        } // li
+      } // slick-dots
+    } // ingredientsDesc
+  } //ingredients
+  .collection {
+    .mainTab-underlay {
+      width: 95%;
+      padding-left: inherit;
+      display: flex;
+      align-items: center;
+
+      .mainTab-subtxt {
+        width: 49%;
+        top: 0;
+        font-size: 15px;
+        line-height: 1.2;
+      }
+    } // mainTab-underlay
+    .mainTab {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+
+      .mainTablinks {
+        font-size: 23px;
+        line-height: 1;
+        padding: 0 0 44px 0 !important;
+      } // mainTablinks
+      .tabActive {
+        padding-bottom: 43px !important;
+      }
+
+    } //mainTab
+    .collectionWrapper {
+      width: 95%;
+
+      .mainTabContent {
+        padding: inherit;
+
+        .productInfo-details {
+          flex-direction: column;
+          width: 100%;
+
+          a {
+            width: 100%;
+          }
+          .productInfo-text {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+          }
+        } // productInfo-details
+        .faceButtons, .targetButtons {
+          flex-direction: row;
+          justify-content: flex-start;
+          flex-wrap: nowrap;
+          overflow-x: scroll;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+          // width: inherit; **
+
+          &:-webkit-scrollbar {
+            display: none;
+          }
+          .tablink, .targetlink {
+            width: 45%;
+            height: 44px;
+            flex: 0 0 auto;
+            font-size: 14px;
+          }
+        } // faceButtons targetButtons
+        .faceContent, .targetContent {
+          height: 732px;
+          padding: 30px;
+        }
+      } // mainTabContent
+    } // collectionWrapper
+    .collectionCta {
+      .collection-cta {
+        padding-left: 60px;
+        padding-right: 60px;
+
+        &:hover {
+          padding-left: 60px;
+          padding-right: 60px;
+        }
+      } // collection-cta
+    }
+  } // collection
+  .suggestedRegimen {
+    h2 {
+      margin: 20px 0 30px 0;
+    }
+    .regimenTab-underlay {
+      width: 95%;
+      margin-top: 0;
+      padding: 20px 0 0 0;
+
+      .regimenTab-subtxt {
+        font-size: 15px;
+      }
+    } // regimenTab-underlay
+    .regimenTab {
+      width: 95%;
+      padding: 0;
+      margin-top: -80px;
+
+      .regimenTablinks {
+        font-size: 25px;
+        padding-top: 6px;
+        padding-bottom: 30px;
+      }
+    } // regimenTab
+    .regimenTabContent {
+      .regimenDetails {
+        width: 95%;
+        margin-top: -68px;
+        padding-top: 70px;
+        flex-wrap: wrap;
+
+        .product {
+          width: 90%;
+          margin: 20px auto 0 auto;
+
+          h3 {
+            line-height: 1.1;
+          }
+          h4 {
+            font-size: 60px;
+            margin: 1rem auto;
+          }
+          p {
+            width: 82.3%;
+          }
+          .oil-icon {
+            width: 110px;
+          }
+          .regCTA {
+            // width: 50%;
+
+            .oil-cta, .coq10-cta {
+              display: inline-block;
+              text-transform: uppercase;
+              background-color: $q10purpleDK;
+              // width: 95%;
+              padding: 10px;
+              margin: 10px 4px;
+              color: #FFF;
+              font-size: 15px;
+              font-weight: 400;
+
+              &:hover {
+                color: $q10purpleDK;
+                background-color: $q10purpleLT;
+                border: 1px solid $q10purpleDK;
+                padding: 9px 10px;
+                text-decoration: none;
+
+                a {
+                  color: $q10purpleDK;
+
+                }
+              } // hover
+            }
+          }
+
+        } // product
+        #core1, #simple1 {
+          h3 {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+          }
+          p {
+            width: 80%;
+          }
+        } // #core1
+        #simple2 {
+          width: 95%;
+        }
+        #simple1, #simple2 {
+          margin-left: inherit;
+        }
+      } //  regimenDetails
+    } // regimenTabContent
+    .regimenCTA {
+      width: 95%;
+      padding: 20px 10px;
+
+      .regCTA-btn1 {
+        display: none;
+      } // regCTA-btn1
+      .regCTA-btn2 {
+        // padding: 10px 0;
+        margin: 0 auto;
+        width: 90%;
+
+        // &:hover {
+        //   padding: 9px 0;
+        // }
+        .regimenCTA-2 {
+          text-align: center;
+          margin: 0 auto;
+          padding: 14px 30px;
+          font-size: 15px;
+
+          &:hover {
+            padding: 13px 30px;
+          }
+        }
+      } // regCTA-btn2
+    } // regimenCTA
+  } // suggestedRegimen
+  .comments {
+    padding: 0 0 20px 0;
+    height: unset;
+    max-height: 450px;
+
+    .quotes {
+      position: absolute;
+      left: 38%;
+    }
+
+    #commentsSlider {
+      margin-top: 0;
+
+      .comment {
+        padding-top: 18px;
+        margin: 0 auto;
+
+        .commentProduct {
+          margin-top: 30px;
+        }
+        h4 {
+          font-size: 35px;
+          line-height: 1;
+          margin-bottom: 10px;
+          margin-top: 30px;
+        }
+        h6 {
+          margin: 10px auto;
+        }
+      } // comment
+      blockquote {
+        font-size: 15px;
+      } // blockquote
+    }
+  } // comments
+  .learn {
+    .learnBox {
+      // position: relative;
+      // top: 62%;
+      left: 0;
+      width: 100%;
+      margin: 90% auto 0 auto;
+      padding: 0 14px;
+      text-align: center;
+      background-color: #FFF;
+
+      h2 {
+        margin-top: 0;
+      }
+      .learn-cta {
+        margin: 20px auto;
+        text-align: center;
+      }
+    } // learnBox
+
+  } // learn
+} // Mobile - everything smaller than 500
+@media only screen and (max-width: 468px) and (min-width: 439px) {
+  .suggestedRegimen .regimenTabContent .regimenDetails .product .oil-cta {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+} // min 439 to max 468 - Mobile exception
+@media only screen and (max-width: 592px) and (min-width: 483px) {
+  .suggestedRegimen .regimenTabContent .regimenDetails {
+    #core1, #simple1 {
+      h3 {
+        width: 63%;
+      }
+    }
+  }
+} // min 439 to max 468 - Mobile exception
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+  .content-wrapper {
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 45px;
+    }
+    h3 {
+      font-size: 28px;
+    }
+    h4 {
+      font-size: 50px;
+    }
+    h5 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+  } // content-wrapper
+  .hero {
+    background-color: #f5f5f5;
+    padding-bottom: 4%;
+
+    .hero-img {
+      margin-top: -20px;
+      // margin-left: -10px;
+    }
+    .heroBox {
+      top: 10%;
+      padding: 0;
+      // right: 2;
+      width: 54%;
+
+      p {
+        margin: 2rem 0;
+      }
+    } // heroBox
+  } // hero
+  .info {
+    // margin-bottom: 40px;
+      margin-bottom: -25px;
+
+    .infoBox {
+      margin-top: 40px;
+      padding-right: 30px;
+      padding-left: 30px;
+
+      .benefits {
+        .benefit {
+          width: 75%;
+        }
+        h3 {
+          font-size: 24px;
+        }
+        h6 {
+          font-size: 18px;
+        }
+      }
+    }
+    .infoImg-right {
+      bottom: 0;
+    }
+  } // info
+  .ingredients {
+    #ingredientsDesc {
+      width: 90%;
+      padding-bottom: 20px;
+      margin-bottom: 10px;
+
+      .ingredientImg {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+      } // ingredientImg
+      .ingredient-text {
+        padding-top: 0;
+        margin-top: -10px;
+      }
+    } // #ingredientsDesc
+  } // ingredients
+  .collection {
+    .collectionWrapper {
+      width: 95%;
+
+      .mainTabContent {
+        .faceButtons, .targetButtons {
+          overflow-x: scroll;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+          justify-content: space-evenly;
+
+          .facelink, .targetlink {
+            font-size: 16px;
+            padding: 10px;
+            // padding: 8px 6px;
+
+            &:hover {
+              padding-bottom: 8px;
+            } // hover
+          } // facelink targetlink
+        }
+        .faceContent, .targetContent {
+          padding: 40px;
+          height: 400px;
+
+          .productInfo-details {
+            width: 90%;
+            padding-top: 0;
+          } // productInfo-details
+        }
+      } // mainTabContent
+    }
+  } // collection
+  .suggestedRegimen {
+    .regimenTabContent .regimenDetails {
+      .product {
+        h3 {
+          font-size: 28px;
+        }
+        h4 {
+          font-size: 80px;
+        }
+      }
+      #simple1, #simple2 {
+        margin-left: inherit;
+      }
+    }
+    .regimenCTA {
+      padding: 0;
+      // padding-left: 20px;
+      // padding-right: 20px;
+
+      .regCTA-btn1 {
+        width: 38%;
+
+        .regimenCTA-1 {
+          padding-left: 14px;
+          padding-right: 14px;
+          font-size: 14px;
+
+          &:hover {
+            padding: 13px 14px;
+          }
+        }
+      }
+      .regCTA-btn2 {
+        width: 54%;
+
+        .regimenCTA-2 {
+            padding-left: 100px;
+            padding-right: 100px;
+            font-size: 14px;
+
+            &:hover {
+              padding: 13px 100px;
+            }
+        } // regimenCTA-2
+      }
+    } // regimenCTA
+  } // suggestedRegimen
+  .comments {
+    #commentsSlider {
+      .comment {
+        h4 {
+          font-size: 40px;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+  .learn {
+    min-height: 340px;
+
+    .learn-img {
+      margin-top: 20px;
+    }
+    .learnBox {
+      width: 50%;
+
+      h2 {
+        margin-top: 0;
+        line-height: 1.1;
+      }
+    }
+  }
+} // min 600 to max 1024 - Tablet
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  .hero {
+    min-height: 500px;
+
+    .heroBox {
+      top: 8%;
+
+      .cta {
+        width: 50%;
+      } // cta
+    } // heroBox
+  } // hero
+  .collection {
+    .collectionWrapper {
+      .mainTabContent {
+        .faceContent, .targetContent {
+          padding: 30px;
+
+          .productInfo-details {
+            width: 100%;
+
+            .productInfo-text {
+              width: 100%;
+              margin-left: 0;
+            }
+          }
+        }
+      } // mainTabContent
+    } // collectionWrapper
+  } // collection
+} // min 600 to max 800 - Tablet exceptions
+@media only screen and (max-width: 700px) and (min-width: 600px) {
+  .suggestedRegimen {
+    .regimenCTA {
+      padding: 0;
+      .regCTA-btn1 {
+        width: 38%;
+        // margin: 16px;
+
+        .regimenCTA-1 {
+          padding-left: 8px;
+          padding-right: 8px;
+          font-size: 11px;
+
+          &:hover {
+            padding: 13px 8px;
+          }
+        }
+      }
+      .regCTA-btn2 {
+        width: 62%;
+
+        .regimenCTA-2 {
+            padding-left: 100px;
+            padding-right: 100px;
+            font-size: 11px;
+
+
+            &:hover {
+              padding: 13px 100px;
+            }
+        } // regimenCTA-2
+      }
+    } // regimenCTA
+  } // suggestedRegimen
+} // min 600 to max 700 - Tablet exceptions
+@media only screen and (max-width: 1024px) and (min-width: 861px) {
+  .collection {
+    .collectionWrapper {
+      .mainTabContent {
+        .targetButtons {
+          overflow-x: unset;
+          white-space: unset;
+          -webkit-overflow-scrolling: unset;
+        }
+      }
+    }
+  }
+} // min 861 to max 1024 - Tablet exceptions
