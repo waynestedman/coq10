@@ -267,6 +267,10 @@ body {
   margin: 2rem 0 4rem 0;
 }
 
+.hero .heroBox h6 {
+  padding-top: 20px;
+}
+
 .hero .heroBox .cta {
   margin-bottom: 0;
   background-color: #9F3F95;
@@ -554,6 +558,10 @@ body {
 .collection .collectionCta {
   margin: 20px auto 0 auto;
   text-align: center;
+}
+
+.collection .collectionCta h6 {
+  padding-top: 20px;
 }
 
 .collection .collectionCta .collection-cta {
