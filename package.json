@@ -19,8 +19,7 @@
     "gulp-sourcemaps": "^2.6.4"
   },
   "dependencies": {
-    "jquery": "^3.3.1",
-    "npm": "^6.4.1"
+    "jquery": "^3.3.1"
   },
   "keywords": [
     "DHC",
